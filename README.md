@@ -7,7 +7,9 @@ I'm currently working at [GitHub](@github) and LOVE it! Mostly I like to tinker 
 Some of my fav projects and organisation on GitHub that I'm part of, support or just use are:
 
 [Swindon Makerspace](https://github.com/swindonmakers)
+
 [OhMyZSH](https://github.com/ohmyzsh/ohmyzsh)
+
 [ZSH History](https://github.com/rchakra3/zsh_history)
 
 ... more to come, I just can't think of them off hand
