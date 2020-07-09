@@ -1,6 +1,6 @@
 ### Hey, thanks for sliding into my profile 👋
 
-I love to drink coffee ![coffee](/assets/coffee-1.gif) , too much coffee ![coffee](/assets/coffee_parrot.gif.
+I love to drink coffee ![coffee](assets/coffee-1.gif) , too much coffee ![coffee](assets/coffee_parrot.gif).
 
 I'm currently working at [GitHub](@github) and LOVE it! Mostly I like to tinker with bash/zsh scripts and home automation. I love [Raspberry Pi's](@raspberrypi) and use quite a few of them in use for various jobs around the house. Most recently I'm using a Pi 4 8GB with [Docker](@docker) to run a couple of custom containers which I might release as well as [Plex](@plex).
 
