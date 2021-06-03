@@ -17,3 +17,7 @@ Thanks for stopping by, you can find me on various [social media platforms](http
 (that's also a link to my blog, I really need to get more active on there)
 
 Psst if you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+
+## Activity
+
+[![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg)](https://github.com/vn7n24fzkq/ithub-profile-summary-cards)
