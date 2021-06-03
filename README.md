@@ -24,7 +24,7 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 [![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/3-stats.svg)  ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/1-repos-per-language.svg)
 
-## WiGLE
+## WiGLE Stats
 
 <a href="https://wigle.net">
 <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
