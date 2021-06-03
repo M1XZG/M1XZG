@@ -27,3 +27,7 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 ## WiGLE
 
 ![WiGLE Stats](https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png)
+
+<a href="https://wigle.net">
+<img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
+</a>
