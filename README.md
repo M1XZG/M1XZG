@@ -23,8 +23,7 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 [![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) ➖
 [![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Swindon-Makerspace-Wiki-Backup.yml/badge.svg?branch=master)](https://github.com/swindonmakers/wiki/actions/workflows/Swindon-Makerspace-Wiki-Backup.yml)
 
-[![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/workflows/CI/Swindon-Makerspace-Wiki-Backup.svg
-)](https://github.com/swindonmakers/wiki/actions/workflows/Swindon-Makerspace-Wiki-Backup.yml)
+[![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/workflows/CI/Swindon-Makerspace-Wiki-Backup.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Swindon-Makerspace-Wiki-Backup.yml)
 
 
 ## Activity
