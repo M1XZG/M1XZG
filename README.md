@@ -18,9 +18,9 @@ Thanks for stopping by, you can find me on various [social media platforms](http
 
 Psst if you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
-## Workflows
+## Workflow Status
 
-[![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml)
+[![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) ➖
 [![Wiki backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
 
 ## Activity
