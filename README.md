@@ -18,8 +18,12 @@ Thanks for stopping by, you can find me on various [social media platforms](http
 
 Psst if you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
-## Activity
+## Workflows
 
+![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)
+
+
+## Activity
 
 [![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/3-stats.svg)  ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/1-repos-per-language.svg)
