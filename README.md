@@ -20,6 +20,10 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 
 ![visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fm1xzg1212%2Fhit-counter)
 
+## Socials
+
+![Twitter](https://img.shields.io/twitter/follow/m1xzg?style=for-the-badge)
+
 ## Workflow Status
 
 [![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) ➖
