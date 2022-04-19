@@ -18,8 +18,6 @@ Thanks for stopping by, you can find me on various [social media platforms](http
 
 Psst if you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
-![visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fm1xzg1212%2Fhit-counter)
-
 ## Socials
 
 [![Twitter](https://img.shields.io/twitter/follow/m1xzg?color=brightgreen&logo=twitter&style=for-the-badge)](https://twitter.com/m1xzg)
