@@ -22,7 +22,7 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 
 ## Socials
 
-![Twitter](https://img.shields.io/twitter/follow/m1xzg?style=for-the-badge)
+[![Twitter](https://img.shields.io/twitter/follow/m1xzg?style=for-the-badge)](https://twitter.com/m1xzg)
 
 ## Workflow Status
 
