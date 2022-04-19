@@ -22,16 +22,17 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 
 ## Socials
 
-[![Twitter](https://img.shields.io/twitter/follow/m1xzg?color=brightgreen&style=for-the-badge)](https://twitter.com/m1xzg)
-[![Website](https://img.shields.io/website?down_message=OFFLINE&color=brightgreen&style=for-the-badge&up_message=ONLINE&url=https%3A%2F%2Fwww.uk-experience.com)](https://www.uk-experience.com)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow_Me-brightgreen?style=for-the-badge)](https://instagram.com/m1xzg)
-[![Ko-fi](https://img.shields.io/badge/Ko--Fi-Follow_Me-brightgreen?style=for-the-badge)](https://ko-fi.com/m1xzg)
-[![Telegram](https://img.shields.io/badge/Telegram-Chat-brightgreen?style=for-the-badge)](https://t.me/m1xzg)
+[![Twitter](https://img.shields.io/twitter/follow/m1xzg?color=brightgreen&logo=twitter&style=for-the-badge)](https://twitter.com/m1xzg)
+[![Website](https://img.shields.io/website?down_message=OFFLINE&logo=wordpress&color=brightgreen&style=for-the-badge&up_message=ONLINE&url=https%3A%2F%2Fwww.uk-experience.com)](https://www.uk-experience.com)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow_Me-brightgreen?style=for-the-badge&logo=instagram)](https://instagram.com/m1xzg)
+[![Ko-fi](https://img.shields.io/badge/Ko--Fi-Follow_Me-brightgreen?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/m1xzg)
+[![Telegram](https://img.shields.io/badge/Telegram-Chat-brightgreen?style=for-the-badge&logo=telegram)](https://t.me/m1xzg)
 
 ## Workflow Status
 
-[![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) ➖
-[![Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
+[![Profile Summary Cards](https://img.shields.io/github/workflow/status/m1xzg/m1xzg/GitHub-Profile-Summary-Cards?color=brightgreen&logo=github&label=Profile%20Summary%20Cards&style=for-the-badge)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml)
+
+[![Wiki Backup](https://img.shields.io/github/workflow/status/swindonmakers/wiki/Wiki%20Backup?color=brightgreen&label=Swindon%20Makerspace%20wiki%20backup&logo=github&style=for-the-badge)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
 
 
 ## Stats
