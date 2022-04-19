@@ -18,13 +18,16 @@ Thanks for stopping by, you can find me on various [social media platforms](http
 
 Psst if you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
+![visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fm1xzg1212%2Fhit-counter)
+
 ## Workflow Status
 
 [![Profile Summary Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) ➖
 [![Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
 
 
-## Activity
+## Stats
+![status](https://github-readme-stats.vercel.app/api?username=m1xzg)
 
 [![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/3-stats.svg)  ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/1-repos-per-language.svg)
