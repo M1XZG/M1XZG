@@ -39,8 +39,6 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 
 ## Stats
-![status](https://github-readme-stats.vercel.app/api?username=m1xzg)
-![streaks](https://github-readme-streak-stats.herokuapp.com/?user=m1xzg)
 
 [![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/3-stats.svg)  ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/1-repos-per-language.svg)
