@@ -1,6 +1,6 @@
 ## Hey, thanks for sliding into my profile 👋
 
-I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish PSL was year round.
+I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
 
 I'm currently working at [GitHub](https://github.com) :octocat: and :heartpulse: it! 
 
