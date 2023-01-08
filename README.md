@@ -4,7 +4,7 @@ I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I w
 
 I'm currently working at [GitHub](https://github.com) :octocat: and :heartpulse: it! 
 
-Mostly I like to tinker with bash/zsh scripts and home automation. I love [Raspberry Pi's](/raspberrypi) and use quite a few of them in use for various jobs around the house. Most recently I'm using a Pi 4 8GB with [Docker](/docker) to run a couple of custom containers which I might release as well as [Plex](/plex). Most recently adding another Pi 4 with 8GB running my own [kiosk](https://github.com/M1XZG/Raspberry-pi-kiosk-config) configuration and [ADS-B Reception, Decoding & Sharing with Docker](https://sdr-enthusiasts.gitbook.io/ads-b/).
+Mostly I like to tinker with bash/zsh scripts and home automation. I love `Raspberry Pi's` and use quite a few of them in use for various jobs around the house. Most recently I'm using a Pi 4 8GB with `Docker` to run a couple of custom containers which I might release as well as `Plex`. Most recently adding another Pi 4 with 8GB running my own [kiosk](https://github.com/M1XZG/Raspberry-pi-kiosk-config) configuration and [ADS-B Reception, Decoding & Sharing with Docker](https://sdr-enthusiasts.gitbook.io/ads-b/).
 
 Some of my fav projects and organisation on GitHub that I'm part of, support or just use are:
 
