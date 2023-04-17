@@ -40,7 +40,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## Stats
 
-[![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/0-profile-details.svg?username=M1XZG&theme=radical)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/3-stats.svg)  ![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/dracula/1-repos-per-language.svg)
 
 ## WiGLE Stats
