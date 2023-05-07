@@ -11,6 +11,7 @@ Some of my fav projects and organisation on GitHub that I'm part of, support or 
 - [Swindon Makerspace](https://github.com/swindonmakers)
 - [OhMyZSH](https://github.com/ohmyzsh/ohmyzsh)
 - [ZSH History](https://github.com/rchakra3/zsh_history)
+- [TTS Voice Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard) I'm using this for [VRChat](https://vrchat.com/) 
 - ... more to come, I just can't think of them off hand
 
 Thanks for stopping by, you can find me on various [social media platforms](https://www.uk-experience.com/social-media-site-links/)
