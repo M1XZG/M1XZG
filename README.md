@@ -30,6 +30,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-brightgreen?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robpmckenzie/)
 [![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](http://discordapp.com/users/350399917921140746)
 [![Telegram](https://img.shields.io/badge/Telegram-Chat-brightgreen?style=for-the-badge&logo=telegram)](https://t.me/m1xzg)
+[![VRChat](https://img.shields.io/badge/VRchat-Friend_me-brightgreen?style=for-the-badge&logo=vrchat)](https://vrchat.com/home/user/usr_6cd0b3d0-d998-4bfb-9af5-57fdb782c1de)
 
 
 ## Workflow Status
