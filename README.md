@@ -54,3 +54,8 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 <a href="https://wigle.net">
 <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
 </a>
+
+## Broadband Monitor
+
+<a title="Broadband Ping" href="https://www.thinkbroadband.com/broadband/monitoring/quality/share/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b"><img alt="My Broadband Ping - Home Fibre" src="https://www.thinkbroadband.com/broadband/monitoring/quality/share/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b.png" /></a>
+
