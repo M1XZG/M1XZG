@@ -39,9 +39,15 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## Workflow Status
 
-[![GitHub-Profile-Summary-Cards](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml)
+[![M1XZG Uptime Monitor](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml)
 
-[![Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
+[![Swindon Makerspace Uptime Monitor](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg)](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml)
+
+[![M1XZG Profile Card Creator](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml)
+
+[![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
+
+
 
 
 ## Stats
