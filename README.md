@@ -23,9 +23,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## Socials
 
-[![Twitter](https://img.shields.io/twitter/follow/m1xzg?color=brightgreen&logo=twitter&style=for-the-badge)](https://twitter.com/m1xzg)
 [![Website](https://img.shields.io/website?down_message=OFFLINE&logo=wordpress&color=brightgreen&style=for-the-badge&up_message=ONLINE&url=https%3A%2F%2Fwww.uk-experience.com)](https://www.uk-experience.com)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow_Me-brightgreen?style=for-the-badge&logo=instagram)](https://instagram.com/m1xzg)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-brightgreen?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robpmckenzie/)
 [![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](http://discordapp.com/users/350399917921140746)
 [![Telegram](https://img.shields.io/badge/Telegram-Chat-brightgreen?style=for-the-badge&logo=telegram)](https://t.me/m1xzg)
