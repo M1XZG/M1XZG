@@ -3,6 +3,7 @@
 import sys
 import urllib.request
 from minsert import MarkdownFile
+from datetime import datetime
 
 # Check if the correct number of arguments are passed
 if len(sys.argv) != 3:
@@ -18,9 +19,12 @@ url = f"https://decapi.me/steam/hours/{STEAMID}/{GAMEID}"
 with urllib.request.urlopen(url) as response:
     livehours = response.read().decode("utf-8")
 
+# Get the current date
+current_date = datetime.now().strftime("%Y-%m-%d")
+
 # Create a dictionary with the formatted hours
 vrchours = {
-    "myhours": f"## My VRChat Hours:\n\n {livehours}",
+    "myhours": f"## My VRChat Hours:\n\n{current_date}\n\n{livehours}",
 }
 
 # Insert the hours into the Markdown file

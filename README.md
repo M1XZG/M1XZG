@@ -37,7 +37,9 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 <!-- start myhours -->
 ## My VRChat Hours:
 
- 3019.63 hours
+2024-06-05
+
+3019.63 hours
 <!-- end myhours -->
 
 ## Workflow Status
