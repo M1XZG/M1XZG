@@ -1,17 +1,29 @@
 #!/bin/zsh
 
-SRC=<PATH TO YOUR PROFILE REPO ON DISK>
+# This is the path to your repo on local disk, ie: $HOME/myrepos/REPO_NAME
+SRC=$1
 
+TSTAMP=`date +%N`
+NEWBRANCH="z$TSTAMP"
 cd $SRC
 
-# Pull the profile down
 gh repo sync
 
-# Fetch the current hours and update the README.md
-# VRChat Game ID: 438100
-./scripts/update-myhours.py <YOUR_STEAM_ID_NUMBER> <STEAM_GAME_ID>
+git switch --create $NEWBRANCH
 
-git add README.md
-git commit -a -m "Update VRC Hours"
-git push
+# Fill in your STEAM_ID and the STEAM_GAME_ID here
+# VRChat STEAM_GAME_ID = 438100
+#
+# Uncomment to hard code
+#./scripts/update-myhours.py <YOUR_STEAM_ID_NUMBER> <STEAM_GAME_ID>
+
+# use this with command line arguments
+./scripts/update-myhours.py $2 $3
+
+git commit -a -m "Update VRC Hours - $TSTAMP"
+git push --set-upstream origin $NEWBRANCH
+gh pr create --title "Update VRC Hours - $TSTAMP" --body "Update of VRChat hours via cron"
+sleep 5
+gh pr merge --auto -m
+git checkout main
 
