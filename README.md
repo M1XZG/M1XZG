@@ -23,21 +23,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## Socials
 
-[![Website](https://img.shields.io/website?down_message=OFFLINE&logo=wordpress&color=brightgreen&style=for-the-badge&up_message=ONLINE&url=https%3A%2F%2Fwww.uk-experience.com)](https://www.uk-experience.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-brightgreen?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robpmckenzie/)
-[![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](http://discordapp.com/users/350399917921140746)
-[![Telegram](https://img.shields.io/badge/Telegram-Chat-brightgreen?style=for-the-badge&logo=telegram)](https://t.me/m1xzg)
-
-## VRChat Related Socials
-
-[![VRChat](https://img.shields.io/badge/VRchat-Friend_me-brightgreen?style=for-the-badge&logo=vrchat)](https://vrchat.com/home/user/usr_6cd0b3d0-d998-4bfb-9af5-57fdb782c1de)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow_Me-brightgreen?style=for-the-badge&logo=instagram)](https://www.instagram.com/wildwanderer_vr/)
-[![AllMyLinks](https://img.shields.io/badge/AllMyLinks-Check_Me_Out-brightgreen?style=for-the-badge&logo=allmylinks)](https://allmylinks.com/wildwanderer-vr)
-
-<!-- start myhours -->
-## My VRChat Hours:
-
-As of 2024-06-05 - 3019.63 hours
+<!-- [![Website](https://img.shields.io/website?down_message=OFFLINE&logo=wordpress&color=brightgreen&style=for-the-badge&up_message=ONLINE&url=https%3A%2F%2Fwww.uk-experience.com)](https://www.uk-experience.com) -->
 <!-- end myhours -->
 
 ## Workflow Status
