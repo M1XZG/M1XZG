@@ -21,7 +21,7 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 
 If you want some of the nifty badges below check out [shields.io](https://shields.io/)
 
-## Socials
+## Socials 1
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-brightgreen?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robpmckenzie/)
 [![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](http://discordapp.com/users/350399917921140746)
