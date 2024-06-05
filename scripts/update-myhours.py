@@ -24,7 +24,7 @@ current_date = datetime.now().strftime("%Y-%m-%d")
 
 # Create a dictionary with the formatted hours
 vrchours = {
-    "myhours": f"## My VRChat Hours:\n\n{current_date}\n\n{livehours}",
+    "myhours": f"## My VRChat Hours:\n\nAs of {current_date} - {livehours}",
 }
 
 # Insert the hours into the Markdown file
