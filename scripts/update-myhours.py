@@ -20,7 +20,7 @@ with urllib.request.urlopen(url) as response:
 
 # Create a dictionary with the formatted hours
 vrchours = {
-    "myhours": f"### My VRChat Hours: {livehours}",
+    "myhours": f"## My VRChat Hours:\n\n {livehours}",
 }
 
 # Insert the hours into the Markdown file
