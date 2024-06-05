@@ -4,6 +4,7 @@ import sys
 import urllib.request
 from minsert import MarkdownFile
 from datetime import datetime
+import shutil
 
 # Check if the correct number of arguments are passed
 if len(sys.argv) != 3:
@@ -13,6 +14,10 @@ if len(sys.argv) != 3:
 # Assign variables from command line arguments
 STEAMID = sys.argv[1]
 GAMEID = sys.argv[2]
+
+# Copy the template file to README.md
+shutil.copy('./README.md', './README.md.bak')
+shutil.copy('./templates/README-template.md', './README.md')
 
 # Fetch the URL content
 url = f"https://decapi.me/steam/hours/{STEAMID}/{GAMEID}"
@@ -28,5 +33,5 @@ vrchours = {
 }
 
 # Insert the hours into the Markdown file
-file = MarkdownFile("README-clone.md")
+file = MarkdownFile("./README.md")
 file.insert(vrchours)
