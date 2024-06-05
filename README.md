@@ -21,7 +21,7 @@ Psst if you don't know what icons are available, check out this [emoji cheat she
 
 If you want some of the nifty badges below check out [shields.io](https://shields.io/)
 
-## Socials 1
+## Socials
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-brightgreen?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robpmckenzie/)
 [![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](http://discordapp.com/users/350399917921140746)
@@ -32,7 +32,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 <!-- start myhours -->
 ## My VRChat Hours:
 
-As of 2024-06-05 - 3020.65 hours
+As of 2024-06-05 - 3021.17 hours
 <!-- end myhours -->
 
 ## Workflow Status
