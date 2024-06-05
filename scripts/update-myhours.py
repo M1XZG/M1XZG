@@ -1,10 +1,20 @@
-# update.py
+#!/usr/bin/python3
 
+import sys
 import urllib.request
 from minsert import MarkdownFile
 
+# Check if the correct number of arguments are passed
+if len(sys.argv) != 3:
+    print("Usage: python update.py <STEAMID> <GAMEID>")
+    sys.exit(1)
+
+# Assign variables from command line arguments
+STEAMID = sys.argv[1]
+GAMEID = sys.argv[2]
+
 # Fetch the URL content
-url = "https://decapi.me/steam/hours/76561198449494512/438100"
+url = f"https://decapi.me/steam/hours/{STEAMID}/{GAMEID}"
 with urllib.request.urlopen(url) as response:
     livehours = response.read().decode("utf-8")
 
