@@ -28,5 +28,6 @@ gh pr merge --auto -m
 git checkout main
 
 # Clean up branches that have been merged and deleted on remote
-# git branch --merged| grep -Ev "(^\*|master|main|dev)" | xargs git branch -d
+gh repo sync
+git branch --merged| grep -Ev "(^\*|master|main|dev)" | xargs git branch -d
 
