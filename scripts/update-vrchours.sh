@@ -20,6 +20,18 @@ git switch --create $NEWBRANCH
 # use this with command line arguments
 ./scripts/update-myhours.py $2 $3
 
+cmp $SRC/README.md $SRC/README.md.bak
+rv=$?
+if [[ $rv == 0 ]]
+then
+	echo "No diff, exiting"
+	git checkout main
+	git branch -D $NEWBRANCH
+    exit
+fi
+
+echo "Files are different.. continuing"
+
 git commit -a -m "Update VRC Hours - $TSTAMP"
 git push --set-upstream origin $NEWBRANCH
 gh pr create --title "Update VRC Hours - $TSTAMP" --body "Update of VRChat hours via cron"
