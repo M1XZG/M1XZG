@@ -17,7 +17,7 @@ GAMEID = sys.argv[2]
 
 # Copy the template file to README.md
 shutil.copy('./README.md', './README.md.bak')
-shutil.copy('./templates/README-template.md', './README.md')
+shutil.copy('./templates/README-template.md', './TMP-README.md')
 
 # Fetch the URL content
 url = f"https://decapi.me/steam/hours/{STEAMID}/{GAMEID}"
@@ -33,5 +33,5 @@ vrchours = {
 }
 
 # Insert the hours into the Markdown file
-file = MarkdownFile("./README.md")
+file = MarkdownFile("./TMP-README.md")
 file.insert(vrchours)
