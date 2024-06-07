@@ -30,4 +30,4 @@ git checkout main
 # Clean up branches that have been merged and deleted on remote
 gh repo sync
 git branch --merged| grep -Ev "(^\*|master|main|dev)" | xargs git branch -d
-
+git remote prune origin
