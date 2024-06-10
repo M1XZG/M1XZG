@@ -32,7 +32,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 <!-- start myhours -->
 ## My VRChat Hours:
 
-As of 2024-06-10 - 3116.83 hours
+As of 2024-06-10 - 3118.67 hours
 <!-- end myhours -->
 
 ## Workflow Status
@@ -61,3 +61,6 @@ Swindon Makerspace Wiki Backup - [![Swindon Makerspace Wiki Backup](https://gith
 ## Broadband Monitor
 
 <a title="Broadband Ping" href="https://www.thinkbroadband.com/broadband/monitoring/quality/share/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b"><img alt="My Broadband Ping - Home Fibre" src="https://www.thinkbroadband.com/broadband/monitoring/quality/share/thumb/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b.png" /></a>
+
+
+----
