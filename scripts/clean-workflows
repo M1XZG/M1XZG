@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Repo name
+
+REPO="M1XZG/M1XZG"
+
+# Sleep time
+ST=10
+
+if [ "$1" == "" ]; then
+	runs=50
+else
+	runs=$1
+fi 
+
+# The loop
+x=1
+while [ $x -le $runs ]
+do
+
+  echo "Starting run: $x of $runs"
+  time `for value in $(gh api /repos/$REPO/actions/runs | jq -r '.workflow_runs[] | [.id] | @tsv'); do echo "Deleting $value"; gh api -X DELETE "/repos/$REPO/actions/runs/$value"; done &> /dev/null`
+  #time `for value in $(gh api /repos/$REPO/actions/runs | jq -r '.workflow_runs[] | [.id] | @tsv'); do echo "Deleting $value"; gh api -X DELETE "/repos/$REPO/actions/runs/$value"; done`
+
+
+  echo -e "Finished run: $x of $runs \nSleeping for $ST seconds... \n" 
+  sleep $ST
+
+  x=$(( $x + 1 ))
+done
