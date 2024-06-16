@@ -30,6 +30,9 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 [![AllMyLinks](https://img.shields.io/badge/AllMyLinks-Check_Me_Out-brightgreen?style=for-the-badge&logo=allmylinks)](https://allmylinks.com/wildwanderer-vr)
 
 <!-- start myhours -->
+## My VRChat Hours:
+
+As of **2024-06-16 @ 12:11hrs** - 3,239.0
 <!-- end myhours -->
 
 ## Workflow Status
