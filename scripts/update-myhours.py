@@ -25,7 +25,8 @@ with urllib.request.urlopen(url) as response:
     livehours = response.read().decode("utf-8")
 
 # Get the current date
-current_date = datetime.now().strftime("%Y-%m-%d")
+#current_date = datetime.now().strftime("%Y-%m-%d")
+current_date = datetime.now().strftime("%Y-%m-%d @ %H:%M")
 
 # Create a dictionary with the formatted hours
 vrchours = {
