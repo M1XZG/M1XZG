@@ -24,13 +24,18 @@ url = f"https://decapi.me/steam/hours/{STEAMID}/{GAMEID}"
 with urllib.request.urlopen(url) as response:
     livehours = response.read().decode("utf-8")
 
+# Round to one decimal place
+rounded_hours = round(float(livehours), 1)
+
+# Format with a comma for thousands separator
+formatted_hours = f"{rounded_hours:,.1f}"
+
 # Get the current date
-#current_date = datetime.now().strftime("%Y-%m-%d")
 current_date = datetime.now().strftime("%Y-%m-%d @ %H:%M")
 
 # Create a dictionary with the formatted hours
 vrchours = {
-    "myhours": f"## My VRChat Hours:\n\nAs of **{current_date}hrs** - {livehours}",
+    "myhours": f"## My VRChat Hours:\n\nAs of **{current_date}hrs** - {formatted_hours}",
 }
 
 # Insert the hours into the Markdown file
