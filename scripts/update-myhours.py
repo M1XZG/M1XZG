@@ -24,8 +24,11 @@ url = f"https://decapi.me/steam/hours/{STEAMID}/{GAMEID}"
 with urllib.request.urlopen(url) as response:
     livehours = response.read().decode("utf-8")
 
+# Extract the numeric part (remove ' hours')
+numeric_hours = float(livehours.split()[0])
+
 # Round to one decimal place
-rounded_hours = round(float(livehours), 1)
+rounded_hours = round(numeric_hours, 1)
 
 # Format with a comma for thousands separator
 formatted_hours = f"{rounded_hours:,.1f}"
