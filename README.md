@@ -32,7 +32,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 <!-- start myhours -->
 ## My VRChat Hours:
 
-As of **2024-06-18 @ 09:00hrs** - 3,270.7 <sup>hrs</sup>
+As of **2024-06-18 @ 12:00hrs** - 3,273.7 <sup>hrs</sup>
 <!-- end myhours -->
 
 ## Workflow Status
