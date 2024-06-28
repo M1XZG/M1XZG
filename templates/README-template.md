@@ -31,10 +31,10 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## My VRChat Hours:
 
-2022-06-01 ＝ Started
-2023-01-01 ＝ ~40 hrs
-2024-06-02 ＝ 3000 hrs
-2024-06-28 ＝ 3500 hrs
+- 2022-06-01 ＝ Started
+- 2023-01-01 ＝ ~40 hrs
+- 2024-06-02 ＝ 3000 hrs
+- 2024-06-28 ＝ 3500 hrs
 <!-- start myhours -->
 <!-- end myhours -->
 
