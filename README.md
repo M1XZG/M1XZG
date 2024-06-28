@@ -29,10 +29,14 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 [![Instagram](https://img.shields.io/badge/Instagram-Follow_Me-brightgreen?style=for-the-badge&logo=instagram)](https://www.instagram.com/wildwanderer_vr/)
 [![AllMyLinks](https://img.shields.io/badge/AllMyLinks-Check_Me_Out-brightgreen?style=for-the-badge&logo=allmylinks)](https://allmylinks.com/wildwanderer-vr)
 
-<!-- start myhours -->
 ## My VRChat Hours:
 
-As of **2024-06-28 @ 09:00hrs** - 3,492.4 <sup>hrs</sup>
+2022-06-01 ＝ Started
+2023-01-01 ＝ ~40 hrs
+2024-06-02 ＝ 3000 hrs
+2024-06-28 ＝ 3500 hrs
+<!-- start myhours -->
+As of **2024-06-28 @ 09:01hrs** - 3,492.4 <sup>hrs</sup>
 <!-- end myhours -->
 
 ## Workflow Status
