@@ -60,7 +60,7 @@ Swindon Makerspace Wiki Backup - [![Swindon Makerspace Wiki Backup](https://gith
 
 <a href="https://wigle.net">
 <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
-</a>
+</a></a>
 
 ## Broadband Monitor
 
