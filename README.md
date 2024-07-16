@@ -36,16 +36,17 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 - 2024-06-02 ＝ 3000 hrs
 - 2024-06-28 ＝ 3500 hrs
 <!-- start myhours -->
-As of **2024-07-16 @ 15:49hrs** - 3,808.6 <sup>lifetime hrs</sup>
+As of **2024-07-16 @ 17:48hrs** - 3,808.6 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 ## Workflow Status
 
-M1XZG Uptime Monitor - [![M1XZG Uptime Monitor](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml)<br>
-M1XZG Profile Card Creator - [![](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml)<br>
-<br>
-Swindon Makerspace Uptime Monitor - [![Swindon Makerspace Uptime Monitor](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg)](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml)<br>
-Swindon Makerspace Wiki Backup - [![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml)
+| Work Flow | Status |
+| :--- | :--- |
+| M1XZG Uptime Monitor | [![M1XZG Uptime Monitor](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml) |
+| M1XZG Profile Card Creator | [![](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) |
+| Swindon Makerspace Uptime Monitor | [![Swindon Makerspace Uptime Monitor](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg)](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml) |
+| Swindon Makerspace Wiki Backup | [![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml) |
 
 ## Stats
 
@@ -60,7 +61,7 @@ Swindon Makerspace Wiki Backup - [![Swindon Makerspace Wiki Backup](https://gith
 
 <a href="https://wigle.net">
 <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
-</a></a>
+</a>
 
 ## Broadband Monitor
 
