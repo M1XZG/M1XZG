@@ -32,7 +32,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 ## My VRChat Hours:
 
 <details>
- <summary>Click to see milestones</summary>
+ <summary>Click to see my past milestones</summary>
 
 - 2022-06-01 ＝ Started
 - 2023-01-01 ＝ ~40 hrs
