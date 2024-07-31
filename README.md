@@ -35,8 +35,9 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 - 2023-01-01 ＝ ~40 hrs
 - 2024-06-02 ＝ 3000 hrs
 - 2024-06-28 ＝ 3500 hrs
+- 2024-07-31 ＝ 4000 hrs
 <!-- start myhours -->
-As of **2024-07-31 @ 08:00hrs** - 3,999.8 <sup>lifetime hrs</sup>
+As of **2024-07-31 @ 08:52hrs** - 4,000.8 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 ## Workflow Status
