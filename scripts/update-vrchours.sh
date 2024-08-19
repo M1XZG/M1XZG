@@ -50,7 +50,7 @@ updateprofile () {
 	if [[ "$LASTTIME" == "$NEWTIME" ]]
 	then
 		echo "No diff, exiting"
-		# rm $SRC/TMP-README.md
+		rm $SRC/TMP-README.md
 	    exit
 	fi
 
