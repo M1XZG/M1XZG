@@ -63,8 +63,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## WiGLE Stats
 
-WiGLE - Wireless Geographic Logging Engine
-
+WiGLE - Wireless Geographic Logging Engine</br>
 *All the networks. Found by everyone*
 
 <a href="https://wigle.net">
