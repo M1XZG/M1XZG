@@ -74,7 +74,7 @@ WiGLE - Wireless Geographic Logging Engine</br>
 
 ## Broadband Monitor
 
-<a title="Broadband Ping" href="https://www.thinkbroadband.com/broadband/monitoring/quality/share/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b"><img alt="My Broadband Ping - Home Fibre" src="https://www.thinkbroadband.com/broadband/monitoring/quality/share/thumb/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b.png?" /></a>
+<a title="Broadband Ping" href="https://www.thinkbroadband.com/broadband/monitoring/quality/share/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b" target=_blank><img alt="My Broadband Ping - Home Fibre" src="https://www.thinkbroadband.com/broadband/monitoring/quality/share/thumb/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b.png?" /></a>
 
 
 ----
