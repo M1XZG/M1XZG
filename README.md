@@ -23,9 +23,9 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 ## Socials
 
-[![My Socials](https://img.shields.io/badge/AllMyLinks-Check_Me_Out-brightgreen?style=for-the-badge&logo=MySocials)](https://wildwanderer-vr.com)
+[![My Socials](https://img.shields.io/badge/My_Socials-Check_Me_Out-brightgreen?style=for-the-badge&logo=MySocials)](https://wildwanderer-vr.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-brightgreen?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robpmckenzie/)
-[![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](http://discordapp.com/users/350399917921140746)
+[![Discord](https://img.shields.io/badge/Discord-Chat-brightgreen?style=for-the-badge&logo=discord)](https://discordapp.com/users/wildwanderer_vr)
 [![VRChat](https://img.shields.io/badge/VRchat-Friend_me-brightgreen?style=for-the-badge&logo=vrchat)](https://vrchat.com/home/user/usr_6cd0b3d0-d998-4bfb-9af5-57fdb782c1de)
 [![Instagram](https://img.shields.io/badge/Instagram-Follow_Me-brightgreen?style=for-the-badge&logo=instagram)](https://www.instagram.com/wildwanderer_vr/)
 
@@ -42,7 +42,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 - 2024-08-25 ＝ 4500 hrs
 </details>
 <!-- start myhours -->
-As of **2024-09-02 @ 19:40hrs** - 4,681.3 <sup>lifetime hrs</sup>
+As of **2024-09-02 @ 20:22hrs** - 4,681.8 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 ## Workflow Status
