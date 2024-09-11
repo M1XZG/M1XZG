@@ -1,0 +1,49 @@
+/*
+My custom css used to power https://wildwanderer-vr.com on https://doras.to
+*/
+
+#display-name {
+color: rgb(0 0 0 / 75%);
+}
+#user-bio {
+color: rgb(0 0 0 / 75%);
+}
+#profile-heading {
+color: rgb(0 0 0 / 75%);
+}
+.richText {
+/* text-shadow: 3px 3px 0px rgba(0,0,0,0.2); */
+background-color: rgb(174 74 255 / 50%);
+border-color: rgb(174 74 255 / 100%);
+color: rgb(0 0 0 / 75%);
+}
+.Text {
+/*text-shadow: 3px 3px 0px rgba(0,0,0,0.2);*/
+background-color: rgb(174 74 255 / 50%);
+border-color: rgb(174 74 255 / 100%);
+color: rgb(0 0 0 / 75%);
+}
+#block {
+/* text-shadow: 5px 5px 0px rgba(0,0,0,0.2);*/
+background-color: rgb(174 74 255 / 50%);
+border-color: rgb(174 74 255 / 100%);
+color: rgb(0 0 0 / 75%);
+}
+#mediakit {
+/*text-shadow: 3px 3px 0px rgba(0,0,0,0.2);*/
+background-color: rgb(174 74 255 / 50%);
+border-color: rgb(174 74 255 / 100%);
+color: rgb(0 0 0 / 75%);
+}
+#mediakit-tiktok-wildwanderer_vr {
+/*text-shadow: 3px 3px 0px rgba(0,0,0,0.2);*/
+background-color: rgb(255 130 253 / 50%);
+border-color: rgb(174 74 255 / 100%);
+color: rgb(0 0 0 / 75%);
+}
+#mediakit-twitter-WildWanderer_vr {
+/*text-shadow: 3px 3px 0px rgba(0,0,0,0.2);*/
+background-color: rgb(255 130 253 / 50%);
+border-color: rgb(174 74 255 / 100%);
+color: rgb(0 0 0 / 75%);
+}
