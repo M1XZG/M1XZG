@@ -34,13 +34,16 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 <details>
  <summary>Click to see my past milestones</summary>
 
-- 2022-06-01 ＝ Started
-- 2023-01-01 ＝ ~40 hrs
-- 2024-06-02 ＝ 3000 hrs
-- 2024-06-28 ＝ 3500 hrs
-- 2024-07-31 ＝ 4000 hrs
-- 2024-08-25 ＝ 4500 hrs
-- 2024-09-17 = 5000 hrs
+| Date | Hours |
+| :--- | :--- |
+| 2022-06-01 | Started |
+| 2023-01-01 | ~40 hrs |
+| 2024-06-02 | 3000 hrs |
+| 2024-06-28 | 3500 hrs |
+| 2024-07-31 | 4000 hrs |
+| 2024-08-25 | 4500 hrs |
+| 2024-09-17 | 5000 hrs |
+
 </details>
 <!-- start myhours -->
 <!-- end myhours -->
