@@ -47,7 +47,6 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 </details>
 <!-- start myhours -->
-As of **2024-10-21 @ 03:15hrs** - 5,616.3 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 ## Workflow Status
