@@ -64,10 +64,10 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 </details>
 <!-- start myhours -->
-As of **2025-03-05 @ 13:38hrs** - 7,830.8 <sup>lifetime hrs</sup>
+As of **2025-03-05 @ 15:41hrs** - 7,832.8 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
-<sub>The above is reported by the Steam API which is typically 7-12 hours behind what the game client reports.</sub>
+<sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
 
 ## Workflow Status
 
