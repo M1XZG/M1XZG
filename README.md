@@ -64,7 +64,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 </details>
 <!-- start myhours -->
-As of **2025-03-13 @ 18:21hrs** - 7,933.3 <sup>lifetime hrs</sup>
+As of **2025-03-13 @ 22:58hrs** - 7,935.9 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
