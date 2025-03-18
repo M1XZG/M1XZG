@@ -46,6 +46,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 | 2024-12-22 | 6900 hrs |
 | 2024-12-29 | 7000 hrs |
 | 2025-02-13 | 7500 hrs |
+| 2025-03-18 | 8000 hrs |
 
 <!--
 | Date | Hours |
