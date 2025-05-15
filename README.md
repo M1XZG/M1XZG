@@ -42,30 +42,13 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 | 2024-07-31 | 4000 hrs |
 | 2024-09-17 | 5000 hrs |
 | 2024-11-07 | 6000 hrs |
-| 2024-12-02 | 6500 hrs |
 | 2024-12-22 | 6900 hrs |
 | 2024-12-29 | 7000 hrs |
-| 2025-02-13 | 7500 hrs |
 | 2025-03-18 | 8000 hrs |
-
-<!--
-| Date | Hours |
-| :--- | :--- |
-| 2022-06-01 | Started |
-| 2023-01-01 | ~40 hrs |
-| 2024-06-02 | 3000 hrs |
-| 2024-06-28 | 3500 hrs |
-| 2024-07-31 | 4000 hrs |
-| 2024-08-25 | 4500 hrs |
-| 2024-09-17 | 5000 hrs |
-| 2024-10-15 | 5500 hrs |
-| 2024-11-07 | 6000 hrs |
-| 2024-12-02 | 6500 hrs |
--->
+| 2025-05-15 | 8500 hrs |
 
 </details>
 <!-- start myhours -->
-As of **2025-05-15 @ 03:40hrs** - 8,500.0 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
