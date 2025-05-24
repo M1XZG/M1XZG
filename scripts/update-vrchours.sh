@@ -1,4 +1,16 @@
 #!/bin/zsh
+# filepath: update-vrchours.sh
+
+LOCKFILE="/tmp/update-vrchours.lock"
+
+if [ -e "$LOCKFILE" ]; then
+    echo "Script is already running. Exiting."
+    exit 1
+fi
+
+touch "$LOCKFILE"
+trap 'rm -f "$LOCKFILE"; exit' INT TERM EXIT
+
 
 # Run this like:
 #
@@ -94,6 +106,11 @@ crondelay () {
 	updateprofile
 }
 
+cleanup () {
+	rm -f "$LOCKFILE"
+	trap - INT TERM EXIT
+}
+
 case $CRON in
 	yes)
 		crondelay	
@@ -102,4 +119,6 @@ case $CRON in
 		updateprofile
 	;;
 esac
+
+cleanup
 
