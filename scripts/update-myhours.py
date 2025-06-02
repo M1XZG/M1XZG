@@ -1,45 +1,50 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-import sys
-import urllib.request
+import requests
 import shutil
 from datetime import datetime
+import sys
 
-# Check if the correct number of arguments are passed
-if len(sys.argv) != 3:
-    print("Usage: python update.py <STEAMID> <GAMEID>")
+STEAM_API_KEY = 'your_api_key_here'  # Replace with your Steam API key
+STEAM_ID = 'your_steam_id'
+GAME_ID = '438100'  # Replace with your desired game ID
+
+# Backup existing README
+shutil.copy('./README.md', './README.md.bak')
+
+# Fetch playtime from Steam API
+url = "https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/"
+params = {
+    "key": STEAM_API_KEY,
+    "steamid": STEAM_ID,
+    "include_played_free_games": True,
+    "format": "json"
+}
+
+response = requests.get(url, params=params)
+
+if response.status_code != 200:
+    print(f"Error fetching data from Steam API: {response.status_code}")
     sys.exit(1)
 
-# Assign variables from command line arguments
-STEAMID = sys.argv[1]
-GAMEID = sys.argv[2]
+data = response.json()
+
+playtime_hours = None
+for game in data.get("response", {}).get("games", []):
+    if game["appid"] == int(GAMEID):
+        playtime_minutes = game["playtime_forever"]
+        playtime_hours = round(playtime_minutes / 60, 1)
+        break
+else:
+    print(f"Game with App ID {GAMEID} not found in user's library.")
+    sys.exit(1)
+
+formatted_hours = f"{playtime_hours:,.1f}"
+current_date = datetime.now().strftime("%Y-%m-%d @ %H:%M")
 
 # Backup and copy template
 shutil.copy('./README.md', './README.md.bak')
-shutil.copy('./templates/README-template.md', './TMP-README.md')
 
-# Fetch URL content
-url = f"https://steamcommunity.com/profiles/{STEAMID}/stats/{GAMEID}/?xml=1"
-try:
-    with urllib.request.urlopen(url) as response:
-        livehours = response.read().decode('utf-8').strip()
-except Exception as e:
-    print(f"Error fetching data: {e}")
-    sys.exit(1)
-
-# Validate and parse numeric hours
-try:
-    numeric_hours = float(livehours.split()[0])
-except (ValueError, IndexError):
-    print(f"Unexpected data format received: '{livehours}'")
-    sys.exit(1)
-
-rounded_hours = round(numeric_hours, 1)
-formatted_hours = f"{rounded_hours:,.1f}"
-
-current_date = datetime.now().strftime("%Y-%m-%d @ %H:%M")
-
-# Replace placeholder in template
 with open('./templates/README-template.md', 'r') as template_file:
     content = template_file.read()
 
