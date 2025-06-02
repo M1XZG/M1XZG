@@ -2,15 +2,37 @@
 # filepath: update-vrchours.sh
 
 LOCKFILE="/tmp/update-vrchours.lock"
+TIMEOUT=600  # 10 minutes in seconds
 
 if [ -e "$LOCKFILE" ]; then
-    echo "Script is already running. Exiting."
-    exit 1
+    OLDPID=$(cat "$LOCKFILE")
+    if ps -p "$OLDPID" > /dev/null 2>&1; then
+        echo "Script is already running with PID $OLDPID. Exiting."
+        exit 1
+    else
+        echo "Removing stale lock file."
+        rm -f "$LOCKFILE"
+    fi
 fi
 
-touch "$LOCKFILE"
-trap 'rm -f "$LOCKFILE"; exit' INT TERM EXIT
+echo $$ > "$LOCKFILE"
 
+cleanup () {
+    rm -f "$LOCKFILE"
+    trap - INT TERM EXIT
+}
+
+timeout_handler () {
+    echo "Script exceeded time limit of $TIMEOUT seconds. Exiting."
+    cleanup
+    kill $$
+}
+
+trap 'cleanup; exit' INT TERM EXIT
+trap 'timeout_handler' ALRM
+
+# Set the timeout alarm
+(sleep $TIMEOUT && kill -ALRM $$) &
 
 # Run this like:
 #
@@ -104,11 +126,6 @@ crondelay () {
 	sleep `echo $TDELAY`m
 	date
 	updateprofile
-}
-
-cleanup () {
-	rm -f "$LOCKFILE"
-	trap - INT TERM EXIT
 }
 
 case $CRON in
