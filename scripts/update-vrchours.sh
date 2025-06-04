@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # filepath: update-vrchours.sh
 
 LOCKFILE="/tmp/update-vrchours.lock"
