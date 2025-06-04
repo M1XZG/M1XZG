@@ -32,7 +32,7 @@
 # trap 'timeout_handler' ALRM
 
 # Set the timeout alarm
-(sleep $TIMEOUT && kill -ALRM $$) &
+# (sleep $TIMEOUT && kill -ALRM $$) &
 
 # Run this like:
 #
