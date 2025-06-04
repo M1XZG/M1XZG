@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install -r scripts/requirements.txt
+          pip install minsert
 
       - name: Set up Git user
         run: |
