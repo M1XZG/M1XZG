@@ -106,7 +106,7 @@ updateprofile () {
 	git commit -a -m "Update VRC Hours - $TSTAMP"
 	git push --set-upstream origin $NEWBRANCH
 	gh pr create --title "Update VRC Hours - $TSTAMP" --body "Update of VRChat hours via cron"
-	sleep 5
+	sleep 5s
 	gh pr merge --auto -m
 	git checkout main
 
