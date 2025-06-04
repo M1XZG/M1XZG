@@ -1,35 +1,35 @@
 #!/bin/bash
 # filepath: update-vrchours.sh
 
-LOCKFILE="/tmp/update-vrchours.lock"
-TIMEOUT=600  # 10 minutes in seconds
-
-if [ -e "$LOCKFILE" ]; then
-    OLDPID=$(cat "$LOCKFILE")
-    if ps -p "$OLDPID" > /dev/null 2>&1; then
-        echo "Script is already running with PID $OLDPID. Exiting."
-        exit 1
-    else
-        echo "Removing stale lock file."
-        rm -f "$LOCKFILE"
-    fi
-fi
-
-echo $$ > "$LOCKFILE"
-
-cleanup () {
-    rm -f "$LOCKFILE"
-    trap - INT TERM EXIT
-}
-
-timeout_handler () {
-    echo "Script exceeded time limit of $TIMEOUT seconds. Exiting."
-    cleanup
-    kill $$
-}
-
-trap 'cleanup; exit' INT TERM EXIT
-trap 'timeout_handler' ALRM
+# LOCKFILE="/tmp/update-vrchours.lock"
+# TIMEOUT=600  # 10 minutes in seconds
+# 
+# if [ -e "$LOCKFILE" ]; then
+#     OLDPID=$(cat "$LOCKFILE")
+#     if ps -p "$OLDPID" > /dev/null 2>&1; then
+#         echo "Script is already running with PID $OLDPID. Exiting."
+#         exit 1
+#     else
+#         echo "Removing stale lock file."
+#         rm -f "$LOCKFILE"
+#     fi
+# fi
+# 
+# echo $$ > "$LOCKFILE"
+# 
+# cleanup () {
+#     rm -f "$LOCKFILE"
+#     trap - INT TERM EXIT
+# }
+# 
+# timeout_handler () {
+#     echo "Script exceeded time limit of $TIMEOUT seconds. Exiting."
+#     cleanup
+#     kill $$
+# }
+# 
+# trap 'cleanup; exit' INT TERM EXIT
+# trap 'timeout_handler' ALRM
 
 # Set the timeout alarm
 (sleep $TIMEOUT && kill -ALRM $$) &
@@ -53,7 +53,7 @@ STEAM_USER_ID=$2
 STEAM_GAME_ID=$3
 
 if [ "$4" = "cron" ]; then
-	TDELAY=`printf "%02d\n" $[RANDOM%120+5]`
+	TDELAY=`printf "%02d\n" $[RANDOM%45+5]`
 	CRON=yes
 fi
 
@@ -137,5 +137,5 @@ case $CRON in
 	;;
 esac
 
-cleanup
+# cleanup
 
