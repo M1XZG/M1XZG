@@ -13,6 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0  # Ensures the entire history is fetched
+          submodules: true  # Ensures submodules are fetched, if applicable
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -29,18 +31,24 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Install GitHub CLI
+      - name: Install GitHub CLI and dos2unix
         run: |
-          sudo apt-get install gh -y
+          sudo apt-get install gh dos2unix -y
 
       - name: Authenticate GitHub CLI
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+      - name: Fix script permissions and line endings
+        run: |
+          dos2unix ./scripts/update-vrchours.sh
+          chmod +x ./scripts/update-vrchours.sh
+          dos2unix ./scripts/update-myhours.py
+          chmod +x ./scripts/update-myhours.py
 
       - name: Run update-vrchours script
         env:
           STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
         run: |
-          chmod +x ./scripts/update-vrchours.sh
           ./scripts/update-vrchours.sh $GITHUB_WORKSPACE $STEAM_USER_ID $STEAM_GAME_ID cron
