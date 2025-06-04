@@ -2,7 +2,7 @@ name: Update VRChat Hours
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Runs every 2 hours at minute 0
+    - cron: '0 0 * * *'  # Runs every 2 hours at minute 0
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -41,9 +41,9 @@ jobs:
 
       - name: Fix script permissions and line endings
         run: |
-          dos2unix ./scripts/update-vrchours.sh
-          chmod +x ./scripts/update-vrchours.sh
-          dos2unix ./scripts/update-myhours.py
+          ls -l
+          ls -l ./scripts
+          chmod +x ./scripts/update-vrchours-workflow.sh
           chmod +x ./scripts/update-myhours.py
 
       - name: Run update-vrchours script
@@ -51,4 +51,4 @@ jobs:
           STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
         run: |
-          ./scripts/update-vrchours.sh $GITHUB_WORKSPACE $STEAM_USER_ID $STEAM_GAME_ID cron
+          ./scripts/update-vrchours-workflow.sh . $STEAM_USER_ID $STEAM_GAME_ID
