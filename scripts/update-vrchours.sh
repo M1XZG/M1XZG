@@ -53,8 +53,8 @@ STEAM_USER_ID=$2
 STEAM_GAME_ID=$3
 
 if [ "$4" = "cron" ]; then
-	TDELAY=`printf "%02d\n" $[RANDOM%45+5]`
-	CRON=yes
+    TDELAY=$((RANDOM % 45 + 5))
+    CRON=yes
 fi
 
 updateprofile () {
