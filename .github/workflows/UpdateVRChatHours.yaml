@@ -2,7 +2,7 @@ name: Update VRChat Hours
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every 2 hours at minute 0
+    - cron: '0 2 * * *'  # Corrected cron to run every 2 hours
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Ensures the entire history is fetched
-          submodules: true  # Ensures submodules are fetched, if applicable
+          fetch-depth: 0
+          submodules: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -22,8 +22,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install Python dependencies
+      - name: Set up Python virtual environment and install dependencies
         run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
           pip install minsert
 
       - name: Set up Git user
@@ -31,9 +34,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Install GitHub CLI and dos2unix
+      - name: Install GitHub CLI
         run: |
-          sudo apt-get install gh dos2unix -y
+          sudo apt-get install gh -y
 
       - name: Authenticate GitHub CLI
         run: |
@@ -41,8 +44,6 @@ jobs:
 
       - name: Fix script permissions and line endings
         run: |
-          ls -l
-          ls -l ./scripts
           chmod +x ./scripts/update-vrchours-workflow.sh
           chmod +x ./scripts/update-myhours.py
 
@@ -51,4 +52,5 @@ jobs:
           STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
         run: |
+          source venv/bin/activate
           ./scripts/update-vrchours-workflow.sh . $STEAM_USER_ID $STEAM_GAME_ID
