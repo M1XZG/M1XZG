@@ -123,7 +123,12 @@ updateprofile () {
 crondelay () {
 
 	date
-	sleep `echo $TDELAY`m
+	if [ -z "$TDELAY" ]; then
+	    echo "TDELAY is not set. Exiting."
+	    exit 1
+	fi
+	echo "Sleeping for ${TDELAY} minutes before running updateprofile"
+	sleep "${TDELAY}m"
 	date
 	updateprofile
 }
