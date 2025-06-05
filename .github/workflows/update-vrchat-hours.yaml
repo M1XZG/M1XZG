@@ -27,14 +27,20 @@ jobs:
 
       - name: Set up git user
         run: |
-          git config --global user.email "rmckenzi@rpmdp.com"
-          git config --global user.name "Robert McKenzie"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Set up git remote with PAT
+        env:
+          MY_GH_PAT: ${{ secrets.MY_GH_PAT }}
+        run: |
+          git remote set-url origin https://x-access-token:${MY_GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
 
       - name: Run update-vrchours.sh
         env:
           STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
           PYTHONPATH: $GITHUB_WORKSPACE/scripts/python-requirements
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
           ./scripts/update-vrchours-workflow.sh "$GITHUB_WORKSPACE" "$STEAM_USER_ID" "$STEAM_GAME_ID"
