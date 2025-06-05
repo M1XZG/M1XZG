@@ -25,10 +25,16 @@ jobs:
       - name: Set execute permissions on scripts
         run: chmod +x scripts/update-vrchours.sh scripts/update-myhours.py
 
+      - name: Set up git user
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
       - name: Run update-vrchours.sh
         env:
           STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
           PYTHONPATH: $GITHUB_WORKSPACE/scripts/python-requirements
+          GH_TOKEN: ${{ github.token }}
         run: |
           ./scripts/update-vrchours-workflow.sh "$GITHUB_WORKSPACE" "$STEAM_USER_ID" "$STEAM_GAME_ID"
