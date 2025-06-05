@@ -73,8 +73,12 @@ updateprofile () {
 	# Uncomment to hard code
 	#./scripts/update-myhours.py <YOUR_STEAM_ID_NUMBER> <STEAM_GAME_ID>
 
-	# use this with command line arguments
-	./scripts/update-myhours.py $STEAM_USER_ID $STEAM_GAME_ID
+    # use this with command line arguments
+    ./scripts/update-myhours.py $STEAM_USER_ID $STEAM_GAME_ID
+    if [ $? -ne 0 ]; then
+        echo "Python script failed, exiting."
+        exit 1
+    fi
 
 	# Start to diff the times and not the file
 
