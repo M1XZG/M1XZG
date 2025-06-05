@@ -31,4 +31,4 @@ jobs:
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
           PYTHONPATH: $GITHUB_WORKSPACE/scripts/python-requirements
         run: |
-          ./scripts/update-vrchours.sh "$GITHUB_WORKSPACE" "$STEAM_USER_ID" "$STEAM_GAME_ID"
+          ./scripts/update-vrchours-workflow.sh "$GITHUB_WORKSPACE" "$STEAM_USER_ID" "$STEAM_GAME_ID"
