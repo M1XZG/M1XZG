@@ -49,7 +49,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 </details>
 <!-- start myhours -->
-As of **2025-06-05 @ 16:07hrs** - 8,845.5 <sup>lifetime hrs</sup>
+As of **2025-06-05 @ 17:27hrs** - 8,846.0 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
@@ -58,7 +58,7 @@ As of **2025-06-05 @ 16:07hrs** - 8,845.5 <sup>lifetime hrs</sup>
 
 | Work Flow | Status |
 | :--- | :--- |
-[![Update VRChat Hours](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours.yaml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours.yaml)
+| My VRChat Hours Update | [![Update VRChat Hours](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours.yaml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours.yaml)
 | M1XZG Uptime Monitor | [![M1XZG Uptime Monitor](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml) |
 | M1XZG Profile Card Creator | [![](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) |
 | Swindon Makerspace Uptime Monitor | [![Swindon Makerspace Uptime Monitor](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg)](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml) |
