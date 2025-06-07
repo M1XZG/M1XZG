@@ -40,7 +40,7 @@ jobs:
         env:
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
         run: |
-          python ./M1XZG/scripts/update-myhours-workflow-v2.py $STEAM_GAME_ID
+          python scripts/update-myhours-workflow-v2.py $STEAM_GAME_ID
 
       - name: Commit and push changes
         run: |
