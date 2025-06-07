@@ -2,10 +2,6 @@ name: Update MyHours Workflow
 
 on:
   workflow_dispatch:
-    inputs:
-      game_id:
-        description: 'Steam Game ID'
-        required: true
 
 jobs:
   update-hours:
@@ -41,8 +37,10 @@ jobs:
           echo "STEAM_ID=${{ secrets.STEAM_USER_ID }}" >> steam_vars.txt
 
       - name: Run update-myhours-workflow-v2.py
+        env:
+          STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
         run: |
-          python ./M1XZG/scripts/update-myhours-workflow-v2.py ${{ github.event.inputs.game_id }}
+          python ./M1XZG/scripts/update-myhours-workflow-v2.py $STEAM_GAME_ID
 
       - name: Commit and push changes
         run: |
