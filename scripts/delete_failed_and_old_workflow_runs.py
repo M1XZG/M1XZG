@@ -1,5 +1,6 @@
 import requests
 import os
+import time
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN")
 REPO_OWNER = "M1XZG"
@@ -14,6 +15,12 @@ def get_all_runs():
     page = 1
     while True:
         resp = session.get(f"{API_URL}/actions/runs", params={"per_page": 100, "page": page})
+        if resp.status_code == 403:
+            reset_time = int(resp.headers.get('X-RateLimit-Reset', time.time() + 60))
+            wait_seconds = max(reset_time - int(time.time()), 1)
+            print(f"Rate limit hit. Sleeping for {wait_seconds} seconds.")
+            time.sleep(wait_seconds)
+            continue
         resp.raise_for_status()
         data = resp.json()
         runs.extend(data.get('workflow_runs', []))
@@ -23,11 +30,21 @@ def get_all_runs():
     return runs
 
 def delete_run(run_id):
-    resp = session.delete(f"{API_URL}/actions/runs/{run_id}")
-    if resp.status_code == 204:
-        print(f"Deleted run {run_id}")
-    else:
-        print(f"Failed to delete run {run_id}: {resp.status_code} - {resp.text}")
+    while True:
+        resp = session.delete(f"{API_URL}/actions/runs/{run_id}")
+        if resp.status_code == 204:
+            print(f"Deleted run {run_id}")
+            break
+        elif resp.status_code == 403:
+            reset_time = int(resp.headers.get('X-RateLimit-Reset', time.time() + 60))
+            wait_seconds = max(reset_time - int(time.time()), 1)
+            print(f"Rate limit hit while deleting. Sleeping for {wait_seconds} seconds.")
+            time.sleep(wait_seconds)
+        else:
+            print(f"Failed to delete run {run_id}: {resp.status_code} - {resp.text}")
+            break
+    # Add a short delay to avoid hitting the rate limit
+    time.sleep(1)
 
 def main():
     all_runs = get_all_runs()
@@ -40,11 +57,8 @@ def main():
 
     # Exclude failed runs from the "recent 100" logic
     non_failed_runs = [run for run in all_runs if run["conclusion"] != "failure"]
-    # Sort by created_at descending (most recent first)
     non_failed_runs.sort(key=lambda x: x["created_at"], reverse=True)
-    # Keep the most recent 100
     keep_runs = set(run["id"] for run in non_failed_runs[:100])
-    # Delete all other non-failed runs
     for run in non_failed_runs[100:]:
         delete_run(run["id"])
 
