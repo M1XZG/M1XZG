@@ -1,4 +1,4 @@
-name: Cleanup Failed Workflow Runs
+name: Cleanup Failed/Old Workflow Runs
 
 on:
   schedule:
