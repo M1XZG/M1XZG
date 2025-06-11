@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
 
+concurrency:
+  group: update-vrchat-hours
+  cancel-in-progress: true
+
 jobs:
   update-vrchours:
     runs-on: ubuntu-latest
