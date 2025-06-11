@@ -27,7 +27,7 @@ jobs:
 
       - name: Set up git remote with PAT
         env:
-          MY_GH_PAT: ${{ secrets.MY_GH_PAT }}
+          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${MY_GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
 
