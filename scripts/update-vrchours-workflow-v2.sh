@@ -40,7 +40,7 @@ updateprofile () {
 	#./scripts/update-myhours.py <YOUR_STEAM_ID_NUMBER> <STEAM_GAME_ID>
 
     # use this with command line arguments
-    ./scripts/update-myhours-workflow.py $STEAM_USER_ID $STEAM_GAME_ID
+    ./scripts/update-myhours-workflow.py $STEAM_GAME_ID
     if [ $? -ne 0 ]; then
         echo "Python script failed, exiting."
         exit 1
