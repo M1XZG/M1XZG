@@ -42,4 +42,4 @@ jobs:
           STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
-          ./scripts/update-vrchours-workflow-v2.sh "$GITHUB_WORKSPACE" "$STEAM_USER_ID" "$STEAM_GAME_ID"
+          ./scripts/update-vrchours-workflow-v2.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
