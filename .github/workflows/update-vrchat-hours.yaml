@@ -40,11 +40,11 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${MY_GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
 
-      - name: Random delay (up to 30 minutes)
-        run: |
-          SECONDS=$((RANDOM % 900))
-          echo "Sleeping for $SECONDS seconds..."
-          sleep $SECONDS
+      #- name: Random delay (up to 30 minutes)
+      #  run: |
+      #    SECONDS=$((RANDOM % 900))
+      #    echo "Sleeping for $SECONDS seconds..."
+      #    sleep $SECONDS
 
       - name: Run update-vrchours.sh
         env:
