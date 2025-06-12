@@ -10,7 +10,7 @@ API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
 RATE_LIMIT_ALLOWANCE = 5000
 RATE_LIMIT_THRESHOLD = int(RATE_LIMIT_ALLOWANCE * 0.8)  # 80%
 SLEEP_INTERVAL = 0.25  # seconds between delete requests
-KEEP_RECENT_RUNS = 100  # Number of non-failed workflow runs to keep
+KEEP_RECENT_RUNS = 50  # Number of non-failed workflow runs to keep
 
 session = requests.Session()
 session.headers.update({"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github+json"})
@@ -33,13 +33,14 @@ def check_rate_limit(headers):
 def get_all_runs():
     runs = []
     page = 1
+    per_page = min(100, KEEP_RECENT_RUNS)  # Use KEEP_RECENT_RUNS if less than 100, else 100
     while True:
-        resp = session.get(f"{API_URL}/actions/runs", params={"per_page": 100, "page": page})
+        resp = session.get(f"{API_URL}/actions/runs", params={"per_page": per_page, "page": page})
         check_rate_limit(resp.headers)
         resp.raise_for_status()
         data = resp.json()
         runs.extend(data.get('workflow_runs', []))
-        if len(data.get('workflow_runs', [])) < 100:
+        if len(data.get('workflow_runs', [])) < per_page:
             break
         page += 1
     return runs
