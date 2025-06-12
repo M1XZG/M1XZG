@@ -1,4 +1,4 @@
-name: Update MyHours Workflow
+name: Update MyHours v2 (SteamAPI)
 
 on:
   workflow_dispatch:

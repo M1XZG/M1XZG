@@ -1,4 +1,4 @@
-name: Update VRChat Hours
+name: Update MyHours v1 (decapiAPI) 
 
 on:
   workflow_dispatch:
