@@ -10,7 +10,7 @@ API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
 RATE_LIMIT_ALLOWANCE = 5000
 RATE_LIMIT_THRESHOLD = int(RATE_LIMIT_ALLOWANCE * 0.8)  # 80%
 SLEEP_INTERVAL = 0.25  # seconds between delete requests
-KEEP_RECENT_RUNS = 50  # Number of non-failed workflow runs to keep
+KEEP_RECENT_RUNS = 100  # Number of non-failed workflow runs to keep
 
 session = requests.Session()
 session.headers.update({"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github+json"})
