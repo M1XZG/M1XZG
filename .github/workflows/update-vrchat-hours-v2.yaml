@@ -2,6 +2,12 @@ name: Update MyHours Workflow
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+
+concurrency:
+  group: update-vrchat-hours-v2
+  cancel-in-progress: true
 
 jobs:
   update-hours:
