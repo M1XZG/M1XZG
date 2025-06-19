@@ -64,6 +64,8 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 | M1XZG Profile Card Creator | [![](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) |
 | Swindon Makerspace Uptime Monitor | [![Swindon Makerspace Uptime Monitor](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg)](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml) |
 | Swindon Makerspace Wiki Backup | [![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml) |
+| M1XZG/M1XZG Run Cleanup | [![Cleanup Failed/Old Workflow Runs](https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml) |
+| M1XZG/uptime Run Cleanup | [![Cleanup Failed/Old Workflow Runs](https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml) 
 
 ## Stats
 
