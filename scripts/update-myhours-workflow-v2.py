@@ -64,7 +64,7 @@ def main():
     playtime_hours = get_playtime(STEAM_ID, GAMEID, STEAM_API_KEY)
     formatted_hours = f"{playtime_hours:,.1f}"
 
-    current_date = datetime.now().strftime("%Y-%m-%d @ %H:%M")
+    current_date = datetime.now().astimezone().strftime("%Y-%m-%d @ %H:%M %Z")
 
     vrchours = {
         "myhoursHERE": f"As of <strong>{current_date}hrs</strong> - {formatted_hours} <sup>lifetime hrs</sup>",
