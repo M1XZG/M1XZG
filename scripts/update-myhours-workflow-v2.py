@@ -67,7 +67,7 @@ def main():
     current_date = datetime.now().strftime("%Y-%m-%d @ %H:%M")
 
     vrchours = {
-        "myhoursHERE": f"As of **{current_date}hrs** - {formatted_hours} <sup>lifetime hrs</sup>",
+        "myhoursHERE": f"As of <strong>{current_date}hrs</strong> - {formatted_hours} <sup>lifetime hrs</sup>",
     }
 
     # Backup and copy template
