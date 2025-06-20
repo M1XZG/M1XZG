@@ -1,4 +1,3 @@
-<!-- Banner Image -->
 <h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
 
 <p align="center">
