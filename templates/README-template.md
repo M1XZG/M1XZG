@@ -1,3 +1,12 @@
+## Table of Contents
+
+- [Socials](#socials)
+- [My VRChat Hours](#my-vrchat-hours)
+- [Workflow Status](#workflow-status)
+- [Stats](#stats)
+- [WiGLE Stats](#wigle-stats)
+- [Broadband Monitor](#broadband-monitor)
+
 ## Hey, thanks for sliding into my profile 👋
 
 I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
