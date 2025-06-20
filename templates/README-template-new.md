@@ -85,7 +85,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ## 🚦 Workflow Status
 
-<p align="center">
+<div align="center">
 
 <table>
 <thead>
@@ -126,7 +126,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 </tbody>
 </table>
 
-</p>
+</div>
 
 ---
 
