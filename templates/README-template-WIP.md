@@ -75,8 +75,8 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2025-06-13 | 9000 hrs |
 
 </details>
-<!-- start myhours -->
-<!-- end myhours -->
+<!-- start myhoursHERE -->
+<!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
 

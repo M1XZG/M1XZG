@@ -59,8 +59,8 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 
 </details>
-<!-- start myhours -->
-<!-- end myhours -->
+<!-- start myhoursHERE -->
+<!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
 
