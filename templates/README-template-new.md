@@ -1,8 +1,4 @@
 <!-- Banner Image -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/0-profile-details.svg" alt="Profile Banner" width="80%" />
-</p>
-
 <h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
 
 <p align="center">
@@ -80,6 +76,8 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2025-06-13 | 9000 hrs |
 
 </details>
+<!-- start myhours -->
+<!-- end myhours -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
 
@@ -100,6 +98,10 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ---
 
 ## 📊 Stats
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/0-profile-details.svg" alt="Profile Banner" width="80%" />
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/1-repos-per-language.svg" alt="Repos Per Language" width="45%" />
