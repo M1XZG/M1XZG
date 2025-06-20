@@ -170,5 +170,5 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=ae4aff&center=true&vCenter=true&width=435&lines=Thanks+for+visiting!;Happy+Hacking!;See+you+in+VRChat!+%F0%9F%91%BD" alt="Typing SVG" />
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=rubik+one&size=30&pause=1000&color=9F04F7&background=B3B3B300&center=true&vCenter=true&width=435&lines=Thanks+for+visiting;Happy+Hacking;See+you+in+VRChat" alt="Typing SVG" /></a>
 </p>
