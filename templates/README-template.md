@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="/assets/github-header-image.png" alt="Profile Banner" width="80%" />
+</p>
+
 <h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
 
 <p align="center">
