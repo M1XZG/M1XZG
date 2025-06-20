@@ -85,15 +85,48 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ## 🚦 Workflow Status
 
-| Work Flow | Status |
-| :--- | :--- |
-| My VRChat Hours Update | [![Update MyHours v2 (SteamAPI)](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml)
-| M1XZG Uptime Monitor | [![M1XZG Uptime Monitor](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/uptime.yml) |
-| M1XZG Profile Card Creator | [![](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml) |
-| Swindon Makerspace Uptime Monitor | [![Swindon Makerspace Uptime Monitor](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg)](https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml) |
-| Swindon Makerspace Wiki Backup | [![Swindon Makerspace Wiki Backup](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg)](https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml) |
-| M1XZG/M1XZG Run Cleanup | [![Cleanup Failed/Old Workflow Runs](https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg)](https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml) |
-| M1XZG/uptime Run Cleanup | [![Cleanup Failed/Old Workflow Runs](https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg)](https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml) 
+<p align="center">
+
+<table>
+<thead>
+<tr>
+<th>Work Flow</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>My VRChat Hours Update</td>
+<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml/badge.svg" alt="Update MyHours v2 (SteamAPI)"></a></td>
+</tr>
+<tr>
+<td>M1XZG Uptime Monitor</td>
+<td><a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml"><img src="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg" alt="M1XZG Uptime Monitor"></a></td>
+</tr>
+<tr>
+<td>M1XZG Profile Card Creator</td>
+<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator"></a></td>
+</tr>
+<tr>
+<td>Swindon Makerspace Uptime Monitor</td>
+<td><a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml"><img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg" alt="Swindon Makerspace Uptime Monitor"></a></td>
+</tr>
+<tr>
+<td>Swindon Makerspace Wiki Backup</td>
+<td><a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml"><img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup"></a></td>
+</tr>
+<tr>
+<td>M1XZG/M1XZG Run Cleanup</td>
+<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs"></a></td>
+</tr>
+<tr>
+<td>M1XZG/uptime Run Cleanup</td>
+<td><a href="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml"><img src="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs"></a></td>
+</tr>
+</tbody>
+</table>
+
+</p>
 
 ---
 
