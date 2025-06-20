@@ -1,3 +1,12 @@
+## Table of Contents
+
+- [Socials](#socials)
+- [My VRChat Hours](#my-vrchat-hours)
+- [Workflow Status](#workflow-status)
+- [Stats](#stats)
+- [WiGLE Stats](#wigle-stats)
+- [Broadband Monitor](#broadband-monitor)
+
 ## Hey, thanks for sliding into my profile 👋
 
 I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
@@ -51,7 +60,7 @@ If you want some of the nifty badges below check out [shields.io](https://shield
 
 </details>
 <!-- start myhours -->
-As of **2025-06-20 @ 09:03hrs** - 9,118.6 <sup>lifetime hrs</sup>
+As of **2025-06-20 @ 09:31hrs** - 9,119.1 <sup>lifetime hrs</sup>
 <!-- end myhours -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
