@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="/assets/github-header-image.png" alt="Profile Banner" width="80%" />
+</p>
+
 <h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
 
 <p align="center">
@@ -76,7 +81,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 </details>
 <!-- start myhoursHERE -->
-As of <strong>2025-06-20 @ 20:45 UTChrs</strong> - 9,125.1 <sup>lifetime hrs</sup>
+As of <strong>2025-06-21 @ 08:19 UTC</strong> - 9,136.7 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>

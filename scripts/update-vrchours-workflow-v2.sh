@@ -49,12 +49,12 @@ updateprofile () {
 	# Start to diff the times and not the file
 
 	LASTTIME=`grep "As of" $SRC/README.md | awk '{print $7}'`
-	NEWTIME=`grep "As of" $SRC/TMP-README.md | awk '{print $7}'`
+	NEWTIME=`grep "As of" $SRC/TMP-README.md | awk '{print $8}'`
 
 	if [[ "$LASTTIME" == "$NEWTIME" ]]
 	then
 		echo "No diff, exiting"
-		rm $SRC/TMP-README.md
+		#rm $SRC/TMP-README.md
 	    exit
 	fi
 
