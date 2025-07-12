@@ -36,6 +36,7 @@ Mostly I like to tinker with bash/zsh scripts and home automation. I love <b>Ras
 
 Some of my fav projects and organisations on GitHub that I'm part of, support or just use are:
 
+- [Discord bot for fun](https://github.com/M1XZG/discord-bot-for-fun) - Now with fishing and even a contest mode for fishing
 - [Swindon Makerspace](https://github.com/swindonmakers)
 - [OhMyZSH](https://github.com/ohmyzsh/ohmyzsh)
 - [ZSH History](https://github.com/rchakra3/zsh_history)
