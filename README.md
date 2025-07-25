@@ -83,7 +83,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 </details>
 <!-- start myhoursHERE -->
-As of <strong>2025-07-25 @ 22:07 UTC</strong> - 9,756.9 <sup>lifetime hrs</sup>
+As of <strong>2025-07-25 @ 23:07 UTC</strong> - 9,757.9 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
@@ -154,7 +154,82 @@ As of <strong>2025-07-25 @ 22:07 UTC</strong> - 9,756.9 <sup>lifetime hrs</sup>
 
 ---
 
-## 🌍 WiGLE Stats
+## � Theme Switcher Preview
+
+<p align="center">
+  <b>Choose your favorite profile card theme!</b>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/2077">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/2077/0-profile-details.svg" width="120" />
+        <br /><sub>2077</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/algolia">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/algolia/0-profile-details.svg" width="120" />
+        <br /><sub>Algolia</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/apprentice">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/apprentice/0-profile-details.svg" width="120" />
+        <br /><sub>Apprentice</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/aura">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg" width="120" />
+        <br /><sub>Aura</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/aura_dark">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura_dark/0-profile-details.svg" width="120" />
+        <br /><sub>Aura Dark</sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/ayu_mirage">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/ayu_mirage/0-profile-details.svg" width="120" />
+        <br /><sub>Ayu Mirage</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/bear">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/bear/0-profile-details.svg" width="120" />
+        <br /><sub>Bear</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/blue_green">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/blue_green/0-profile-details.svg" width="120" />
+        <br /><sub>Blue Green</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/blueberry">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/blueberry/0-profile-details.svg" width="120" />
+        <br /><sub>Blueberry</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/M1XZG/M1XZG/tree/main/profile-summary-card-output/buefy">
+        <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/buefy/0-profile-details.svg" width="120" />
+        <br /><sub>Buefy</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## �🌍 WiGLE Stats
 
 <p align="center">
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
