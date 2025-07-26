@@ -139,16 +139,16 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/0-profile-details.svg" alt="Profile Banner" width="80%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg" alt="Profile Banner" width="80%" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/1-repos-per-language.svg" alt="Repos Per Language" width="45%" />
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/2-most-commit-language.svg" alt="Most Commit Language" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/1-repos-per-language.svg" alt="Repos Per Language" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/2-most-commit-language.svg" alt="Most Commit Language" width="45%" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/3-stats.svg" alt="Stats" width="45%" />
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/radical/4-productive-time.svg" alt="Productive Time" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/3-stats.svg" alt="Stats" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg" alt="Productive Time" width="45%" />
 </p>
 
 ---
