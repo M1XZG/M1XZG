@@ -16,13 +16,14 @@
 
 ## 📑 Table of Contents
 
-- [About Me](#about-me)
-- [Socials](#socials)
-- [My VRChat Hours](#my-vrchat-hours)
-- [Workflow Status](#workflow-status)
-- [Stats](#stats)
-- [WiGLE Stats](#wigle-stats)
-- [Broadband Monitor](#broadband-monitor)
+- [About Me](#-about-me)
+- [Socials](#-socials)
+- [My VRChat Hours](#️-my-vrchat-hours)
+- [Workflow Status](#-workflow-status)
+- [Stats](#-stats)
+- [Theme Switcher Preview](#-theme-switcher-preview)
+- [WiGLE Stats](#-wigle-stats)
+- [Broadband Monitor](#-broadband-monitor)
 
 ---
 
@@ -157,7 +158,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## � Theme Switcher Preview
+## 🎨 Theme Switcher Preview
 
 <p align="center">
   <b>Choose your favorite profile card theme!</b>
@@ -232,7 +233,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## �🌍 WiGLE Stats
+## 🌐🌍 WiGLE Stats
 
 <p align="center">
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
