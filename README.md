@@ -16,13 +16,14 @@
 
 ## 📑 Table of Contents
 
-- [About Me](#about-me)
-- [Socials](#socials)
-- [My VRChat Hours](#my-vrchat-hours)
-- [Workflow Status](#workflow-status)
-- [Stats](#stats)
-- [WiGLE Stats](#wigle-stats)
-- [Broadband Monitor](#broadband-monitor)
+- [About Me](#-about-me)
+- [Socials](#-socials)
+- [My VRChat Hours](#️-my-vrchat-hours)
+- [Workflow Status](#-workflow-status)
+- [Stats](#-stats)
+- [Theme Switcher Preview](#-theme-switcher-preview)
+- [WiGLE Stats](#-wigle-stats)
+- [Broadband Monitor](#-broadband-monitor)
 
 ---
 
@@ -83,7 +84,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 </details>
 <!-- start myhoursHERE -->
-As of <strong>2025-07-30 @ 14:46 UTC</strong> - 9,848.7 <sup>lifetime hrs</sup>
+As of <strong>2025-07-30 @ 14:59 UTC</strong> - 9,849.2 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
@@ -158,7 +159,7 @@ As of <strong>2025-07-30 @ 14:46 UTC</strong> - 9,848.7 <sup>lifetime hrs</sup>
 
 ---
 
-## � Theme Switcher Preview
+## 🎨 Theme Switcher Preview
 
 <p align="center">
   <b>Choose your favorite profile card theme!</b>
@@ -233,7 +234,7 @@ As of <strong>2025-07-30 @ 14:46 UTC</strong> - 9,848.7 <sup>lifetime hrs</sup>
 
 ---
 
-## �🌍 WiGLE Stats
+## 🌐🌍 WiGLE Stats
 
 <p align="center">
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
