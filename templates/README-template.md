@@ -151,6 +151,8 @@ Thanks for stopping by! You can find me on various [social media platforms](http
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg" alt="Productive Time" width="45%" />
 </p>
 
+[![GitHub Trends SVG](https://api.githubtrends.io/user/svg/avgupta456/langs)](https://githubtrends.io)
+
 ---
 
 ## � Theme Switcher Preview
