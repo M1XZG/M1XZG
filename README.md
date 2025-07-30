@@ -83,7 +83,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 </details>
 <!-- start myhoursHERE -->
-As of <strong>2025-07-30 @ 14:08 UTC</strong> - 9,848.2 <sup>lifetime hrs</sup>
+As of <strong>2025-07-30 @ 14:46 UTC</strong> - 9,848.7 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
@@ -150,6 +150,10 @@ As of <strong>2025-07-30 @ 14:08 UTC</strong> - 9,848.2 <sup>lifetime hrs</sup>
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/3-stats.svg" alt="Stats" width="45%" />
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg" alt="Productive Time" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/images/userstats.svg" alt="My GitHub Stats" />
 </p>
 
 ---
