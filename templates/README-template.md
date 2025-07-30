@@ -151,7 +151,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg" alt="Productive Time" width="45%" />
 </p>
 
-![My user statistics](/images/userstats.svg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/images/userstats.svg" alt="My GitHub Stats" />
+</p>
 
 ---
 
