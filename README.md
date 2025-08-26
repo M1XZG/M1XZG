@@ -86,7 +86,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 </details>
 <!-- start myhoursHERE -->
-As of <strong>2025-08-26 @ 05:08 UTC</strong> - 10,135.3 <sup>lifetime hrs</sup>
+As of <strong>2025-08-26 @ 06:11 UTC</strong> - 10,136.3 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
