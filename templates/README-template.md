@@ -78,10 +78,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2024-12-22 | 6900 hrs |
 | 2024-12-29 | 7000 hrs |
 | 2025-03-18 | 8000 hrs |
-| 2025-05-15 | 8500 hrs |
 | 2025-06-13 | 9000 hrs |
-| 2025-07-09 | 9500 hrs |
 | 2025-08-17 | 10000 hrs |
+! 2025-10-09 | 11000 hrs !
 
 
 </details>
