@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'python-requirements'
 from minsert import MarkdownFile
 
 # Hours consistently missing from the API that we want to add back
-OFFSET_MISSING_HOURS = 14.0
+OFFSET_MISSING_HOURS = 13.0
 
 def load_steam_vars(filename="steam_vars.txt", debug=False):
     steam_vars = {}
