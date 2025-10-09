@@ -8,6 +8,9 @@ from datetime import datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'python-requirements'))
 from minsert import MarkdownFile
 
+# Hours consistently missing from the API that we want to add back
+OFFSET_MISSING_HOURS = 14.0
+
 def load_steam_vars(filename="steam_vars.txt", debug=False):
     steam_vars = {}
     try:
@@ -75,12 +78,20 @@ def main():
         print(f"[DEBUG] GAMEID: {GAMEID}")
 
     playtime_hours = get_playtime(STEAM_ID, GAMEID, STEAM_API_KEY, debug=debug)
-    formatted_hours = f"{playtime_hours:,.1f}"
+
+    # Apply the fixed offset and round to one decimal place
+    adjusted_hours = round(playtime_hours + OFFSET_MISSING_HOURS, 1)
+    if debug:
+        print(f"[DEBUG] Raw playtime hours: {playtime_hours:.1f}")
+        print(f"[DEBUG] Offset applied: +{OFFSET_MISSING_HOURS}")
+        print(f"[DEBUG] Adjusted playtime hours: {adjusted_hours:.1f}")
+
+    formatted_hours = f"{adjusted_hours:,.1f}"
 
     current_date = datetime.now().astimezone().strftime("%Y-%m-%d @ %H:%M %Z")
     if debug:
         print(f"[DEBUG] Current date: {current_date}")
-        print(f"[DEBUG] Playtime hours: {formatted_hours}")
+        print(f"[DEBUG] Playtime hours (formatted): {formatted_hours}")
 
     vrchours = {
         "myhoursHERE": f"As of <strong>{current_date}</strong> - {formatted_hours} <sup>lifetime hrs</sup>",
