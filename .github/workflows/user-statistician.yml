@@ -18,6 +18,6 @@ jobs:
         custom-title: My GitHub Statistics
         colors: dark
         include-title: true
-        animated-language-chart: true
+        animated-language-chart: false
       env:
         GITHUB_TOKEN: ${{ secrets.user_statistician }}
