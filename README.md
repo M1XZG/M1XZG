@@ -18,7 +18,7 @@
 
 - [About Me](#-about-me)
 - [Socials](#-socials)
-- [My VRChat Hours](#️-my-vrchat-hours)
+- [My VRChat info](#️-my-vrchat-info)
 - [Workflow Status](#-workflow-status)
 - [Stats](#-stats)
 - [Theme Switcher Preview](#-theme-switcher-preview)
@@ -62,7 +62,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## 🕶️ My VRChat Hours
+## 🕶️ My VRChat Info
 
 <details>
  <summary>Click to see my past milestones</summary>
@@ -85,10 +85,28 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 </details>
 <!-- start myhoursHERE -->
-As of <strong>2025-11-15 @ 12:11 UTC</strong> - 11,834.1 <sup>lifetime hrs</sup>
+As of <strong>2025-11-15 @ 17:00 UTC</strong> - 11,834.6 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 <sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
+
+## Some of the worlds I've uploaded
+
+### [Wildy's Cozy House](https://vrchat.com/home/content/worlds/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
+[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=updated_at&label=Last%20Upload%20to%20Wild%27s%20Cozy%20House)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
+[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=visits&label=Total%20Wild%27s%20Cozy%20House%20Visits&color=red)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
+[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=favorites&label=Total%20Wild%27s%20Cozy%20House%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
+
+### [Wildy's Soft and Comfy Space](https://vrchat.com/home/content/worlds/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
+[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=updated_at&label=Last%20Upload%20to%20Wildy%27s%20Soft%20and%20Comfy%20Space)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
+[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=visits&label=Total%20Wildy%27s%20Soft%20and%20Comfy%20Space%20Visits&color=red)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
+[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Wildy%27s%20Soft%20and%20Comfy%20Space%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
+
+### [Wildy's Cozy Loft](https://vrchat.com/home/content/worlds/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
+[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=updated_at&label=Last%20Upload%20to%20Wildy%27s%20Cozy%20Loft)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
+[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=visits&label=Total%20Wildy%27s%20Cozy%20Loft%20Visits&color=red)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
+[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20Wildy%27s%20Cozy%20Loft%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
+
 
 ---
 
