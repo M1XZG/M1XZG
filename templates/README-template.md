@@ -62,7 +62,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## 🕶️ My VRChat Info
+## My VRChat Info
 
 <details>
  <summary>Click to see my past milestones</summary>
@@ -86,7 +86,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <!-- start myhoursHERE -->
 <!-- end myhoursHERE -->
 
-### AFK Instance Bot Hours
+<!-- ### AFK Instance Bot Hours -->
 
 <!-- start afkhoursHERE -->
 <!-- end afkhoursHERE -->
