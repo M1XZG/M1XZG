@@ -1,7 +1,10 @@
 README.md.bak
 TMP-README.md
 TMP-README-afk.md
+TMP-README-unified.md
+TMP-hours-data.txt
 *.WIP
 scripts/python-requirements/__pycache__/
 steam_vars.txt
 steam_vars_afk.txt
+steam_vars_main.txt
