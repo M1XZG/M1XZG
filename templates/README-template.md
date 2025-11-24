@@ -133,7 +133,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <tbody>
 <tr>
 <td>My VRChat Hours Update</td>
-<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml/badge.svg" alt="Update MyHours v2 (SteamAPI)"></a></td>
+<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)"></a></td>
 </tr>
 <tr>
 <td>M1XZG Uptime Monitor</td>
