@@ -54,7 +54,7 @@ jobs:
 
       - name: Sleep
         run: |
-          sleep 10m
+          sleep 1m
 
       - name: Run update-myhours-workflow-v2_afk.sh
         env:
