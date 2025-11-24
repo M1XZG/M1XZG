@@ -56,10 +56,10 @@ jobs:
       #  run: |
       #    sleep 1m
 
-      #- name: Run update-myhours-workflow-v2_afk.sh
-      #  env:
-      #    STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
-      #    STEAM_USER_ID: ${{ secrets.STEAM_USER_ID_AFK }}
-      #    GH_TOKEN: ${{ secrets.MY_GH_PAT }}
-      #  run: |
-      #    ./scripts/update-vrchours-workflow-v2-afk.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
+      - name: Run update-myhours-workflow-v2_afk.sh
+        env:
+          STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
+          STEAM_USER_ID: ${{ secrets.STEAM_USER_ID_AFK }}
+          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
+        run: |
+          ./scripts/update-vrchours-workflow-v2-afk.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
