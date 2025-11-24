@@ -1,12 +1,12 @@
-name: Update MyHours v2 (SteamAPI)
+name: Update VRChat Hours (Unified)
 
 on:
   workflow_dispatch:
-  #schedule:
-  #  - cron: '0 * * * *' # Runs every 1 hour
+  schedule:
+    - cron: '0 * * * *' # Runs every 1 hour
 
 concurrency:
-  group: update-vrchat-hours-v2
+  group: update-vrchat-hours-unified
   cancel-in-progress: true
 
 jobs:
@@ -35,18 +35,18 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
-          git remote set-url origin https://x-access-token:${MY_GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
-      - name: Create steam_vars.txt from secrets
+      - name: Create steam config files from secrets
         run: |
-          echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY }}" > steam_vars.txt
-          echo "STEAM_ID=${{ secrets.STEAM_USER_ID }}" >> steam_vars.txt
+          echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY }}" > steam_vars_main.txt
+          echo "STEAM_ID=${{ secrets.STEAM_USER_ID }}" >> steam_vars_main.txt
+          echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY_AFK }}" > steam_vars_afk.txt
+          echo "STEAM_ID=${{ secrets.STEAM_USER_ID_AFK }}" >> steam_vars_afk.txt
 
-      - name: Run update-myhours-workflow-v2.sh
+      - name: Run unified update script
         env:
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
-          STEAM_USER_ID: ${{ secrets.STEAM_USER_ID }}
           GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
-          ./scripts/update-vrchours-workflow-v2.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
-
+          ./scripts/update-vrchours-unified.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
