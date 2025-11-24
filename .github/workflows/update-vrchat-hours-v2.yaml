@@ -41,6 +41,8 @@ jobs:
         run: |
           echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY }}" > steam_vars.txt
           echo "STEAM_ID=${{ secrets.STEAM_USER_ID }}" >> steam_vars.txt
+          echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY_AFK }}" > steam_vars_afk.txt
+          echo "STEAM_ID=${{ secrets.STEAM_USER_ID_AFK }}" >> steam_vars_afk.txt
 
       - name: Run update-myhours-workflow-v2.sh
         env:
@@ -49,3 +51,15 @@ jobs:
           GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
           ./scripts/update-vrchours-workflow-v2.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
+
+      - name: Sleep
+        run: |
+          sleep 10m
+
+      - name: Run update-myhours-workflow-v2_afk.sh
+        env:
+          STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
+          STEAM_USER_ID: ${{ secrets.STEAM_USER_ID_AFK }}
+          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
+        run: |
+          ./scripts/update-vrchours-workflow-v2-afk.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
