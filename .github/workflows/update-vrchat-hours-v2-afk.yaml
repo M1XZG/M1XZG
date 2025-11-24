@@ -2,8 +2,8 @@ name: Update MyHours v2 AFK (SteamAPI)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '30 * * * *' # Runs every 1 hour
+  #schedule:
+  #  - cron: '30 * * * *' # Runs every 1 hour
 
 concurrency:
   group: update-vrchat-hours-v2-afk
