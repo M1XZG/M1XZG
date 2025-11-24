@@ -112,25 +112,52 @@ def main():
         placeholder: f"As of <strong>{current_date}</strong> - {formatted_hours} <sup>{suffix}</sup>",
     }
 
-    # The unified approach: read existing temp file or start from template
-    temp_file = './TMP-README-unified.md'
+    # The unified approach: collect data from both accounts before writing
+    data_file = './TMP-hours-data.txt'
     
-    # On first run (main account), copy template
-    if user_type == 'main':
+    # Store the hours data for this account
+    if debug:
+        print(f"[DEBUG] Writing {user_type} hours data to {data_file}")
+    
+    with open(data_file, 'a') as f:
+        f.write(f"{placeholder}={formatted_hours}|{suffix}|{current_date}\n")
+    
+    # If this is the AFK account (last to run), process the complete README
+    if user_type == 'afk':
+        if debug:
+            print("[DEBUG] Processing complete README with both accounts")
+        
+        # Read all collected data
+        all_data = {}
+        with open(data_file, 'r') as f:
+            for line in f:
+                key, value = line.strip().split('=', 1)
+                hours, suffix_text, date = value.split('|')
+                all_data[key] = f"As of <strong>{date}</strong> - {hours} <sup>{suffix_text}</sup>"
+        
+        # Backup and create final README
         if debug:
             print("[DEBUG] Backing up README.md to README.md.bak")
         shutil.copy('./README.md', './README.md.bak')
+        
+        temp_file = './TMP-README-unified.md'
         if debug:
             print(f"[DEBUG] Copying template to {temp_file}")
         shutil.copy('./templates/README-template.md', temp_file)
-    
-    # Insert the hours into the working file
-    if debug:
-        print(f"[DEBUG] Inserting {user_type} hours into {temp_file}")
-    file = MarkdownFile(temp_file)
-    file.insert(hours_data)
-    if debug:
-        print(f"[DEBUG] Done processing {user_type} account.")
+        
+        # Insert all hours data at once
+        if debug:
+            print(f"[DEBUG] Inserting all hours data into {temp_file}")
+        file = MarkdownFile(temp_file)
+        file.insert(all_data)
+        
+        # Clean up data file
+        os.remove(data_file)
+        if debug:
+            print(f"[DEBUG] Done processing both accounts.")
+    else:
+        if debug:
+            print(f"[DEBUG] Done collecting {user_type} account data.")
 
 if __name__ == "__main__":
     main()
