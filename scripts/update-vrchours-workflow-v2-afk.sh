@@ -48,8 +48,8 @@ updateprofile () {
 
 	# Start to diff the times and not the file
 
-	LASTTIME=$(grep "As of" $SRC/README.md | awk -F'- | <sup>lifetime hrs' '{print $2}')
-	NEWTIME=$(grep "As of" $SRC/TMP-README.md | awk -F'- | <sup>lifetime hrs' '{print $2}')
+	LASTTIME=$(grep "As of" $SRC/README.md | awk -F'- | <sup>AFK lifetime hrs' '{print $2}')
+	NEWTIME=$(grep "As of" $SRC/TMP-README.md | awk -F'- | <sup>AFK lifetime hrs' '{print $2}')
 
 	if [[ "$LASTTIME" == "$NEWTIME" ]]
 	then

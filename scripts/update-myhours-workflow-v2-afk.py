@@ -94,7 +94,7 @@ def main():
         print(f"[DEBUG] Playtime hours (formatted): {formatted_hours}")
 
     vrchours = {
-        "afkhoursHERE": f"As of <strong>{current_date}</strong> - {formatted_hours} <sup>lifetime hrs</sup>",
+        "afkhoursHERE": f"As of <strong>{current_date}</strong> - {formatted_hours} <sup>AFK lifetime hrs</sup>",
     }
 
     # Backup and copy template
