@@ -2,8 +2,8 @@ name: Update VRChat Hours (Unified)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *' # Runs every 1 hour
+  #schedule:
+  #  - cron: '0 * * * *' # Runs every 1 hour
 
 concurrency:
   group: update-vrchat-hours-unified
