@@ -41,8 +41,8 @@ jobs:
         run: |
           echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY }}" > steam_vars.txt
           echo "STEAM_ID=${{ secrets.STEAM_USER_ID }}" >> steam_vars.txt
-          # echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY_AFK }}" > steam_vars_afk.txt
-          # echo "STEAM_ID=${{ secrets.STEAM_USER_ID_AFK }}" >> steam_vars_afk.txt
+          echo "STEAM_API_KEY=${{ secrets.STEAM_API_KEY_AFK }}" > steam_vars_afk.txt
+          echo "STEAM_ID=${{ secrets.STEAM_USER_ID_AFK }}" >> steam_vars_afk.txt
 
       - name: Run update-myhours-workflow-v2.sh
         env:
