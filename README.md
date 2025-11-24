@@ -90,13 +90,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 </details>
 
 <!-- start myhoursHERE -->
-As of <strong>2025-11-24 @ 17:08 UTC</strong> - 11,976.5 <sup>lifetime hrs</sup>
+As of <strong>2025-11-24 @ 17:43 UTC</strong> - 11,977.0 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### AFK Instance Bot Hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-11-24 @ 17:08 UTC</strong> - 64.9 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-11-24 @ 17:43 UTC</strong> - 65.4 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
@@ -135,7 +135,7 @@ As of <strong>2025-11-24 @ 17:08 UTC</strong> - 64.9 <sup>AFK lifetime hrs</sup>
 <tbody>
 <tr>
 <td>My VRChat Hours Update</td>
-<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-v2.yaml/badge.svg" alt="Update MyHours v2 (SteamAPI)"></a></td>
+<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)"></a></td>
 </tr>
 <tr>
 <td>M1XZG Uptime Monitor</td>
