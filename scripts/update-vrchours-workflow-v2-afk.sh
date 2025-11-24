@@ -49,21 +49,21 @@ updateprofile () {
 	# Start to diff the times and not the file
 
 	LASTTIME=$(grep "As of" $SRC/README.md | awk -F'- | <sup>AFK lifetime hrs' '{print $2}')
-	NEWTIME=$(grep "As of" $SRC/TMP-README.md | awk -F'- | <sup>AFK lifetime hrs' '{print $2}')
+	NEWTIME=$(grep "As of" $SRC/TMP-README-afk.md | awk -F'- | <sup>AFK lifetime hrs' '{print $2}')
 
 	if [[ "$LASTTIME" == "$NEWTIME" ]]
 	then
 		echo "No diff, exiting"
-		#rm $SRC/TMP-README.md
+		#rm $SRC/TMP-README-afk.md
 	    exit
 	fi
 
-#	cmp $SRC/README.md $SRC/TMP-README.md
+#	cmp $SRC/README.md $SRC/TMP-README-afk.md
 #	rv=$?
 #	if [[ $rv == 0 ]]
 #	then
 #		echo "No diff, exiting"
-#		# rm $SRC/TMP-README.md
+#		# rm $SRC/TMP-README-afk.md
 #	    exit
 #	fi
 
@@ -71,7 +71,7 @@ updateprofile () {
 
 	git switch --create $NEWBRANCH
 
-	mv $SRC/TMP-README.md ./README.md
+	mv $SRC/TMP-README-afk.md ./README.md
 
 	git commit -a -m "Update AFK Account VRC Hours - $TSTAMP"
 	git push --set-upstream origin $NEWBRANCH

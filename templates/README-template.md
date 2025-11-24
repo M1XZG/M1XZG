@@ -16,14 +16,20 @@
 
 ## 📑 Table of Contents
 
-- [About Me](#-about-me)
-- [Socials](#-socials)
-- [My VRChat info](#️-my-vrchat-info)
-- [Workflow Status](#-workflow-status)
-- [Stats](#-stats)
-- [Theme Switcher Preview](#-theme-switcher-preview)
-- [WiGLE Stats](#-wigle-stats)
-- [Broadband Monitor](#-broadband-monitor)
+- [📑 Table of Contents](#-table-of-contents)
+- [🧑‍💻 About Me](#-about-me)
+- [🌐 Socials](#-socials)
+- [My VRChat Info](#my-vrchat-info)
+  - [AFK Instance Bot Hours](#afk-instance-bot-hours)
+- [Some of the worlds I've uploaded](#some-of-the-worlds-ive-uploaded)
+  - [Wildy's Cozy House](#wildys-cozy-house)
+  - [Wildy's Soft and Comfy Space](#wildys-soft-and-comfy-space)
+  - [Wildy's Cozy Loft](#wildys-cozy-loft)
+- [🚦 Workflow Status](#-workflow-status)
+- [📊 Stats](#-stats)
+- [🎨 Theme Switcher Preview](#-theme-switcher-preview)
+- [🌐🌍 WiGLE Stats](#-wigle-stats)
+- [📡 Broadband Monitor](#-broadband-monitor)
 
 ---
 
@@ -86,12 +92,12 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <!-- start myhoursHERE -->
 <!-- end myhoursHERE -->
 
-<!-- ### AFK Instance Bot Hours -->
+### AFK Instance Bot Hours
 
 <!-- start afkhoursHERE -->
 <!-- end afkhoursHERE -->
 
-<sub>The above is reported by the Steam API which is typically 8-16 hours behind what the game client reports.</sub>
+<sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
 
 ## Some of the worlds I've uploaded
 

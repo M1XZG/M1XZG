@@ -102,13 +102,13 @@ def main():
         print("[DEBUG] Backing up README.md to README.md.bak")
     shutil.copy('./README.md', './README.md.bak')
     if debug:
-        print("[DEBUG] Copying template to TMP-README.md")
-    shutil.copy('./templates/README-template.md', './TMP-README.md')
+        print("[DEBUG] Copying template to TMP-README-afk.md")
+    shutil.copy('./templates/README-template.md', './TMP-README-afk.md')
 
     # Insert the hours into the Markdown file
     if debug:
-        print("[DEBUG] Inserting hours into TMP-README.md")
-    file = MarkdownFile("./TMP-README.md")
+        print("[DEBUG] Inserting hours into TMP-README-afk.md")
+    file = MarkdownFile("./TMP-README-afk.md")
     file.insert(vrchours)
     if debug:
         print("[DEBUG] Done.")
