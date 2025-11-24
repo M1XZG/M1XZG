@@ -86,7 +86,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <!-- start myhoursHERE -->
 <!-- end myhoursHERE -->
 
-<!-- ### AFK Instance Bot -->
+### AFK Instance Bot Hours
 
 <!-- start afkhoursHERE -->
 <!-- end afkhoursHERE -->
