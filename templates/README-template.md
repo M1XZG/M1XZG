@@ -20,7 +20,8 @@
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
 - [🥽 My VRChat Info](#-my-vrchat-info)
-  - [🥽🤖 AFK Instance Bot Hours](#-afk-instance-bot-hours)
+  - [🥽 My current hours](#-my-current-hours)
+  - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
     - [🥽🌐 Wildy's Cozy House](#-wildys-cozy-house)
     - [🥽🌐 Wildy's Soft and Comfy Space](#-wildys-soft-and-comfy-space)
@@ -89,10 +90,12 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2025-10-08 | 11000 hrs |
 </details>
 
+### 🥽 My current hours
+
 <!-- start myhoursHERE -->
 <!-- end myhoursHERE -->
 
-### 🥽🤖 AFK Instance Bot Hours
+### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
 <!-- end afkhoursHERE -->
