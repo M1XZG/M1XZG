@@ -19,9 +19,9 @@
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
-- [My VRChat Info](#my-vrchat-info)
-  - [AFK Instance Bot Hours](#afk-instance-bot-hours)
-- [Some of the worlds I've uploaded](#some-of-the-worlds-ive-uploaded)
+- [🥽 My VRChat Info](#-my-vrchat-info)
+  - [🥽🤖 AFK Instance Bot Hours](#-afk-instance-bot-hours)
+- [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
   - [Wildy's Cozy House](#wildys-cozy-house)
   - [Wildy's Soft and Comfy Space](#wildys-soft-and-comfy-space)
   - [Wildy's Cozy Loft](#wildys-cozy-loft)
@@ -68,7 +68,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## My VRChat Info
+## 🥽 My VRChat Info
 
 <details>
  <summary>Click to see my past milestones</summary>
@@ -92,14 +92,14 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <!-- start myhoursHERE -->
 <!-- end myhoursHERE -->
 
-### AFK Instance Bot Hours
+### 🥽🤖 AFK Instance Bot Hours
 
 <!-- start afkhoursHERE -->
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
 
-## Some of the worlds I've uploaded
+## 🥽🌐 Some of the worlds I've uploaded
 
 ### [Wildy's Cozy House](https://vrchat.com/home/content/worlds/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
