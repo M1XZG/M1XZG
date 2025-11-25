@@ -19,12 +19,13 @@
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
-- [My VRChat Info](#my-vrchat-info)
-  - [AFK Instance Bot Hours](#afk-instance-bot-hours)
-- [Some of the worlds I've uploaded](#some-of-the-worlds-ive-uploaded)
-  - [Wildy's Cozy House](#wildys-cozy-house)
-  - [Wildy's Soft and Comfy Space](#wildys-soft-and-comfy-space)
-  - [Wildy's Cozy Loft](#wildys-cozy-loft)
+- [🥽 My VRChat Info](#-my-vrchat-info)
+  - [🥽 My current hours](#-my-current-hours)
+  - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
+  - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
+    - [🥽🌐 Wildy's Cozy House](#-wildys-cozy-house)
+    - [🥽🌐 Wildy's Soft and Comfy Space](#-wildys-soft-and-comfy-space)
+    - [🥽🌐 Wildy's Cozy Loft](#-wildys-cozy-loft)
 - [🚦 Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
 - [🎨 Theme Switcher Preview](#-theme-switcher-preview)
@@ -68,7 +69,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## My VRChat Info
+## 🥽 My VRChat Info
 
 <details>
  <summary>Click to see my past milestones</summary>
@@ -89,31 +90,33 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2025-10-08 | 11000 hrs |
 </details>
 
+### 🥽 My current hours
+
 <!-- start myhoursHERE -->
-As of <strong>2025-11-25 @ 14:09 UTC</strong> - 11,997.1 <sup>lifetime hrs</sup>
+As of <strong>2025-11-25 @ 14:56 UTC</strong> - 11,998.2 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
-### AFK Instance Bot Hours
+### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-11-25 @ 14:09 UTC</strong> - 86.1 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-11-25 @ 14:56 UTC</strong> - 86.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
 
-## Some of the worlds I've uploaded
+### 🥽🌐 Some of the worlds I've uploaded
 
-### [Wildy's Cozy House](https://vrchat.com/home/content/worlds/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
+#### 🥽🌐 [Wildy's Cozy House](https://vrchat.com/home/content/worlds/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=favorites&label=Total%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
 
-### [Wildy's Soft and Comfy Space](https://vrchat.com/home/content/worlds/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
+#### 🥽🌐 [Wildy's Soft and Comfy Space](https://vrchat.com/home/content/worlds/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
 
-### [Wildy's Cozy Loft](https://vrchat.com/home/content/worlds/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
+#### 🥽🌐 [Wildy's Cozy Loft](https://vrchat.com/home/content/worlds/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
