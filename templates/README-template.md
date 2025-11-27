@@ -136,6 +136,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 </thead>
 <tbody>
 <tr>
+<td colspan="2" style="text-align: center; font-weight: bold; background-color: #2d2d2d; padding: 8px;">Personal Profile Updates</td>
+</tr>
+<tr>
 <td>My VRChat Hours Update</td>
 <td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)"></a></td>
 </tr>
@@ -148,12 +151,18 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator"></a></td>
 </tr>
 <tr>
+<td colspan="2" style="text-align: center; font-weight: bold; background-color: #2d2d2d; padding: 8px;">Swindon Makerspace</td>
+</tr>
+<tr>
 <td>Swindon Makerspace Uptime Monitor</td>
 <td><a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml"><img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg" alt="Swindon Makerspace Uptime Monitor"></a></td>
 </tr>
 <tr>
 <td>Swindon Makerspace Wiki Backup</td>
 <td><a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml"><img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup"></a></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center; font-weight: bold; background-color: #2d2d2d; padding: 8px;">Misc Cleanup Tasks</td>
 </tr>
 <tr>
 <td>M1XZG/M1XZG Run Cleanup</td>
