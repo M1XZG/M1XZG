@@ -94,13 +94,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-11-27 @ 18:52 UTC</strong> - 12,050.1 <sup>lifetime hrs</sup>
+As of <strong>2025-11-27 @ 19:07 UTC</strong> - 12,050.1 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-11-27 @ 18:52 UTC</strong> - 138.3 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-11-27 @ 19:07 UTC</strong> - 138.3 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
@@ -138,7 +138,7 @@ As of <strong>2025-11-27 @ 18:52 UTC</strong> - 138.3 <sup>AFK lifetime hrs</sup
 </thead>
 <tbody>
 <tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #2d2d2d; padding: 8px;">Personal Profile Updates</td>
+<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Personal Profile Updates</td>
 </tr>
 <tr>
 <td>My VRChat Hours Update</td>
@@ -153,7 +153,7 @@ As of <strong>2025-11-27 @ 18:52 UTC</strong> - 138.3 <sup>AFK lifetime hrs</sup
 <td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator"></a></td>
 </tr>
 <tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #2d2d2d; padding: 8px;">Swindon Makerspace</td>
+<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Swindon Makerspace</td>
 </tr>
 <tr>
 <td>Swindon Makerspace Uptime Monitor</td>
@@ -164,7 +164,7 @@ As of <strong>2025-11-27 @ 18:52 UTC</strong> - 138.3 <sup>AFK lifetime hrs</sup
 <td><a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml"><img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup"></a></td>
 </tr>
 <tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #2d2d2d; padding: 8px;">Misc Cleanup Tasks</td>
+<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Misc Cleanup Tasks</td>
 </tr>
 <tr>
 <td>M1XZG/M1XZG Run Cleanup</td>
