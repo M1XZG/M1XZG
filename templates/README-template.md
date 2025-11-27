@@ -127,7 +127,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 <div align="center">
 
-<table>
+<table align="center" width="850">
 <thead>
 <tr>
 <th>Work Flow</th>
@@ -136,7 +136,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 </thead>
 <tbody>
 <tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Personal Profile Updates</td>
+<td colspan="2" align="center">
+  <img src="https://img.shields.io/badge/Personal%20Profile%20Updates-660ab1?style=for-the-badge&labelColor=660ab1&color=660ab1" alt="Personal Profile Updates" />
+</td>
 </tr>
 <tr>
 <td>My VRChat Hours Update</td>
@@ -151,7 +153,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator"></a></td>
 </tr>
 <tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Swindon Makerspace</td>
+<td colspan="2" align="center">
+  <img src="https://img.shields.io/badge/Swindon%20Makerspace-660ab1?style=for-the-badge&labelColor=660ab1&color=660ab1" alt="Swindon Makerspace" />
+</td>
 </tr>
 <tr>
 <td>Swindon Makerspace Uptime Monitor</td>
@@ -162,7 +166,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <td><a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml"><img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup"></a></td>
 </tr>
 <tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Misc Cleanup Tasks</td>
+<td colspan="2" align="center">
+  <img src="https://img.shields.io/badge/Misc%20Cleanup%20Tasks-660ab1?style=for-the-badge&labelColor=660ab1&color=660ab1" alt="Misc Cleanup Tasks" />
+</td>
 </tr>
 <tr>
 <td>M1XZG/M1XZG Run Cleanup</td>
