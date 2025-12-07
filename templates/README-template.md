@@ -105,22 +105,22 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ### 🥽🌐 Some of the worlds I've uploaded
 
-#### 🥽🏠 [Wildy's Cozy House](https://vrchat.com/home/content/worlds/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
+#### 🥽🏠 [Wildy's Cozy House](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=favorites&label=Total%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
 
-#### 🥽🏠 [Wildy's Soft and Comfy Space](https://vrchat.com/home/content/worlds/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
+#### 🥽🏠 [Wildy's Soft and Comfy Space](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
 
-#### 🥽🏠 [Wildy's Cozy Loft](https://vrchat.com/home/content/worlds/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
+#### 🥽🏠 [Wildy's Cozy Loft](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
 
-#### 🥽🏠 [Neon AFK Home](https://vrchat.com/home/content/worlds/wrld_4941600b-e662-499c-b5fa-d8023190730a)
+#### 🥽🏠 [Neon AFK Home](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)
 [![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)</br>
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)
