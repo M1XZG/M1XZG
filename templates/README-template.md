@@ -120,6 +120,10 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 [![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
 [![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
 
+#### 🥽🏠 [Neon AFK Home](https://vrchat.com/home/content/worlds/wrld_4941600b-e662-499c-b5fa-d8023190730a)
+[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)</br>
+[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)</br>
+[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)
 
 ---
 
