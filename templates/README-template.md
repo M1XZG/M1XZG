@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="/assets/github-header-image.png" alt="Profile Banner" width="100%" />
 </p>
@@ -61,7 +60,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ## 🌐 Socials
 
 <p align="center">
-  <a href="https://wildwanderer-vr.com"><img src="https://img.shields.io/badge/My_Socials-Check_Me_Out-ae4aff?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAyOTIgMjkyIiB2ZXJzaW9uPSIxLjEiPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMSI+CiAgPHBhdGggZD0iTSAwIDE4Ny4xMzY3MTkgTCAyOTIgMTg3LjEzNjcxOSBMIDI5MiAyOTIgTCAwIDI5MiBaIE0gMCAxODcuMTM2NzE5ICIvPgo8L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNsaXAyIj4KICA8cGF0aCBkPSJNIDAgMCBMIDI5MiAwIEwgMjkyIDE1MS43OTI5NjkgTCAwIDE1MS43OTI5NjkgWiBNIDAgMCAiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMyI+CiAgPHBhdGggZD0iTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgTCAyOTIgMTI5Ljc3NzM0NCBMIDI5MiAxOTIuNjQwNjI1IEwgMTc2LjA2NjQwNiAxOTIuNjQwNjI1IFogTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPGcgaWQ9InN1cmZhY2UxIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAxKSIgY2xpcC1ydWxlPSJub256ZXJvIj4KPHBhdGggc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtmaWxsOnJnYigxMDAlLDEwMCUsMTAwJSk7ZmlsbC1vcGFjaXR5OjE7IiBkPSJNIDI5MiAzOC41NzQyMTkgTCAyOTIgMTkwLjc1NzgxMiBDIDI5MiAyMTcuNjA5Mzc1IDI4MS4zMzIwMzEgMjQzLjM2MzI4MSAyNjIuMzQ3NjU2IDI2Mi4zNDc2NTYgQyAyNDMuMzYzMjgxIDI4MS4zMzIwMzEgMjE3LjYwOTM3NSAyOTIgMTkwLjc2MTcxOSAyOTIgTCAzOC41NzQyMTkgMjkyIEMgMTcuMjY5NTMxIDI5MiAwIDI3NC43MzA0NjkgMCAyNTMuNDI1NzgxIEwgMCAzOC41NzQyMTkgQyAwIDE3LjI2OTUzMSAxNy4yNjk1MzEgMCAzOC41NzQyMTkgMCBMIDI1My40MjU3ODEgMCBDIDI2My42NTYyNSAwIDI3My40Njg3NSA0LjA2MjUgMjgwLjcwMzEyNSAxMS4yOTY4NzUgQyAyODcuOTM3NSAxOC41MzEyNSAyOTIgMjguMzQzNzUgMjkyIDM4LjU3NDIxOSBaIE0gNjcuMzI0MjE5IDY3LjMyMDMxMiBMIDY3LjMyNDIxOSAyMjQuNjc1NzgxIEwgMTkwLjc2MTcxOSAyMjQuNjc1NzgxIEMgMTk5Ljc1MzkwNiAyMjQuNjc1NzgxIDIwOC4zODI4MTIgMjIxLjEwMTU2MiAyMTQuNzQyMTg4IDIxNC43NDIxODggQyAyMjEuMTA1NDY5IDIwOC4zODI4MTIgMjI0LjY3OTY4OCAxOTkuNzUzOTA2IDIyNC42Nzk2ODggMTkwLjc1NzgxMiBMIDIyNC42Nzk2ODggNjcuMzIwMzEyIFogTSA2Ny4zMjQyMTkgNjcuMzIwMzEyICIvPgo8L2c+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMikiIGNsaXAtcnVsZT0ibm9uemVybyI+CjxwYXRoIHN0eWxlPSIgc3Ryb2tlOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7ZmlsbDpyZ2IoMTAwJSwxMDAlLDEwMCUpO2ZpbGwtb3BhY2l0eToxOyIgZD0iTSAyOTIgMzguNTc0MjE5IEwgMjkyIDI1My40MjU3ODEgQyAyOTIgMjc0LjczMDQ2OSAyNzQuNzMwNDY5IDI5MiAyNTMuNDI1NzgxIDI5MiBMIDM4LjU3NDIxOSAyOTIgQyAyOC4zNDM3NSAyOTIgMTguNTM1MTU2IDI4Ny45Mzc1IDExLjMwMDc4MSAyODAuNzAzMTI1IEMgNC4wNjY0MDYgMjczLjQ2ODc1IDAgMjYzLjY1NjI1IDAgMjUzLjQyNTc4MSBMIDAgMTExLjgwMDc4MSBDIDAgNTAuMDU0Njg4IDUwLjA1NDY4OCAwIDExMS44MDA3ODEgMCBMIDI1My40MjU3ODEgMCBDIDI3NC43MzA0NjkgMCAyOTIgMTcuMjY5NTMxIDI5MiAzOC41NzQyMTkgWiBNIDY3LjMyNDIxOSAyMjQuNjc1NzgxIEwgMjI0LjY3OTY4OCAyMjQuNjc1NzgxIEwgMjI0LjY3OTY4OCA2Ny4zMjAzMTIgTCAxMTEuODAwNzgxIDY3LjMyMDMxMiBDIDg3LjIzNDM3NSA2Ny4zMjAzMTIgNjcuMzI0MjE5IDg3LjIzNDM3NSA2Ny4zMjQyMTkgMTExLjgwMDc4MSBaIE0gNjcuMzI0MjE5IDIyNC42NzU3ODEgIi8+CjwvZz4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAzKSIgY2xpcC1ydWxlPSJub256ZXJvIj4KPHBhdGggc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtmaWxsOnJnYigxMDAlLDEwMCUsMTAwJSk7ZmlsbC1vcGFjaXR5OjE7IiBkPSJNIDI5Mi4wMDM5MDYgMzguNTc0MjE5IEwgMjkyLjAwMzkwNiAyNTMuNDI1NzgxIEMgMjkyLjAwMzkwNiAyNzQuNzMwNDY5IDI3NC43MzQzNzUgMjkyIDI1My40Mjk2ODggMjkyIEwgLTY1NS44Nzg5MDYgMjkyIEMgLTY1OS4xNTYyNSAyOTIgLTY2Mi4yOTY4NzUgMjkwLjY5OTIxOSAtNjY0LjYxMzI4MSAyODguMzgyODEyIEMgLTY2Ni45Mjk2ODggMjg2LjA2MjUgLTY2OC4yMzA0NjkgMjgyLjkyNTc4MSAtNjY4LjIzMDQ2OSAyNzkuNjQ4NDM4IEwgLTY2OC4yMzA0NjkgMTIuMzUxNTYyIEMgLTY2OC4yMzA0NjkgOS4wNzQyMTkgLTY2Ni45Mjk2ODggNS45MzM1OTQgLTY2NC42MTMyODEgMy42MTcxODggQyAtNjYyLjI5Njg3NSAxLjMwMDc4MSAtNjU5LjE1NjI1IDAgLTY1NS44Nzg5MDYgMCBMIDI1My40Mjk2ODggMCBDIDI3NC43MzQzNzUgMCAyOTIuMDAzOTA2IDE3LjI2OTUzMSAyOTIuMDAzOTA2IDM4LjU3NDIxOSBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSA2Ny4zMjAzMTIgTCAtNjAwLjkwNjI1IDY3LjMyMDMxMiBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxICIvPgo8L2c+CjwvZz4KPC9zdmc+Cg==" alt="My Socials" /></a>
+  <a href="https://wildwanderer-vr.com"><img src="https://img.shields.io/badge/My_Socials-Check_Me_Out-ae4aff?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAyOTIgMjkyIiB2ZXJzaW9uPSIxLjEiPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMSI+CiAgPHBhdGggZD0iTSAwIDE4Ny4xMzY3MTkgTCAyOTIgMTg3LjEzNjcxOSBMIDI5MiAyOTIgTCAwIDI5MiBaIE0gMCAxODcuMTM2NzE5ICIvPgo8L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNsaXAyIj4KICA8cGF0aCBkPSJNIDAgMCBMIDI5MiAwIEwgMjkyIDE1MS43OTI5NjkgTCAwIDE1MS43OTI5NjkgWiBNIDAgMCAiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMyI+CiAgPHBhdGggZD0iTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgTCAyOTIgMTI5Ljc3NzM0NCBMIDI5MiAxOTIuNjQwNjI1IEwgMTc2LjA2NjQwNiAxOTIuNjQwNjI1IFogTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPGcgaWQ9InN1cmZhY2UxIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAxKSIgY2xpcC1ydWxlPSJub256ZXJvIj4KPHBhdGggc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtmaWxsOnJnYigxMDAlLDEwMCUsMTAwJSk7ZmlsbC1vcGFjaXR5OjE7IiBkPSJNIDI5Mi4wMDM5MDYgMzguNTc0MjE5IEwgMjkyLjAwMzkwNiAyNTMuNDI1NzgxIEMgMjkyLjAwMzkwNiAyNzQuNzMwNDY5IDI3NC43MzQzNzUgMjkyIDI1My40Mjk2ODggMjkyIEwgLTY1NS44Nzg5MDYgMjkyIEMgLTY1OS4xNTYyNSAyOTIgLTY2Mi4yOTY4NzUgMjkwLjY5OTIxOSAtNjY0LjYxMzI4MSAyODguMzgyODEyIEMgLTY2Ni45Mjk2ODggMjg2LjA2MjUgLTY2OC4yMzA0NjkgMjgyLjkyNTc4MSAtNjY4LjIzMDQ2OSAyNzkuNjQ4NDM4IEwgLTY2OC4yMzA0NjkgMTIuMzUxNTYyIEMgLTY2OC4yMzA0NjkgOS4wNzQyMTkgLTY2Ni45Mjk2ODggNS45MzM1OTQgLTY2NC42MTMyODEgMy42MTcxODggQyAtNjYyLjI5Njg3NSAxLjMwMDc4MSAtNjU5LjE1NjI1IDAgLTY1NS44Nzg5MDYgMCBMIDI1My40Mjk2ODggMCBDIDI3NC43MzQzNzUgMCAyOTIuMDAzOTA2IDE3LjI2OTUzMSAyOTIuMDAzOTA2IDM4LjU3NDIxOSBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSA2Ny4zMjAzMTIgTCAtNjAwLjkwNjI1IDY3LjMyMDMxMiBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxICIvPgo8L2c+CjwvZz4KPC9zdmc+Cg==" alt="My Socials" /></a>
   <a href="https://www.linkedin.com/in/robpmckenzie/"><img src="https://img.shields.io/badge/LinkedIn-Connect-ae4aff?style=for-the-badge&logo=linkedin" /></a>
   <a href="https://discordapp.com/users/wildwanderer_vr"><img src="https://img.shields.io/badge/Discord-Chat-ae4aff?style=for-the-badge&logo=discord" /></a>
   <a href="https://vrchat.com/home/user/usr_6cd0b3d0-d998-4bfb-9af5-57fdb782c1de"><img src="https://img.shields.io/badge/VRchat-Friend_me-ae4aff?style=for-the-badge&logo=vrchat" /></a>
@@ -106,25 +105,60 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ### 🥽🌐 Some of the worlds I've uploaded
 
-#### 🥽🏠 [Wildy's Cozy House](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
-[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
-[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)</br>
-[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=favorites&label=Total%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224)
-
-#### 🥽🏠 [Wildy's Soft and Comfy Space](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
-[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
-[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)</br>
-[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69)
-
-#### 🥽🏠 [Wildy's Cozy Loft](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
-[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
-[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)</br>
-[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc)
-
-#### 🥽🏠 [Neon AFK Home](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)
-[![Last Upload](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)</br>
-[![Total Visits](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)</br>
-[![Total Favorites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold)](https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a)
+<table>
+  <tr>
+    <td valign="top">
+      <h4 id="-wildys-cozy-house">🥽🏠 <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224">Wildy’s Cozy House</a></h4>
+      <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=updated_at&label=Last%20Upload" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=visits&label=Total%20Visits&color=red" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_5931e6c9-1b23-4852-9c73-ee0bf273e224&query=favorites&label=Total%20Favorites&color=gold" />
+      </a>
+    </td>
+    <td valign="top">
+      <h4 id="-wildys-soft-and-comfy-space">🥽🏠 <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69">Wildy’s Soft and Comfy Space</a></h4>
+      <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=updated_at&label=Last%20Upload" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=visits&label=Total%20Visits&color=red" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Favorites&color=gold" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h4 id="-wildys-cozy-loft">🥽🏠 <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">Wildy’s Cozy Loft</a></h4>
+      <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=updated_at&label=Last%20Upload" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=visits&label=Total%20Visits&color=red" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold" />
+      </a>
+    </td>
+    <td valign="top">
+      <h4 id="-neon-afk-home">🥽🏠 <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">Neon AFK Home</a></h4>
+      <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red" />
+      </a><br />
+      <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
