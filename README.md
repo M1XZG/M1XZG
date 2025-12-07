@@ -23,9 +23,10 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-    - [🥽� Wildy's Cozy House](#-wildys-cozy-house)
+    - [🥽🏠 Wildy's Cozy House](#-wildys-cozy-house)
     - [🥽🏠 Wildy's Soft and Comfy Space](#-wildys-soft-and-comfy-space)
     - [🥽🏠 Wildy's Cozy Loft](#-wildys-cozy-loft)
+    - [🥽🏠 Neon AFK Home](#-neon-afk-home)
 - [🚦 Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
 - [🎨 Theme Switcher Preview](#-theme-switcher-preview)
@@ -94,13 +95,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-07 @ 02:16 UTC</strong> - 12,268.6 <sup>lifetime hrs</sup>
+As of <strong>2025-12-07 @ 02:30 UTC</strong> - 12,269.1 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-07 @ 02:16 UTC</strong> - 361.5 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-07 @ 02:30 UTC</strong> - 361.5 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
