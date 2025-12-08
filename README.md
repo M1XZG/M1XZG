@@ -22,10 +22,6 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-    - [🥽🏠 Wildy's Cozy House](#-wildys-cozy-house)
-    - [🥽🏠 Wildy's Soft and Comfy Space](#-wildys-soft-and-comfy-space)
-    - [🥽🏠 Wildy's Cozy Loft](#-wildys-cozy-loft)
-    - [🥽🏠 Neon AFK Home](#-neon-afk-home)
 - [🚦 Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
 - [🎨 Theme Switcher Preview](#-theme-switcher-preview)
@@ -94,18 +90,20 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-08 @ 12:15 UTC</strong> - 12,302.9 <sup>lifetime hrs</sup>
+As of <strong>2025-12-08 @ 13:43 UTC</strong> - 12,304.4 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-08 @ 12:15 UTC</strong> - 395.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-08 @ 13:43 UTC</strong> - 396.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
 
 ### 🥽🌐 Some of the worlds I've uploaded
+
+<div align="center">
 
 <table>
   <tr>
@@ -162,6 +160,8 @@ As of <strong>2025-12-08 @ 12:15 UTC</strong> - 395.6 <sup>AFK lifetime hrs</sup
   </tr>
 </table>
 
+</div>
+
 ---
 
 ## 🚦 Workflow Status
@@ -169,51 +169,85 @@ As of <strong>2025-12-08 @ 12:15 UTC</strong> - 395.6 <sup>AFK lifetime hrs</sup
 <div align="center">
 
 <table>
-<thead>
-<tr>
-<th>Work Flow</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Personal Profile Updates</td>
-</tr>
-<tr>
-<td>My VRChat Hours Update</td>
-<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)"></a></td>
-</tr>
-<tr>
-<td>M1XZG Uptime Monitor</td>
-<td><a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml"><img src="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg" alt="M1XZG Uptime Monitor"></a></td>
-</tr>
-<tr>
-<td>M1XZG Profile Card Creator</td>
-<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator"></a></td>
-</tr>
-<tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Swindon Makerspace</td>
-</tr>
-<tr>
-<td>Swindon Makerspace Uptime Monitor</td>
-<td><a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml"><img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg" alt="Swindon Makerspace Uptime Monitor"></a></td>
-</tr>
-<tr>
-<td>Swindon Makerspace Wiki Backup</td>
-<td><a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml"><img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup"></a></td>
-</tr>
-<tr>
-<td colspan="2" style="text-align: center; font-weight: bold; background-color: #660ab1ff; padding: 8px;">Misc Cleanup Tasks</td>
-</tr>
-<tr>
-<td>M1XZG/M1XZG Run Cleanup</td>
-<td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml"><img src="https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs"></a></td>
-</tr>
-<tr>
-<td>M1XZG/uptime Run Cleanup</td>
-<td><a href="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml"><img src="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs"></a></td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Work Flow</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" align="center">
+        <strong>Personal Profile Updates</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>My VRChat Hours Update</td>
+      <td>
+        <a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml">
+          <img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>M1XZG Uptime Monitor</td>
+      <td>
+        <a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml">
+          <img src="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg" alt="M1XZG Uptime Monitor" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>M1XZG Profile Card Creator</td>
+      <td>
+        <a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml">
+          <img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <strong>Swindon Makerspace</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>Swindon Makerspace Uptime Monitor</td>
+      <td>
+        <a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml">
+          <img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg" alt="Swindon Makerspace Uptime Monitor" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Swindon Makerspace Wiki Backup</td>
+      <td>
+        <a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml">
+          <img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <strong>Misc Cleanup Tasks</strong>
+      </td>
+    </tr>
+    <tr>
+      <td>M1XZG/M1XZG Run Cleanup</td>
+      <td>
+        <a href="https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml">
+          <img src="https://github.com/M1XZG/M1XZG/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>M1XZG/uptime Run Cleanup</td>
+      <td>
+        <a href="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml">
+          <img src="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs" />
+        </a>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 </div>
