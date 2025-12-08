@@ -174,7 +174,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
     </tr>
   </thead>
   <tbody>
-    <!-- Personal Profile Updates Section -->
     <tr>
       <td colspan="2" align="center">
         <strong>Personal Profile Updates</strong>
@@ -204,8 +203,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
     </tr>
-    
-    <!-- Swindon Makerspace Section -->
     <tr>
       <td colspan="2" align="center">
         <strong>Swindon Makerspace</strong>
@@ -227,8 +224,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
     </tr>
-    
-    <!-- Misc Cleanup Tasks Section -->
     <tr>
       <td colspan="2" align="center">
         <strong>Misc Cleanup Tasks</strong>
