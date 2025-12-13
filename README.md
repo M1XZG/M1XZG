@@ -90,13 +90,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-13 @ 21:07 UTC</strong> - 12,426.1 <sup>lifetime hrs</sup>
+As of <strong>2025-12-13 @ 22:07 UTC</strong> - 12,427.5 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-13 @ 21:07 UTC</strong> - 520.1 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-13 @ 22:07 UTC</strong> - 521.5 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
