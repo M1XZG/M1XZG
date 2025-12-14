@@ -90,13 +90,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-14 @ 15:07 UTC</strong> - 12,444.7 <sup>lifetime hrs</sup>
+As of <strong>2025-12-14 @ 16:09 UTC</strong> - 12,445.7 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-14 @ 15:07 UTC</strong> - 538.7 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-14 @ 16:09 UTC</strong> - 539.7 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
@@ -202,6 +202,14 @@ As of <strong>2025-12-14 @ 15:07 UTC</strong> - 538.7 <sup>AFK lifetime hrs</sup
       <td>
         <a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml">
           <img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Shared Game Images - GitHub Pages</td>
+      <td>
+        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">
+          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Shared Game Images - Deploy GitHub Pages" />
         </a>
       </td>
     </tr>
