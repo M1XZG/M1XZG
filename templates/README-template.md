@@ -204,6 +204,14 @@ Thanks for stopping by! You can find me on various [social media platforms](http
       </td>
     </tr>
     <tr>
+      <td>Shared Game Images - GitHub Pages</td>
+      <td>
+        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">
+          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Shared Game Images - Deploy GitHub Pages" />
+        </a>
+      </td>
+    </tr>
+    <tr>
       <td colspan="2" align="center">
         <strong>Swindon Makerspace</strong>
       </td>
