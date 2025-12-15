@@ -17,6 +17,7 @@ jobs:
       with:
         custom-title: My GitHub Statistics
         colors: dark
+        image-file: assets/userstats.svg
         include-title: true
         animated-language-chart: false
         language-animation-speed: 20
@@ -24,7 +25,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.user_statistician }}
 
-    - name: Move userstats.svg to assets folder
-      run: |
-        mkdir -p assets
-        mv userstats.svg assets/userstats.svg || true
+#    - name: Move userstats.svg to assets folder
+#      run: |
+#        mkdir -p assets
+#        mv userstats.svg assets/userstats.svg || true
