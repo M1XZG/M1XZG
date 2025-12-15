@@ -58,26 +58,3 @@ jobs:
           git add README.md
           git commit -m "docs: update open issues and PRs [skip ci]"
           git push origin main
-
-      - name: Create Pull Request
-        if: steps.readme_check.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
-        run: |
-          # Check if branch exists
-          if git ls-remote --heads origin open-issues-prs-update > /dev/null; then
-            git push origin --delete open-issues-prs-update
-          fi
-
-          git checkout -b open-issues-prs-update
-          git add README.md
-          git commit -m "docs: update open issues and PRs"
-          git push -u origin open-issues-prs-update
-
-          # Create PR using GitHub CLI
-          gh pr create \
-            --title "docs: update open issues and PRs" \
-            --body "Automated update of open issues and pull requests across repositories" \
-            --head open-issues-prs-update \
-            --base main \
-            || echo "PR already exists or failed to create"
