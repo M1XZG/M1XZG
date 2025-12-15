@@ -29,4 +29,19 @@ jobs:
           # EXCLUDE is an optional comma seperated list of languages to exclude, defaults to ""
           EXCLUDE: ""
           # AUTO_PUSH is optional, a boolean variable default to true, whether automatically push generated files to desired branch 
-          AUTO_PUSH: true
+          AUTO_PUSH: false
+      
+      # Keep only the aura theme and remove all others
+      - name: Keep only aura theme
+        run: |
+          cd profile-summary-card-output
+          find . -mindepth 1 -maxdepth 1 -type d ! -name 'aura' -exec rm -rf {} +
+          
+      # Commit and push changes
+      - name: Commit changes
+        run: |
+          git config --global user.email "profile-summary-cards-bot@example.com"
+          git config --global user.name "profile-summary-cards[bot]"
+          git add profile-summary-card-output
+          git commit -m "Generate profile summary cards (aura theme only)" || echo "No changes to commit"
+          git push
