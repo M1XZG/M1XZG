@@ -22,7 +22,8 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-- [🚦 Workflow Status](#-workflow-status)
+- [� Open Issues & PRs](#-open-issues--prs)
+- [�🚦 Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
 - [🎨 Theme Switcher Preview](#-theme-switcher-preview)
 - [🌐🌍 WiGLE Stats](#-wigle-stats)
@@ -162,7 +163,19 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## 🚦 Workflow Status
+## � Open Issues & PRs
+
+<div align="center">
+
+<!-- start openissuesHERE -->
+✨ No open issues or pull requests at the moment!
+<!-- end openissuesHERE -->
+
+</div>
+
+---
+
+## �🚦 Workflow Status
 
 <div align="center">
 
