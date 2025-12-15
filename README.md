@@ -22,9 +22,9 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-- [� Workflow Status](#-workflow-status)
+- [🚦 Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
-- [�🌍 WiGLE Stats](#-wigle-stats)
+- [🌐🌍 WiGLE Stats](#-wigle-stats)
 - [📡 Broadband Monitor](#-broadband-monitor)
 
 ---

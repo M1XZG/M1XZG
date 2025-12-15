@@ -22,9 +22,8 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-- [🔍 Open Issues \& PRs](#-open-issues--prs)
-- [📊 Stats](#-stats)
-- [�🌍 WiGLE Stats](#-wigle-stats)
+- [� Stats](#-stats)
+- [🌐🌍 WiGLE Stats](#-wigle-stats)
 - [📡 Broadband Monitor](#-broadband-monitor)
 
 ---
@@ -156,18 +155,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
     </td>
   </tr>
 </table>
-
-</div>
-
----
-
-## 🔍 Open Issues & PRs
-
-<div align="center">
-
-<!-- start openissuesHERE -->
-✨ No open issues or pull requests at the moment!
-<!-- end openissuesHERE -->
 
 </div>
 
