@@ -23,3 +23,8 @@ jobs:
         show-border: false
       env:
         GITHUB_TOKEN: ${{ secrets.user_statistician }}
+
+    - name: Move userstats.svg to assets folder
+      run: |
+        mkdir -p assets
+        mv userstats.svg assets/userstats.svg || true

@@ -288,7 +288,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/images/userstats.svg" alt="My GitHub Stats" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/assets/userstats.svg" alt="My GitHub Stats" />
 </p>
 
 ---
