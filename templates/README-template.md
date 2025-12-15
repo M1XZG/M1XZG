@@ -22,7 +22,8 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-- [� Stats](#-stats)
+- [🚦 Workflow Status](#-workflow-status)
+- [📊 Stats](#-stats)
 - [🌐🌍 WiGLE Stats](#-wigle-stats)
 - [📡 Broadband Monitor](#-broadband-monitor)
 
@@ -160,7 +161,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-##🚦 Workflow Status
+## 🚦 Workflow Status
 
 <div align="center">
 
