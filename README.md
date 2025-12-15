@@ -22,7 +22,7 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-- [🔍 Open Issues \& PRs](#-open-issues--prs)
+- [� Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
 - [�🌍 WiGLE Stats](#-wigle-stats)
 - [📡 Broadband Monitor](#-broadband-monitor)
@@ -163,18 +163,7 @@ As of <strong>2025-12-15 @ 10:22 UTC</strong> - 557.8 <sup>AFK lifetime hrs</sup
 
 ---
 
-## 🔍 Open Issues & PRs
-
-<div align="center">
-
-<!-- start openissuesHERE -->
-<!-- end openissuesHERE -->
-
-</div>
-
----
-
-##🚦 Workflow Status
+## 🚦 Workflow Status
 
 <div align="center">
 
