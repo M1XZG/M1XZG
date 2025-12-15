@@ -22,7 +22,8 @@
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
   - [🥽🌐 Some of the worlds I've uploaded](#-some-of-the-worlds-ive-uploaded)
-- [🚦 Workflow Status](#-workflow-status)
+- [� Open Issues & PRs](#-open-issues--prs)
+- [�🚦 Workflow Status](#-workflow-status)
 - [📊 Stats](#-stats)
 - [🎨 Theme Switcher Preview](#-theme-switcher-preview)
 - [🌐🌍 WiGLE Stats](#-wigle-stats)
@@ -90,13 +91,11 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-15 @ 09:15 UTC</strong> - 12,462.8 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-15 @ 09:15 UTC</strong> - 556.8 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
@@ -164,7 +163,19 @@ As of <strong>2025-12-15 @ 09:15 UTC</strong> - 556.8 <sup>AFK lifetime hrs</sup
 
 ---
 
-## 🚦 Workflow Status
+## � Open Issues & PRs
+
+<div align="center">
+
+<!-- start openissuesHERE -->
+✨ No open issues or pull requests at the moment!
+<!-- end openissuesHERE -->
+
+</div>
+
+---
+
+## �🚦 Workflow Status
 
 <div align="center">
 
