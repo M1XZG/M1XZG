@@ -10,13 +10,13 @@ import sys
 import requests
 from datetime import datetime
 
-# Add python-requirements to path for minsert
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'python-requirements'))
+# Add scripts directory to path for minsert
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'python-requirements'))
 
 try:
     import minsert
 except ImportError:
-    print("ERROR: minsert module not found. Please ensure python-requirements/minsert.py exists.")
+    print("ERROR: minsert module not found. Please ensure scripts/python-requirements/minsert.py exists.")
     sys.exit(1)
 
 def get_github_data(token, username):
