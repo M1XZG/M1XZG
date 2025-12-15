@@ -8,13 +8,14 @@ then inserts them into the README template.
 import os
 import sys
 import requests
+import shutil
 from datetime import datetime
 
 # Add scripts directory to path for minsert
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'python-requirements'))
 
 try:
-    import minsert
+    from minsert import MarkdownFile
 except ImportError:
     print("ERROR: minsert module not found. Please ensure scripts/python-requirements/minsert.py exists.")
     sys.exit(1)
@@ -114,25 +115,16 @@ def update_readme(issues, prs, username):
     # Generate content
     content_block = generate_markdown(issues, prs, username)
     
-    # Read template
-    with open(template_path, 'r', encoding='utf-8') as f:
-        template_content = f.read()
+    # Copy template to README
+    shutil.copy(template_path, readme_path)
     
     # Insert content using minsert
     try:
-        result = minsert.update_section(
-            template_content,
-            '<!-- start openissuesHERE -->',
-            '<!-- end openissuesHERE -->',
-            content_block
-        )
+        markdown_file = MarkdownFile(readme_path)
+        markdown_file.insert({'openissuesHERE': content_block})
     except Exception as e:
         print(f"ERROR: Failed to insert content: {e}")
         sys.exit(1)
-    
-    # Write to README
-    with open(readme_path, 'w', encoding='utf-8') as f:
-        f.write(result)
     
     print(f"✅ Successfully updated README.md with {len(issues)} issues and {len(prs)} pull requests")
 
