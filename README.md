@@ -89,13 +89,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-16 @ 11:08 UTC</strong> - 12,488.3 <sup>lifetime hrs</sup>
+As of <strong>2025-12-16 @ 12:09 UTC</strong> - 12,489.3 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-16 @ 11:08 UTC</strong> - 582.5 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-16 @ 12:09 UTC</strong> - 583.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
@@ -234,14 +234,6 @@ As of <strong>2025-12-16 @ 11:08 UTC</strong> - 582.5 <sup>AFK lifetime hrs</sup
       </td>
     </tr>
     <tr>
-      <td>Swindon Makerspace Cleanup Runs</td>
-      <td>
-        <a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/cleanup-failed-and-old-runs.yml">
-          <img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs" />
-        </a>
-      </td>
-    </tr>
-    <tr>
       <td colspan="2" align="center">
         <strong>Misc Cleanup Tasks</strong>
       </td>
@@ -259,6 +251,14 @@ As of <strong>2025-12-16 @ 11:08 UTC</strong> - 582.5 <sup>AFK lifetime hrs</sup
       <td>
         <a href="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml">
           <img src="https://github.com/M1XZG/uptime/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Swindon Makerspace Uptime Cleanups</td>
+      <td>
+        <a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/cleanup-failed-and-old-runs.yml">
+          <img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs" />
         </a>
       </td>
     </tr>
