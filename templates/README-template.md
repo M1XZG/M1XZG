@@ -232,6 +232,14 @@ Thanks for stopping by! You can find me on various [social media platforms](http
       </td>
     </tr>
     <tr>
+      <td>Swindon Makerspace Cleanup Runs</td>
+      <td>
+        <a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/cleanup-failed-and-old-runs.yml">
+          <img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/cleanup-failed-and-old-runs.yml/badge.svg" alt="Cleanup Failed/Old Workflow Runs" />
+        </a>
+      </td>
+    </tr>
+    <tr>
       <td colspan="2" align="center">
         <strong>Misc Cleanup Tasks</strong>
       </td>
