@@ -1,11 +1,20 @@
 <p align="center">
+  ❄️ ⛄ 🎄 ✨ 🎁 ⭐ 🎅 🦌 🔔 ❄️
+</p>
+
+<p align="center">
   <img src="/assets/github-header-image.png" alt="Profile Banner" width="100%" />
 </p>
 
-<h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
+<p align="center">
+  ❄️ ⛄ 🎄 ✨ 🎁 ⭐ 🎅 🦌 🔔 ❄️
+</p>
+
+<h1 align="center">🎄 Hey, thanks for sliding into my profile this holiday season! 🎅</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Coffee-Lover-brown?style=for-the-badge&logo=buymeacoffee&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hot%20Cocoa-Ready-8B4513?style=for-the-badge&logo=☕&logoColor=white" />
   <img src="https://img.shields.io/badge/Bash/Zsh-Scripter-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
   <img src="https://img.shields.io/badge/Raspberry%20Pi-Enthusiast-C51A4A?style=for-the-badge&logo=raspberry-pi&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -13,7 +22,7 @@
 
 ---
 
-## 📑 Table of Contents
+## 📑 Table of Contents 🎁
 
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
@@ -31,9 +40,9 @@
 
 ## 🧑‍💻 About Me
 
-I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
+I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round. But right now? It's all about the hot cocoa ☕🎄 and gingerbread lattes! ❄️
 
-I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! 
+I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! Even coding during the holidays! 🎄✨ 
 
 Mostly I like to tinker with bash/zsh scripts and home automation. I love <b>Raspberry Pi's</b> and use quite a few of them for various jobs around the house. Most recently I'm using a Pi 4 8GB with <b>Docker</b> to run a couple of custom containers (which I might release) as well as <b>Plex</b>. Also running my own <a href="https://github.com/M1XZG/Raspberry-pi-kiosk-config">kiosk</a> configuration and <a href="https://sdr-enthusiasts.gitbook.io/ads-b/">ADS-B Reception, Decoding & Sharing with Docker</a>.
 
@@ -46,13 +55,13 @@ Some of my fav projects and organisations on GitHub that I'm part of, support or
 - [TTS Voice Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard) (I'm using this for [VRChat](https://vrchat.com/))
 - ... more to come, I just can't think of them off hand
 
-Thanks for stopping by! You can find me on various [social media platforms](https://www.uk-experience.com/social-media-site-links/) (that's also a link to my blog, I really need to get more active on there).
+Thanks for stopping by during this festive season! 🎁 You can find me on various [social media platforms](https://www.uk-experience.com/social-media-site-links/) (that's also a link to my blog, I really need to get more active on there). Wishing you happy holidays! ⛄
 
 > 💡 *Psst! If you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md). If you want some of the nifty badges below, check out [shields.io](https://shields.io/).*
 
 ---
 
-## 🌐 Socials
+## 🌐 Socials 🎁
 
 <p align="center">
   <a href="https://wildwanderer-vr.com"><img src="https://img.shields.io/badge/My_Socials-Check_Me_Out-ae4aff?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAyOTIgMjkyIiB2ZXJzaW9uPSIxLjEiPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMSI+CiAgPHBhdGggZD0iTSAwIDE4Ny4xMzY3MTkgTCAyOTIgMTg3LjEzNjcxOSBMIDI5MiAyOTIgTCAwIDI5MiBaIE0gMCAxODcuMTM2NzE5ICIvPgo8L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNsaXAyIj4KICA8cGF0aCBkPSJNIDAgMCBMIDI5MiAwIEwgMjkyIDE1MS43OTI5NjkgTCAwIDE1MS43OTI5NjkgWiBNIDAgMCAiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMyI+CiAgPHBhdGggZD0iTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgTCAyOTIgMTI5Ljc3NzM0NCBMIDI5MiAxOTIuNjQwNjI1IEwgMTc2LjA2NjQwNiAxOTIuNjQwNjI1IFogTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPGcgaWQ9InN1cmZhY2UxIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAxKSIgY2xpcC1ydWxlPSJub256ZXJvIj4KPHBhdGggc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtmaWxsOnJnYigxMDAlLDEwMCUsMTAwJSk7ZmlsbC1vcGFjaXR5OjE7IiBkPSJNIDI5Mi4wMDM5MDYgMzguNTc0MjE5IEwgMjkyLjAwMzkwNiAyNTMuNDI1NzgxIEMgMjkyLjAwMzkwNiAyNzQuNzMwNDY5IDI3NC43MzQzNzUgMjkyIDI1My40Mjk2ODggMjkyIEwgLTY1NS44Nzg5MDYgMjkyIEMgLTY1OS4xNTYyNSAyOTIgLTY2Mi4yOTY4NzUgMjkwLjY5OTIxOSAtNjY0LjYxMzI4MSAyODguMzgyODEyIEMgLTY2Ni45Mjk2ODggMjg2LjA2MjUgLTY2OC4yMzA0NjkgMjgyLjkyNTc4MSAtNjY4LjIzMDQ2OSAyNzkuNjQ4NDM4IEwgLTY2OC4yMzA0NjkgMTIuMzUxNTYyIEMgLTY2OC4yMzA0NjkgOS4wNzQyMTkgLTY2Ni45Mjk2ODggNS45MzM1OTQgLTY2NC42MTMyODEgMy42MTcxODggQyAtNjYyLjI5Njg3NSAxLjMwMDc4MSAtNjU5LjE1NjI1IDAgLTY1NS44Nzg5MDYgMCBMIDI1My40Mjk2ODggMCBDIDI3NC43MzQzNzUgMCAyOTIuMDAzOTA2IDE3LjI2OTUzMSAyOTIuMDAzOTA2IDM4LjU3NDIxOSBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSA2Ny4zMjAzMTIgTCAtNjAwLjkwNjI1IDY3LjMyMDMxMiBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxICIvPgo8L2c+CjwvZz4KPC9zdmc+Cg==" alt="My Socials" /></a>
@@ -64,7 +73,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ---
 
-## 🥽 My VRChat Info
+## 🥽 My VRChat Info 🎄
 
 <details>
  <summary>Click to see my past milestones</summary>
@@ -89,18 +98,18 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-17 @ 23:08 UTC</strong> - 12,524.5 <sup>lifetime hrs</sup>
+As of <strong>2025-12-18 @ 00:34 UTC</strong> - 12,525.5 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-17 @ 23:08 UTC</strong> - 618.3 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-18 @ 00:34 UTC</strong> - 619.8 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
 
-### 🥽🌐 Some of the worlds I've uploaded
+### 🥽🌐 Some of the worlds I've uploaded ❄️
 
 <div align="center">
 
@@ -163,7 +172,7 @@ As of <strong>2025-12-17 @ 23:08 UTC</strong> - 618.3 <sup>AFK lifetime hrs</sup
 
 ---
 
-## 🚦 Workflow Status
+## 🚦 Workflow Status 🎄
 
 <div align="center">
 
@@ -269,7 +278,7 @@ As of <strong>2025-12-17 @ 23:08 UTC</strong> - 618.3 <sup>AFK lifetime hrs</sup
 
 ---
 
-## 📊 Stats
+## 📊 Stats ❄️
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg" alt="Profile Banner" width="80%" />
@@ -290,7 +299,7 @@ As of <strong>2025-12-17 @ 23:08 UTC</strong> - 618.3 <sup>AFK lifetime hrs</sup
 
 ---
 
-## 🌐🌍 WiGLE Stats
+## 🌐🌍 WiGLE Stats 🎅
 
 <p align="center">
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
@@ -302,7 +311,7 @@ As of <strong>2025-12-17 @ 23:08 UTC</strong> - 618.3 <sup>AFK lifetime hrs</sup
 
 ---
 
-## 📡 Broadband Monitor
+## 📡 Broadband Monitor 🔔
 
 <p align="center">
   <a title="Broadband Ping" href="https://www.thinkbroadband.com/broadband/monitoring/quality/share/e33e1796b2518bb01b039dc3cf85b7f6c3e4a92b">
@@ -313,5 +322,9 @@ As of <strong>2025-12-17 @ 23:08 UTC</strong> - 618.3 <sup>AFK lifetime hrs</sup
 ---
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=rubik+one&size=30&pause=1000&color=9F04F7&background=B3B3B300&center=true&vCenter=true&width=435&lines=Thanks+for+visiting;Happy+Hacking;See+you+in+VRChat" alt="Typing SVG" /></a>
+  <b>🎄 May your code be bug-free and your holidays be merry! 🎅</b>
+</p>
+
+<p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=rubik+one&size=30&pause=1000&color=9F04F7&background=B3B3B300&center=true&vCenter=true&width=550&lines=Happy+Holidays!;Thanks+for+visiting;Happy+Hacking;See+you+in+VRChat" alt="Typing SVG" /></a>
 </p>
