@@ -14,7 +14,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Coffee-Lover-brown?style=for-the-badge&logo=buymeacoffee&logoColor=white" />
-  <img src="https://img.shields.io/badge/Hot%20Cocoa-Ready-8B4513?style=for-the-badge&logo=☕&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hot%20Cocoa-Ready-8B4513?style=for-the-badge&logo=coffee&logoColor=white" />
   <img src="https://img.shields.io/badge/Bash/Zsh-Scripter-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
   <img src="https://img.shields.io/badge/Raspberry%20Pi-Enthusiast-C51A4A?style=for-the-badge&logo=raspberry-pi&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
