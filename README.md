@@ -14,7 +14,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Coffee-Lover-brown?style=for-the-badge&logo=buymeacoffee&logoColor=white" />
-  <img src="https://img.shields.io/badge/Hot%20Cocoa-Ready-8B4513?style=for-the-badge&logo=☕&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hot%20Cocoa-Ready-8B4513?style=for-the-badge&logo=coffee&logoColor=white" />
   <img src="https://img.shields.io/badge/Bash/Zsh-Scripter-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
   <img src="https://img.shields.io/badge/Raspberry%20Pi-Enthusiast-C51A4A?style=for-the-badge&logo=raspberry-pi&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -98,13 +98,13 @@ Thanks for stopping by during this festive season! 🎁 You can find me on vario
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2025-12-24 @ 14:09 UTC</strong> - 12,677.3 <sup>lifetime hrs</sup>
+As of <strong>2025-12-24 @ 14:34 UTC</strong> - 12,677.8 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2025-12-24 @ 14:09 UTC</strong> - 777.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2025-12-24 @ 14:34 UTC</strong> - 778.1 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
