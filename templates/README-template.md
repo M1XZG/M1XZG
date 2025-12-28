@@ -96,7 +96,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 <!-- start afkhoursHERE -->
 <!-- end afkhoursHERE -->
 
-<sub>The above is reported by the Steam API which is potentially 8-16 hours behind what the game client reports.</sub>
+<sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
 
 ### 🥽🌐 Some of the worlds I've uploaded
 
