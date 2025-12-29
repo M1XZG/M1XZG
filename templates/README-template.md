@@ -205,11 +205,19 @@ Thanks for stopping by! You can find me on various [social media platforms](http
     <tr>
       <td>Shared Game Images - GitHub Pages</td>
       <td>
-        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">
-          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Shared Game Images - Deploy GitHub Pages" />
+        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages/pages-build-deployment">
+          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages/pages-build-deployment/badge.svg" alt="pages-build-deployment" />
         </a>
       </td>
     </tr>
+      <tr>
+        <td>Replace Posters Daily</td>
+        <td>
+          <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml">
+            <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml/badge.svg" alt="Replace Posters Daily" />
+          </a>
+        </td>
+      </tr>
     <tr>
       <td colspan="2" align="center">
         <strong>Swindon Makerspace</strong>
