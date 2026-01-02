@@ -69,15 +69,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 <div align="center">
   <p>
-    <a href="https://coderabbit.ai">
-      <img src="https://img.shields.io/coderabbit/prs/github/M1XZG/M1XZG?utm_source=oss&utm_medium=github&utm_campaign=M1XZG%2FM1XZG&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews" alt="CodeRabbit Pull Request Reviews" />
-    </a>
     <img src="https://img.shields.io/github/issues-pr/M1XZG/M1XZG?label=Open%20PRs&color=0A84FF" alt="Open pull requests" />
     <img src="https://img.shields.io/github/issues-pr-closed/M1XZG/M1XZG?label=Merged%20PRs&color=6f42c1" alt="Merged pull requests" />
-    <img src="https://img.shields.io/github/issues/M1XZG/M1XZG?label=Open%20Issues&color=d73a4a" alt="Open issues" />
     <img src="https://img.shields.io/github/last-commit/M1XZG/M1XZG?label=Last%20Commit&color=2cbe4e" alt="Last commit" />
-    <img src="https://img.shields.io/github/stars/M1XZG/M1XZG?label=Stars&color=fcc419" alt="GitHub stars" />
-    <img src="https://img.shields.io/github/forks/M1XZG/M1XZG?label=Forks&color=0f6fff" alt="GitHub forks" />
     <img src="https://img.shields.io/github/repo-size/M1XZG/M1XZG?label=Repo%20Size&color=999999" alt="Repository size" />
   </p>
 </div>
@@ -109,13 +103,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-01-02 @ 13:46 UTC</strong> - 12,881.5 <sup>lifetime hrs</sup>
+As of <strong>2026-01-02 @ 13:58 UTC</strong> - 12,882.0 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-01-02 @ 13:46 UTC</strong> - 993.1 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-01-02 @ 13:59 UTC</strong> - 993.1 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
