@@ -13,12 +13,24 @@
 
 ---
 
+## Repo Stats
+
+<div align="center">
+  <p>
+    <img src="https://img.shields.io/github/issues-pr/M1XZG/M1XZG?label=Open%20PRs&color=0A84FF" alt="Open pull requests" />
+    <img src="https://img.shields.io/github/issues-pr-closed/M1XZG/M1XZG?label=Merged%20PRs&color=6f42c1" alt="Merged pull requests" />
+    <img src="https://img.shields.io/github/last-commit/M1XZG/M1XZG?label=Last%20Commit&color=2cbe4e" alt="Last commit" />
+    <img src="https://img.shields.io/github/repo-size/M1XZG/M1XZG?label=Repo%20Size&color=999999" alt="Repository size" />
+  </p>
+</div>
+
+---
+
 ## 📑 Table of Contents
 
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
-- [Repo Stats](#repo-stats)
 - [🥽 My VRChat Info](#-my-vrchat-info)
   - [🥽 My current hours](#-my-current-hours)
   - [🥽🤖 AFK Instance Bot hours](#-afk-instance-bot-hours)
@@ -62,19 +74,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
   <a href="https://vrchat.com/home/user/usr_6cd0b3d0-d998-4bfb-9af5-57fdb782c1de"><img src="https://img.shields.io/badge/VRchat-Friend_me-ae4aff?style=for-the-badge&logo=vrchat" /></a>
   <a href="https://www.instagram.com/wildwanderer_vr/"><img src="https://img.shields.io/badge/Instagram-Follow_Me-ae4aff?style=for-the-badge&logo=instagram" /></a>
 </p>
-
----
-
-## Repo Stats
-
-<div align="center">
-  <p>
-    <img src="https://img.shields.io/github/issues-pr/M1XZG/M1XZG?label=Open%20PRs&color=0A84FF" alt="Open pull requests" />
-    <img src="https://img.shields.io/github/issues-pr-closed/M1XZG/M1XZG?label=Merged%20PRs&color=6f42c1" alt="Merged pull requests" />
-    <img src="https://img.shields.io/github/last-commit/M1XZG/M1XZG?label=Last%20Commit&color=2cbe4e" alt="Last commit" />
-    <img src="https://img.shields.io/github/repo-size/M1XZG/M1XZG?label=Repo%20Size&color=999999" alt="Repository size" />
-  </p>
-</div>
 
 ---
 
