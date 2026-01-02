@@ -165,6 +165,12 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 <div align="center">
 
+<p>
+  <a href="https://coderabbit.ai">
+    <img src="https://img.shields.io/coderabbit/prs/github/M1XZG/M1XZG?utm_source=oss&utm_medium=github&utm_campaign=M1XZG%2FM1XZG&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews" alt="CodeRabbit Pull Request Reviews" />
+  </a>
+</p>
+
 <table>
   <thead>
     <tr>
