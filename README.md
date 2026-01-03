@@ -28,6 +28,7 @@
 
 ## 📑 Table of Contents
 
+- [Repo Stats](#repo-stats)
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
@@ -102,13 +103,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-01-03 @ 08:11 UTC</strong> - 12,900.2 <sup>lifetime hrs</sup>
+As of <strong>2026-01-03 @ 08:23 UTC</strong> - 12,900.2 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-01-03 @ 08:11 UTC</strong> - 1,011.7 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-01-03 @ 08:23 UTC</strong> - 1,011.7 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -230,8 +231,8 @@ As of <strong>2026-01-03 @ 08:11 UTC</strong> - 1,011.7 <sup>AFK lifetime hrs</s
     <tr>
       <td>Shared Game Images - GitHub Pages</td>
       <td>
-        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages/pages-build-deployment">
-          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages/pages-build-deployment/badge.svg" alt="pages-build-deployment" />
+        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">
+          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Deploy GitHub Pages" />
         </a>
       </td>
       <td>
