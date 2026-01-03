@@ -103,13 +103,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-01-03 @ 08:23 UTC</strong> - 12,900.2 <sup>lifetime hrs</sup>
+As of <strong>2026-01-03 @ 08:27 UTC</strong> - 12,900.2 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-01-03 @ 08:23 UTC</strong> - 1,011.7 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-01-03 @ 08:27 UTC</strong> - 1,011.7 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -236,7 +236,7 @@ As of <strong>2026-01-03 @ 08:23 UTC</strong> - 1,011.7 <sup>AFK lifetime hrs</s
         </a>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages%2Fpages-build-deployment%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
       <tr>
