@@ -234,7 +234,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages%2Fpages-build-deployment%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
       <tr>
