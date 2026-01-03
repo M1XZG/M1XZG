@@ -28,6 +28,7 @@
 
 ## 📑 Table of Contents
 
+- [Repo Stats](#repo-stats)
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
@@ -228,8 +229,8 @@ Thanks for stopping by! You can find me on various [social media platforms](http
     <tr>
       <td>Shared Game Images - GitHub Pages</td>
       <td>
-        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages/pages-build-deployment">
-          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages/pages-build-deployment/badge.svg" alt="pages-build-deployment" />
+        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">
+          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Deploy GitHub Pages" />
         </a>
       </td>
       <td>
