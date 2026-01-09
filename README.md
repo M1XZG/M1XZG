@@ -105,13 +105,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-01-09 @ 09:12 UTC</strong> - 13,040.3 <sup>lifetime hrs</sup>
+As of <strong>2026-01-09 @ 09:40 UTC</strong> - 13,040.8 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-01-09 @ 09:12 UTC</strong> - 1,155.9 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-01-09 @ 09:40 UTC</strong> - 1,156.4 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -146,8 +146,6 @@ As of <strong>2026-01-09 @ 09:12 UTC</strong> - 1,155.9 <sup>AFK lifetime hrs</s
         <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Favorites&color=gold" />
       </a>
     </td>
-  </tr>
-  <tr>
     <td valign="top">
       <h4 id="-wildys-cozy-loft">🥽🏠 <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">Wildy’s Cozy Loft</a></h4>
       <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">
@@ -160,18 +158,34 @@ As of <strong>2026-01-09 @ 09:12 UTC</strong> - 1,155.9 <sup>AFK lifetime hrs</s
         <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold" />
       </a>
     </td>
+  </tr>
+  <tr>
     <td valign="top">
-      <h4 id="-neon-afk-home">🥽🏠 <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">Neon AFK Home</a></h4>
-      <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload" />
-      </a><br />
-      <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red" />
-      </a><br />
-      <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold" />
-      </a>
-    </td>
+   <h4 id="-wildys-afk-home">🥽🏠 <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">Wildy's AFK Home</a></h4>
+   <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">
+     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=updated_at&label=Last%20Upload" />
+   </a><br />
+   <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">
+     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=visits&label=Total%20Visits&color=red" />
+   </a><br />
+   <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">
+     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=favorites&label=Total%20%20Favorites&color=gold" />
+   </a>
+ </td>
+ <td>
+ </td>
+ <td valign="top">
+   <h4 id="-neon-afk-home">🥽🏠 <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">Neon AFK Home</a></h4>
+   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
+     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload" />
+   </a><br />
+   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
+     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red" />
+   </a><br />
+   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
+     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold" />
+   </a>
+ </td>
   </tr>
 </table>
 
