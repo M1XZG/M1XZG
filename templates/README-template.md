@@ -170,8 +170,8 @@ Thanks for stopping by! You can find me on various [social media platforms](http
      <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=favorites&label=Total%20%20Favorites&color=gold" />
    </a>
  </td>
-   <td valign="top">
-     <h4 id="-new-world-dde3e2a3">🥽🏠 <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50">VRChat World</a></h4>
+  <td valign="top">
+    <h4 id="-wildys-soft-haven">🥽🏠 <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50">Wildy’s Soft Haven</a></h4>
      <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50">
        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50&query=updated_at&label=Last%20Upload" />
      </a><br />
