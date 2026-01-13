@@ -2,6 +2,8 @@
   <img src="/assets/github-header-banner-rounded.png" alt="Profile Banner" width="100%" />
 </p>
 
+<p align="center"><sub>Banner generated with <a href="https://leviarista.github.io/github-profile-header-generator/">GitHub Profile Header Generator</a>.</sub></p>
+
 <h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
 
 <p align="center">
