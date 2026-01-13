@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/github-header-image.png" alt="Profile Banner" width="100%" />
+  <img src="/assets/github-header-banner-rounded.png" alt="Profile Banner" width="100%" />
 </p>
 
 <h1 align="center">Hey, thanks for sliding into my profile 👋</h1>
