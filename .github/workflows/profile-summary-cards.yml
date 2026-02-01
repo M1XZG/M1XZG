@@ -40,6 +40,7 @@ jobs:
       # Commit and push changes
       - name: Commit changes
         run: |
+          git remote set-url origin https://x-access-token:${{ secrets.MY_GH_PAT }}@github.com/${{ github.repository }}.git
           git config --global user.email "rmckenzi@rpmdp.com"
           git config --global user.name "Robert McKenzie"
           git add profile-summary-card-output
