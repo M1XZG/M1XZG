@@ -12,6 +12,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
+    
+    - name: Set up git user
+      run: |
+        git config --global user.email "rmckenzi@rpmdp.com"
+        git config --global user.name "Robert McKenzie"
+    
     - name: Generate the user stats image
       uses: cicirello/user-statistician@v1
       with:

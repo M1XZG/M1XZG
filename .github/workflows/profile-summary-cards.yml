@@ -40,8 +40,8 @@ jobs:
       # Commit and push changes
       - name: Commit changes
         run: |
-          git config --global user.email "profile-summary-cards-bot@example.com"
-          git config --global user.name "profile-summary-cards[bot]"
+          git config --global user.email "rmckenzi@rpmdp.com"
+          git config --global user.name "Robert McKenzie"
           git add profile-summary-card-output
           git commit -m "Generate profile summary cards (aura themes only)" || echo "No changes to commit"
           git push
