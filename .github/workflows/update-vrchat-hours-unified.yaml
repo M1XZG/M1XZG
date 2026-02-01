@@ -34,7 +34,7 @@ jobs:
 
       - name: Set up git remote with PAT
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
@@ -48,6 +48,6 @@ jobs:
       - name: Run unified update script
         env:
           STEAM_GAME_ID: ${{ secrets.STEAM_GAME_ID }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MY_GH_PAT }}
         run: |
           ./scripts/update-vrchours-unified.sh "$GITHUB_WORKSPACE" "$STEAM_GAME_ID"
