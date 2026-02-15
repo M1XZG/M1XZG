@@ -1,10 +1,5 @@
 name: Daily Repo Status Report
 
-on:
-  schedule:
-    - cron: '0 7 * * *' # Runs daily at 07:00 UTC
-  workflow_dispatch:
-
 permissions:
   contents: read
   issues: write
@@ -24,107 +19,150 @@ jobs:
           set -euo pipefail
 
           REPO="${{ github.repository }}"
+          OWNER="${{ github.repository_owner }}"
           DATE=$(date -u +"%Y-%m-%d")
+          DAY_OF_WEEK=$(date -u +"%A")
           SINCE=$(date -u -d "1 day ago" +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date -u -v-1d +"%Y-%m-%dT%H:%M:%SZ")
-
-          REPORT="## Daily Repo Status — ${DATE}\n\n"
-
-          # ── Recent Commits (last 24h) ──
-          REPORT+="### Recent Commits\n\n"
-          COMMITS=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=20" \
-            --jq '.[] | "- [`\(.sha[0:7])`](\(.html_url)) \(.commit.message | split("\n")[0]) — *\(.commit.author.name)*"' 2>/dev/null || true)
-          if [ -n "$COMMITS" ]; then
-            REPORT+="${COMMITS}\n\n"
-          else
-            REPORT+="_No commits in the last 24 hours._\n\n"
-          fi
-
-          # ── Open Issues ──
-          REPORT+="### Open Issues\n\n"
-          ISSUES=$(gh issue list --repo "$REPO" --state open --limit 15 \
-            --json number,title,createdAt,updatedAt,labels,url \
-            --jq '.[] | "- [#\(.number)](\(.url)) \(.title) \(if (.labels | length) > 0 then "(" + ([.labels[].name] | join(", ")) + ")" else "" end)"' 2>/dev/null || true)
-          if [ -n "$ISSUES" ]; then
-            REPORT+="${ISSUES}\n\n"
-          else
-            REPORT+="_No open issues._\n\n"
-          fi
-
-          # ── Recently Closed Issues (last 7 days) ──
-          REPORT+="### Recently Closed Issues (last 7 days)\n\n"
           CLOSED_SINCE=$(date -u -d "7 days ago" +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date -u -v-7d +"%Y-%m-%dT%H:%M:%SZ")
-          CLOSED_ISSUES=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=15" \
-            --jq '[.[] | select(.pull_request == null)] | .[] | "- [#\(.number)](\(.html_url)) \(.title) — closed \(.closed_at | split("T")[0])"' 2>/dev/null || true)
-          if [ -n "$CLOSED_ISSUES" ]; then
-            REPORT+="${CLOSED_ISSUES}\n\n"
-          else
-            REPORT+="_No issues closed in the last 7 days._\n\n"
-          fi
 
-          # ── Open Pull Requests ──
-          REPORT+="### Open Pull Requests\n\n"
-          PRS=$(gh pr list --repo "$REPO" --state open --limit 15 \
-            --json number,title,createdAt,url,isDraft,reviewDecision \
-            --jq '.[] | "- [#\(.number)](\(.url)) \(.title)\(if .isDraft then " _(draft)_" else "" end)\(if .reviewDecision != "" and .reviewDecision != null then " [\(.reviewDecision)]" else "" end)"' 2>/dev/null || true)
-          if [ -n "$PRS" ]; then
-            REPORT+="${PRS}\n\n"
-          else
-            REPORT+="_No open pull requests._\n\n"
-          fi
-
-          # ── Recently Merged PRs (last 7 days) ──
-          REPORT+="### Recently Merged PRs (last 7 days)\n\n"
-          MERGED_PRS=$(gh pr list --repo "$REPO" --state merged --limit 15 \
-            --json number,title,mergedAt,url \
-            --jq '.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'") | "- [#\(.number)](\(.url)) \(.title) — merged \(.mergedAt | split("T")[0])"' 2>/dev/null || true)
-          if [ -n "$MERGED_PRS" ]; then
-            REPORT+="${MERGED_PRS}\n\n"
-          else
-            REPORT+="_No PRs merged in the last 7 days._\n\n"
-          fi
-
-          # ── Latest Releases ──
-          REPORT+="### Latest Releases\n\n"
-          RELEASES=$(gh release list --repo "$REPO" --limit 3 \
-            --json tagName,name,publishedAt,url \
-            --jq '.[] | "- [\(.tagName)](\(.url)) \(.name) — \(.publishedAt | split("T")[0])"' 2>/dev/null || true)
-          if [ -n "$RELEASES" ]; then
-            REPORT+="${RELEASES}\n\n"
-          else
-            REPORT+="_No releases found._\n\n"
-          fi
-
-          # ── Discussions (if enabled) ──
-          REPORT+="### Recent Discussions\n\n"
-          DISCUSSIONS=$(gh api "repos/${REPO}/discussions?per_page=5" \
-            --jq '.[] | "- [#\(.number)](\(.html_url)) \(.title) — \(.created_at | split("T")[0])"' 2>/dev/null || true)
-          if [ -n "$DISCUSSIONS" ]; then
-            REPORT+="${DISCUSSIONS}\n\n"
-          else
-            REPORT+="_No recent discussions (or discussions not enabled)._\n\n"
-          fi
-
-          # ── Summary & Recommendations ──
+          # ── Gather counts upfront for the dashboard ──
           OPEN_ISSUE_COUNT=$(gh issue list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
           OPEN_PR_COUNT=$(gh pr list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
+          COMMIT_COUNT=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=100" --jq 'length' 2>/dev/null || echo "0")
+          CLOSED_ISSUE_COUNT=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=100" \
+            --jq '[.[] | select(.pull_request == null)] | length' 2>/dev/null || echo "0")
+          MERGED_PR_COUNT=$(gh pr list --repo "$REPO" --state merged --limit 100 \
+            --json mergedAt \
+            --jq '[.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'")] | length' 2>/dev/null || echo "0")
 
-          REPORT+="### Summary & Recommendations\n\n"
-          REPORT+="| Metric | Count |\n|---|---|\n"
-          REPORT+="| Open issues | ${OPEN_ISSUE_COUNT} |\n"
-          REPORT+="| Open PRs | ${OPEN_PR_COUNT} |\n\n"
+          # ── Health indicator ──
+          if [ "$OPEN_ISSUE_COUNT" -eq 0 ] 2>/dev/null && [ "$OPEN_PR_COUNT" -eq 0 ] 2>/dev/null; then
+            HEALTH="🟢 All Clear"
+          elif [ "$OPEN_PR_COUNT" -gt 5 ] 2>/dev/null || [ "$OPEN_ISSUE_COUNT" -gt 20 ] 2>/dev/null; then
+            HEALTH="🟡 Needs Attention"
+          else
+            HEALTH="🔵 Normal"
+          fi
 
-          REPORT+="#### Actionable Next Steps\n\n"
+          REPORT=""
+
+          # ── Header ──
+          REPORT+="# 📊 Daily Repo Status — ${DAY_OF_WEEK}, ${DATE}\n\n"
+          REPORT+="> Repository: **${REPO}** · Status: **${HEALTH}**\n\n"
+
+          # ── Dashboard cards ──
+          REPORT+="## 🎯 At a Glance\n\n"
+          REPORT+="| 📝 Commits (24h) | 🐛 Open Issues | 🔀 Open PRs | ✅ Closed Issues (7d) | 🔗 Merged PRs (7d) |\n"
+          REPORT+="|:---:|:---:|:---:|:---:|:---:|\n"
+          REPORT+="| **${COMMIT_COUNT}** | **${OPEN_ISSUE_COUNT}** | **${OPEN_PR_COUNT}** | **${CLOSED_ISSUE_COUNT}** | **${MERGED_PR_COUNT}** |\n\n"
+
+          # ── Recent Commits (last 24h) ──
+          REPORT+="---\n\n"
+          REPORT+="<details>\n<summary><h2>📝 Recent Commits (last 24h)</h2></summary>\n\n"
+          COMMITS=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=20" \
+            --jq '.[] | "| [`\(.sha[0:7])`](\(.html_url)) | \(.commit.message | split("\n")[0]) | \(.commit.author.name) |"' 2>/dev/null || true)
+          if [ -n "$COMMITS" ]; then
+            REPORT+="| Commit | Message | Author |\n|:---|:---|:---|\n"
+            REPORT+="${COMMITS}\n\n"
+          else
+            REPORT+="💤 _No commits in the last 24 hours._\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Open Issues ──
+          REPORT+="<details>\n<summary><h2>🐛 Open Issues (${OPEN_ISSUE_COUNT})</h2></summary>\n\n"
+          ISSUES=$(gh issue list --repo "$REPO" --state open --limit 15 \
+            --json number,title,createdAt,labels,url \
+            --jq '.[] | "| [#\(.number)](\(.url)) | \(.title) | \(if (.labels | length) > 0 then ([.labels[].name] | map("`\(.)`") | join(" ")) else "—" end) | \(.createdAt | split("T")[0]) |"' 2>/dev/null || true)
+          if [ -n "$ISSUES" ]; then
+            REPORT+="| Issue | Title | Labels | Created |\n|:---|:---|:---|:---|\n"
+            REPORT+="${ISSUES}\n\n"
+          else
+            REPORT+="🎉 _No open issues — nice!_\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Recently Closed Issues (last 7 days) ──
+          REPORT+="<details>\n<summary><h2>✅ Recently Closed Issues (7d)</h2></summary>\n\n"
+          CLOSED_ISSUES=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=15" \
+            --jq '[.[] | select(.pull_request == null)] | .[] | "| [#\(.number)](\(.html_url)) | \(.title) | \(.closed_at | split("T")[0]) |"' 2>/dev/null || true)
+          if [ -n "$CLOSED_ISSUES" ]; then
+            REPORT+="| Issue | Title | Closed |\n|:---|:---|:---|\n"
+            REPORT+="${CLOSED_ISSUES}\n\n"
+          else
+            REPORT+="📭 _No issues closed in the last 7 days._\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Open Pull Requests ──
+          REPORT+="<details>\n<summary><h2>🔀 Open Pull Requests (${OPEN_PR_COUNT})</h2></summary>\n\n"
+          PRS=$(gh pr list --repo "$REPO" --state open --limit 15 \
+            --json number,title,createdAt,url,isDraft,author \
+            --jq '.[] | "| [#\(.number)](\(.url)) | \(.title) | \(.author.login) | \(if .isDraft then "📝 Draft" else "🟢 Ready" end) | \(.createdAt | split("T")[0]) |"' 2>/dev/null || true)
+          if [ -n "$PRS" ]; then
+            REPORT+="| PR | Title | Author | Status | Created |\n|:---|:---|:---|:---|:---|\n"
+            REPORT+="${PRS}\n\n"
+          else
+            REPORT+="✨ _No open pull requests._\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Recently Merged PRs (last 7 days) ──
+          REPORT+="<details>\n<summary><h2>🔗 Recently Merged PRs (7d)</h2></summary>\n\n"
+          MERGED_PRS=$(gh pr list --repo "$REPO" --state merged --limit 15 \
+            --json number,title,mergedAt,url,author \
+            --jq '.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'") | "| [#\(.number)](\(.url)) | \(.title) | \(.author.login) | \(.mergedAt | split("T")[0]) |"' 2>/dev/null || true)
+          if [ -n "$MERGED_PRS" ]; then
+            REPORT+="| PR | Title | Author | Merged |\n|:---|:---|:---|:---|\n"
+            REPORT+="${MERGED_PRS}\n\n"
+          else
+            REPORT+="📭 _No PRs merged in the last 7 days._\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Latest Releases ──
+          REPORT+="<details>\n<summary><h2>🚀 Latest Releases</h2></summary>\n\n"
+          RELEASES=$(gh release list --repo "$REPO" --limit 3 \
+            --json tagName,name,publishedAt,url \
+            --jq '.[] | "| [\(.tagName)](\(.url)) | \(.name) | \(.publishedAt | split("T")[0]) |"' 2>/dev/null || true)
+          if [ -n "$RELEASES" ]; then
+            REPORT+="| Tag | Name | Published |\n|:---|:---|:---|\n"
+            REPORT+="${RELEASES}\n\n"
+          else
+            REPORT+="📭 _No releases found._\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Discussions (if enabled) ──
+          REPORT+="<details>\n<summary><h2>💬 Recent Discussions</h2></summary>\n\n"
+          DISCUSSIONS=$(gh api "repos/${REPO}/discussions?per_page=5" \
+            --jq '.[] | "| [#\(.number)](\(.html_url)) | \(.title) | \(.created_at | split("T")[0]) |"' 2>/dev/null || true)
+          if [ -n "$DISCUSSIONS" ]; then
+            REPORT+="| # | Title | Created |\n|:---|:---|:---|\n"
+            REPORT+="${DISCUSSIONS}\n\n"
+          else
+            REPORT+="📭 _No recent discussions (or discussions not enabled)._\n\n"
+          fi
+          REPORT+="</details>\n\n"
+
+          # ── Actionable Next Steps ──
+          REPORT+="---\n\n"
+          REPORT+="## 🚦 Recommended Actions\n\n"
+          HAS_ACTIONS=false
           if [ "$OPEN_PR_COUNT" -gt 0 ] 2>/dev/null; then
-            REPORT+="- Review and merge/close **${OPEN_PR_COUNT}** open pull request(s)\n"
+            REPORT+="- [ ] 🔀 Review and merge/close **${OPEN_PR_COUNT}** open pull request(s)\n"
+            HAS_ACTIONS=true
           fi
           if [ "$OPEN_ISSUE_COUNT" -gt 0 ] 2>/dev/null; then
-            REPORT+="- Triage and address **${OPEN_ISSUE_COUNT}** open issue(s)\n"
+            REPORT+="- [ ] 🐛 Triage and address **${OPEN_ISSUE_COUNT}** open issue(s)\n"
+            HAS_ACTIONS=true
           fi
-          if [ "$OPEN_PR_COUNT" -eq 0 ] 2>/dev/null && [ "$OPEN_ISSUE_COUNT" -eq 0 ] 2>/dev/null; then
-            REPORT+="- All clear! No open issues or PRs requiring attention.\n"
+          if [ "$HAS_ACTIONS" = false ]; then
+            REPORT+="🎉 **All clear!** No open issues or PRs requiring attention. Great job!\n"
           fi
 
-          REPORT+="\n---\n_Auto-generated by [Daily Repo Status](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) workflow._"
+          REPORT+="\n---\n\n"
+          REPORT+="<sub>🤖 Auto-generated by [Daily Repo Status](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) · ${DAY_OF_WEEK}, ${DATE}</sub>"
 
           # Write report to file for the next step
           echo -e "$REPORT" > /tmp/daily-status-report.md
@@ -134,6 +172,6 @@ jobs:
           DATE=$(date -u +"%Y-%m-%d")
           gh issue create \
             --repo "${{ github.repository }}" \
-            --title "[repo status] ${DATE}" \
+            --title "📊 [repo status] ${DATE}" \
             --label "report" \
             --body-file /tmp/daily-status-report.md
