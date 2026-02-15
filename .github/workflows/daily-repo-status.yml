@@ -23,122 +23,137 @@ jobs:
         run: |
           set -euo pipefail
 
-          REPO="${{ github.repository }}"
           OWNER="${{ github.repository_owner }}"
           DATE=$(date -u +"%Y-%m-%d")
           DAY_OF_WEEK=$(date -u +"%A")
           SINCE=$(date -u -d "1 day ago" +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date -u -v-1d +"%Y-%m-%dT%H:%M:%SZ")
           CLOSED_SINCE=$(date -u -d "7 days ago" +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date -u -v-7d +"%Y-%m-%dT%H:%M:%SZ")
 
-          # ── Gather counts upfront for the dashboard ──
-          OPEN_ISSUE_COUNT=$(gh issue list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
-          OPEN_PR_COUNT=$(gh pr list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
-          COMMIT_COUNT=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=100" --jq 'length' 2>/dev/null || echo "0")
-          CLOSED_ISSUE_COUNT=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=100" \
-            --jq '[.[] | select(.pull_request == null)] | length' 2>/dev/null || echo "0")
-          MERGED_PR_COUNT=$(gh pr list --repo "$REPO" --state merged --limit 100 \
-            --json mergedAt \
-            --jq '[.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'")] | length' 2>/dev/null || echo "0")
-
-          # ── Health indicator ──
-          if [ "$OPEN_ISSUE_COUNT" -eq 0 ] 2>/dev/null && [ "$OPEN_PR_COUNT" -eq 0 ] 2>/dev/null; then
-            HEALTH="🟢 All Clear"
-          elif [ "$OPEN_PR_COUNT" -gt 5 ] 2>/dev/null || [ "$OPEN_ISSUE_COUNT" -gt 20 ] 2>/dev/null; then
-            HEALTH="🟡 Needs Attention"
-          else
-            HEALTH="🔵 Normal"
-          fi
+          # ── Get all public repos owned by the user ──
+          REPOS=$(gh repo list "$OWNER" --source --no-archived --limit 100 --json nameWithOwner --jq '.[].nameWithOwner')
 
           REPORT=""
+          REPORT+="# 📊 Daily Status — ${DAY_OF_WEEK}, ${DATE}\n\n"
+          REPORT+="> Owner: **${OWNER}** · Covering all public repos\n\n"
 
-          # ── Header ──
-          REPORT+="# 📊 Daily Repo Status — ${DAY_OF_WEEK}, ${DATE}\n\n"
-          REPORT+="> Repository: **${REPO}** · Status: **${HEALTH}**\n\n"
+          # ── Global summary table ──
+          REPORT+="## 🎯 Cross-Repo Summary\n\n"
+          REPORT+="| Repository | 📝 Commits (24h) | 🐛 Open Issues | 🔀 Open PRs | ✅ Closed (7d) | 🔗 Merged (7d) | Health |\n"
+          REPORT+="|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n"
 
-          # ── Dashboard cards ──
-          REPORT+="## 🎯 At a Glance\n\n"
-          REPORT+="| 📝 Commits (24h) | 🐛 Open Issues | 🔀 Open PRs | ✅ Closed Issues (7d) | 🔗 Merged PRs (7d) |\n"
-          REPORT+="|:---:|:---:|:---:|:---:|:---:|\n"
-          REPORT+="| **${COMMIT_COUNT}** | **${OPEN_ISSUE_COUNT}** | **${OPEN_PR_COUNT}** | **${CLOSED_ISSUE_COUNT}** | **${MERGED_PR_COUNT}** |\n\n"
+          TOTAL_COMMITS=0
+          TOTAL_OPEN_ISSUES=0
+          TOTAL_OPEN_PRS=0
+          TOTAL_CLOSED_ISSUES=0
+          TOTAL_MERGED_PRS=0
+          ACTIVE_REPOS=""
 
-          # ── Recent Commits (last 24h) ──
-          REPORT+="---\n\n"
-          REPORT+="<details>\n<summary><h2>📝 Recent Commits (last 24h)</h2></summary>\n\n"
-          COMMITS=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=20" \
-            --jq '.[] | "| [`\(.sha[0:7])`](\(.html_url)) | \(.commit.message | split("\n")[0]) | \(.commit.author.name) |"' 2>/dev/null || true)
-          if [ -n "$COMMITS" ]; then
-            REPORT+="| Commit | Message | Author |\n|:---|:---|:---|\n"
-            REPORT+="${COMMITS}\n\n"
-          else
-            REPORT+="💤 _No commits in the last 24 hours._\n\n"
-          fi
-          REPORT+="</details>\n\n"
+          for REPO in $REPOS; do
+            COMMIT_COUNT=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=100" --jq 'length' 2>/dev/null || echo "0")
+            OPEN_ISSUE_COUNT=$(gh issue list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
+            OPEN_PR_COUNT=$(gh pr list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
+            CLOSED_ISSUE_COUNT=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=100" \
+              --jq '[.[] | select(.pull_request == null)] | length' 2>/dev/null || echo "0")
+            MERGED_PR_COUNT=$(gh pr list --repo "$REPO" --state merged --limit 100 \
+              --json mergedAt \
+              --jq '[.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'")] | length' 2>/dev/null || echo "0")
 
-          # ── Open Issues ──
-          REPORT+="<details>\n<summary><h2>🐛 Open Issues (${OPEN_ISSUE_COUNT})</h2></summary>\n\n"
-          ISSUES=$(gh issue list --repo "$REPO" --state open --limit 15 \
-            --json number,title,createdAt,labels,url \
-            --jq '.[] | "| [#\(.number)](\(.url)) | \(.title) | \(if (.labels | length) > 0 then ([.labels[].name] | map("`\(.)`") | join(" ")) else "—" end) | \(.createdAt | split("T")[0]) |"' 2>/dev/null || true)
-          if [ -n "$ISSUES" ]; then
-            REPORT+="| Issue | Title | Labels | Created |\n|:---|:---|:---|:---|\n"
-            REPORT+="${ISSUES}\n\n"
-          else
-            REPORT+="🎉 _No open issues — nice!_\n\n"
-          fi
-          REPORT+="</details>\n\n"
+            TOTAL_COMMITS=$((TOTAL_COMMITS + COMMIT_COUNT))
+            TOTAL_OPEN_ISSUES=$((TOTAL_OPEN_ISSUES + OPEN_ISSUE_COUNT))
+            TOTAL_OPEN_PRS=$((TOTAL_OPEN_PRS + OPEN_PR_COUNT))
+            TOTAL_CLOSED_ISSUES=$((TOTAL_CLOSED_ISSUES + CLOSED_ISSUE_COUNT))
+            TOTAL_MERGED_PRS=$((TOTAL_MERGED_PRS + MERGED_PR_COUNT))
 
-          # ── Recently Closed Issues (last 7 days) ──
-          REPORT+="<details>\n<summary><h2>✅ Recently Closed Issues (7d)</h2></summary>\n\n"
-          CLOSED_ISSUES=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=15" \
-            --jq '[.[] | select(.pull_request == null)] | .[] | "| [#\(.number)](\(.html_url)) | \(.title) | \(.closed_at | split("T")[0]) |"' 2>/dev/null || true)
-          if [ -n "$CLOSED_ISSUES" ]; then
-            REPORT+="| Issue | Title | Closed |\n|:---|:---|:---|\n"
-            REPORT+="${CLOSED_ISSUES}\n\n"
-          else
-            REPORT+="📭 _No issues closed in the last 7 days._\n\n"
-          fi
-          REPORT+="</details>\n\n"
+            # Health indicator per repo
+            if [ "$OPEN_ISSUE_COUNT" -eq 0 ] 2>/dev/null && [ "$OPEN_PR_COUNT" -eq 0 ] 2>/dev/null; then
+              HEALTH="🟢"
+            elif [ "$OPEN_PR_COUNT" -gt 5 ] 2>/dev/null || [ "$OPEN_ISSUE_COUNT" -gt 20 ] 2>/dev/null; then
+              HEALTH="🟡"
+            else
+              HEALTH="🔵"
+            fi
 
-          # ── Open Pull Requests ──
-          REPORT+="<details>\n<summary><h2>🔀 Open Pull Requests (${OPEN_PR_COUNT})</h2></summary>\n\n"
-          PRS=$(gh pr list --repo "$REPO" --state open --limit 15 \
-            --json number,title,createdAt,url,isDraft,author \
-            --jq '.[] | "| [#\(.number)](\(.url)) | \(.title) | \(.author.login) | \(if .isDraft then "📝 Draft" else "🟢 Ready" end) | \(.createdAt | split("T")[0]) |"' 2>/dev/null || true)
-          if [ -n "$PRS" ]; then
-            REPORT+="| PR | Title | Author | Status | Created |\n|:---|:---|:---|:---|:---|\n"
-            REPORT+="${PRS}\n\n"
-          else
-            REPORT+="✨ _No open pull requests._\n\n"
-          fi
-          REPORT+="</details>\n\n"
+            # Only show repos with any activity or open items
+            if [ "$COMMIT_COUNT" -gt 0 ] || [ "$OPEN_ISSUE_COUNT" -gt 0 ] || [ "$OPEN_PR_COUNT" -gt 0 ] || [ "$CLOSED_ISSUE_COUNT" -gt 0 ] || [ "$MERGED_PR_COUNT" -gt 0 ]; then
+              REPO_SHORT="${REPO#${OWNER}/}"
+              REPORT+="| [${REPO_SHORT}](https://github.com/${REPO}) | ${COMMIT_COUNT} | ${OPEN_ISSUE_COUNT} | ${OPEN_PR_COUNT} | ${CLOSED_ISSUE_COUNT} | ${MERGED_PR_COUNT} | ${HEALTH} |\n"
+              ACTIVE_REPOS="${ACTIVE_REPOS} ${REPO}"
+            fi
+          done
 
-          # ── Recently Merged PRs (last 7 days) ──
-          REPORT+="<details>\n<summary><h2>🔗 Recently Merged PRs (7d)</h2></summary>\n\n"
-          MERGED_PRS=$(gh pr list --repo "$REPO" --state merged --limit 15 \
-            --json number,title,mergedAt,url,author \
-            --jq '.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'") | "| [#\(.number)](\(.url)) | \(.title) | \(.author.login) | \(.mergedAt | split("T")[0]) |"' 2>/dev/null || true)
-          if [ -n "$MERGED_PRS" ]; then
-            REPORT+="| PR | Title | Author | Merged |\n|:---|:---|:---|:---|\n"
-            REPORT+="${MERGED_PRS}\n\n"
-          else
-            REPORT+="📭 _No PRs merged in the last 7 days._\n\n"
-          fi
-          REPORT+="</details>\n\n"
+          REPORT+="| **Totals** | **${TOTAL_COMMITS}** | **${TOTAL_OPEN_ISSUES}** | **${TOTAL_OPEN_PRS}** | **${TOTAL_CLOSED_ISSUES}** | **${TOTAL_MERGED_PRS}** | |\n\n"
+
+          # ── Per-repo details for active repos ──
+          for REPO in $ACTIVE_REPOS; do
+            REPO_SHORT="${REPO#${OWNER}/}"
+            REPORT+="---\n\n"
+            REPORT+="<details>\n<summary><h2>📦 ${REPO_SHORT}</h2></summary>\n\n"
+
+            # Recent Commits
+            COMMITS=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=10" \
+              --jq '.[] | "| [`\(.sha[0:7])`](\(.html_url)) | \(.commit.message | split("\n")[0] | if length > 80 then .[:80] + "…" else . end) | \(.commit.author.name) |"' 2>/dev/null || true)
+            if [ -n "$COMMITS" ]; then
+              REPORT+="### 📝 Recent Commits\n\n"
+              REPORT+="| Commit | Message | Author |\n|:---|:---|:---|\n"
+              REPORT+="${COMMITS}\n\n"
+            fi
+
+            # Open Issues
+            ISSUES=$(gh issue list --repo "$REPO" --state open --limit 10 \
+              --json number,title,createdAt,labels,url \
+              --jq '.[] | "| [#\(.number)](\(.url)) | \(.title) | \(if (.labels | length) > 0 then ([.labels[].name] | map("`\(.)`") | join(" ")) else "—" end) | \(.createdAt | split("T")[0]) |"' 2>/dev/null || true)
+            if [ -n "$ISSUES" ]; then
+              REPORT+="### 🐛 Open Issues\n\n"
+              REPORT+="| Issue | Title | Labels | Created |\n|:---|:---|:---|:---|\n"
+              REPORT+="${ISSUES}\n\n"
+            fi
+
+            # Recently Closed Issues
+            CLOSED_ISSUES=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=10" \
+              --jq '[.[] | select(.pull_request == null)] | .[] | "| [#\(.number)](\(.html_url)) | \(.title) | \(.closed_at | split("T")[0]) |"' 2>/dev/null || true)
+            if [ -n "$CLOSED_ISSUES" ]; then
+              REPORT+="### ✅ Recently Closed Issues\n\n"
+              REPORT+="| Issue | Title | Closed |\n|:---|:---|:---|\n"
+              REPORT+="${CLOSED_ISSUES}\n\n"
+            fi
+
+            # Open PRs
+            PRS=$(gh pr list --repo "$REPO" --state open --limit 10 \
+              --json number,title,createdAt,url,isDraft,author \
+              --jq '.[] | "| [#\(.number)](\(.url)) | \(.title) | \(.author.login) | \(if .isDraft then "📝 Draft" else "🟢 Ready" end) | \(.createdAt | split("T")[0]) |"' 2>/dev/null || true)
+            if [ -n "$PRS" ]; then
+              REPORT+="### 🔀 Open Pull Requests\n\n"
+              REPORT+="| PR | Title | Author | Status | Created |\n|:---|:---|:---|:---|:---|\n"
+              REPORT+="${PRS}\n\n"
+            fi
+
+            # Merged PRs
+            MERGED_PRS=$(gh pr list --repo "$REPO" --state merged --limit 10 \
+              --json number,title,mergedAt,url,author \
+              --jq '.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'") | "| [#\(.number)](\(.url)) | \(.title) | \(.author.login) | \(.mergedAt | split("T")[0]) |"' 2>/dev/null || true)
+            if [ -n "$MERGED_PRS" ]; then
+              REPORT+="### 🔗 Recently Merged PRs\n\n"
+              REPORT+="| PR | Title | Author | Merged |\n|:---|:---|:---|:---|\n"
+              REPORT+="${MERGED_PRS}\n\n"
+            fi
+
+            REPORT+="</details>\n\n"
+          done
 
           # ── Actionable Next Steps ──
           REPORT+="---\n\n"
           REPORT+="## 🚦 Recommended Actions\n\n"
           HAS_ACTIONS=false
-          if [ "$OPEN_PR_COUNT" -gt 0 ] 2>/dev/null; then
-            REPORT+="- [ ] 🔀 Review and merge/close **${OPEN_PR_COUNT}** open pull request(s)\n"
+          if [ "$TOTAL_OPEN_PRS" -gt 0 ] 2>/dev/null; then
+            REPORT+="- [ ] 🔀 Review and merge/close **${TOTAL_OPEN_PRS}** open pull request(s) across all repos\n"
             HAS_ACTIONS=true
           fi
-          if [ "$OPEN_ISSUE_COUNT" -gt 0 ] 2>/dev/null; then
-            REPORT+="- [ ] 🐛 Triage and address **${OPEN_ISSUE_COUNT}** open issue(s)\n"
+          if [ "$TOTAL_OPEN_ISSUES" -gt 0 ] 2>/dev/null; then
+            REPORT+="- [ ] 🐛 Triage and address **${TOTAL_OPEN_ISSUES}** open issue(s) across all repos\n"
             HAS_ACTIONS=true
           fi
           if [ "$HAS_ACTIONS" = false ]; then
-            REPORT+="🎉 **All clear!** No open issues or PRs requiring attention. Great job!\n"
+            REPORT+="🎉 **All clear!** No open issues or PRs requiring attention across any repos. Great job!\n"
           fi
 
           REPORT+="\n---\n\n"
