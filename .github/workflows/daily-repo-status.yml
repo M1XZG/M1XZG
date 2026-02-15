@@ -125,31 +125,6 @@ jobs:
           fi
           REPORT+="</details>\n\n"
 
-          # ── Latest Releases ──
-          REPORT+="<details>\n<summary><h2>🚀 Latest Releases</h2></summary>\n\n"
-          RELEASES=$(gh release list --repo "$REPO" --limit 3 \
-            --json tagName,name,publishedAt,url \
-            --jq '.[] | "| [\(.tagName)](\(.url)) | \(.name) | \(.publishedAt | split("T")[0]) |"' 2>/dev/null || true)
-          if [ -n "$RELEASES" ]; then
-            REPORT+="| Tag | Name | Published |\n|:---|:---|:---|\n"
-            REPORT+="${RELEASES}\n\n"
-          else
-            REPORT+="📭 _No releases found._\n\n"
-          fi
-          REPORT+="</details>\n\n"
-
-          # ── Discussions (if enabled) ──
-          REPORT+="<details>\n<summary><h2>💬 Recent Discussions</h2></summary>\n\n"
-          DISCUSSIONS=$(gh api "repos/${REPO}/discussions?per_page=5" \
-            --jq '.[] | "| [#\(.number)](\(.html_url)) | \(.title) | \(.created_at | split("T")[0]) |"' 2>/dev/null || true)
-          if [ -n "$DISCUSSIONS" ]; then
-            REPORT+="| # | Title | Created |\n|:---|:---|:---|\n"
-            REPORT+="${DISCUSSIONS}\n\n"
-          else
-            REPORT+="📭 _No recent discussions (or discussions not enabled)._\n\n"
-          fi
-          REPORT+="</details>\n\n"
-
           # ── Actionable Next Steps ──
           REPORT+="---\n\n"
           REPORT+="## 🚦 Recommended Actions\n\n"
