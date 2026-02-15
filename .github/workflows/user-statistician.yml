@@ -28,10 +28,13 @@ jobs:
         animated-language-chart: false
         language-animation-speed: 20
         show-border: false
+        commit-and-push: false
       env:
         GITHUB_TOKEN: ${{ secrets.user_statistician }}
 
-#    - name: Move userstats.svg to assets folder
-#      run: |
-#        mkdir -p assets
-#        mv userstats.svg assets/userstats.svg || true
+    - name: Commit and push changes
+      run: |
+        git remote set-url origin https://x-access-token:${{ secrets.MY_GH_PAT }}@github.com/${{ github.repository }}.git
+        git add assets/userstats.svg
+        git commit -m "Update user statistics SVG" || echo "No changes to commit"
+        git push
