@@ -49,12 +49,12 @@ jobs:
           ACTIVE_REPOS=""
 
           for REPO in $REPOS; do
-            COMMIT_COUNT=$(gh api "repos/${REPO}/commits?since=${SINCE}&per_page=100" --jq 'length' 2>/dev/null || echo "0")
-            OPEN_ISSUE_COUNT=$(gh issue list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
-            OPEN_PR_COUNT=$(gh pr list --repo "$REPO" --state open --json number --jq 'length' 2>/dev/null || echo "0")
-            CLOSED_ISSUE_COUNT=$(gh api "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=100" \
-              --jq '[.[] | select(.pull_request == null)] | length' 2>/dev/null || echo "0")
-            MERGED_PR_COUNT=$(gh pr list --repo "$REPO" --state merged --limit 100 \
+            COMMIT_COUNT=$(gh api --paginate "repos/${REPO}/commits?since=${SINCE}&per_page=100" --jq 'length' 2>/dev/null | awk '{s+=$1} END {print s+0}' || echo "0")
+            OPEN_ISSUE_COUNT=$(gh issue list --repo "$REPO" --state open --limit 9999 --json number --jq 'length' 2>/dev/null || echo "0")
+            OPEN_PR_COUNT=$(gh pr list --repo "$REPO" --state open --limit 9999 --json number --jq 'length' 2>/dev/null || echo "0")
+            CLOSED_ISSUE_COUNT=$(gh api --paginate "repos/${REPO}/issues?state=closed&since=${CLOSED_SINCE}&per_page=100" \
+              --jq '[.[] | select(.pull_request == null)] | length' 2>/dev/null | awk '{s+=$1} END {print s+0}' || echo "0")
+            MERGED_PR_COUNT=$(gh pr list --repo "$REPO" --state merged --limit 9999 \
               --json mergedAt \
               --jq '[.[] | select(.mergedAt >= "'"${CLOSED_SINCE}"'")] | length' 2>/dev/null || echo "0")
 
