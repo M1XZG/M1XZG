@@ -1,4 +1,4 @@
-name: Daily Repo Status Report (Workflow)
+name: Daily Repo Status Report (WF)
 
 on:
   schedule:
