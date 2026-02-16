@@ -1,8 +1,8 @@
-name: Daily Repo Status Report
+name: Daily Repo Status Report (Workflow)
 
 on:
   schedule:
-    - cron: '0 7 * * *' # Runs daily at 07:00 UTC
+    - cron: 45 6 * * *' # Runs daily at 06:45 UTC
   workflow_dispatch:
 
 permissions:
@@ -170,3 +170,4 @@ jobs:
             --title "📊 [repo status] ${DATE}" \
             --label "report" \
             --body-file /tmp/daily-status-report.md
+
