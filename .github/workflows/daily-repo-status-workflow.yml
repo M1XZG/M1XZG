@@ -2,7 +2,7 @@ name: Daily Repo Status Report (WF)
 
 on:
   schedule:
-    - cron: 45 6 * * *' # Runs daily at 06:45 UTC
+    - cron: 45 6 * * * # Runs daily at 06:45 UTC
   workflow_dispatch:
 
 permissions:
