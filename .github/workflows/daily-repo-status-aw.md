@@ -22,6 +22,7 @@ Create a daily status report for maintainers.
  
 Include 
 - Recent repository activity (issues, PRs, discussions, releases, code changes) 
+- Total number of commits, issues, PR' across all active repos
 - Progress tracking, goal reminders and highlights 
 - Project status and recommendations 
 - Actionable next steps for maintainers 
