@@ -11,6 +11,7 @@ safe-outputs:
   create-issue: 
     title-prefix: "[repo status] " 
     labels: [report] 
+    assignees: m1xzg
  
 tools: 
   github: 
