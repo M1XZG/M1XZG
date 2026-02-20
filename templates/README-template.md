@@ -19,10 +19,12 @@
 
 <div align="center">
   <p>
-    <img src="https://img.shields.io/github/issues-pr/M1XZG/M1XZG?label=Open%20PRs&color=0A84FF" alt="Open pull requests" />
-    <img src="https://img.shields.io/github/issues-pr-closed/M1XZG/M1XZG?label=Merged%20PRs&color=6f42c1" alt="Merged pull requests" />
-    <img src="https://img.shields.io/github/last-commit/M1XZG/M1XZG?label=Last%20Commit&color=2cbe4e" alt="Last commit" />
-    <img src="https://img.shields.io/github/repo-size/M1XZG/M1XZG?label=Repo%20Size&color=999999" alt="Repository size" />
+    <a href="https://github.com/M1XZG/M1XZG/issues"><img src="https://img.shields.io/github/issues/M1XZG/M1XZG?label=Open%20Issues&color=F85149" alt="Open issues" /></a>
+    <a href="https://github.com/M1XZG/M1XZG/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/M1XZG/M1XZG?label=Closed%20Issues&color=8957e5" alt="Closed issues" /></a>
+    <a href="https://github.com/M1XZG/M1XZG/pulls"><img src="https://img.shields.io/github/issues-pr/M1XZG/M1XZG?label=Open%20PRs&color=0A84FF" alt="Open pull requests" /></a>
+    <a href="https://github.com/M1XZG/M1XZG/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed/M1XZG/M1XZG?label=Merged%20PRs&color=6f42c1" alt="Merged pull requests" /></a>
+    <a href="https://github.com/M1XZG/M1XZG/commits"><img src="https://img.shields.io/github/last-commit/M1XZG/M1XZG?label=Last%20Commit&color=2cbe4e" alt="Last commit" /></a>
+    <a href="https://github.com/M1XZG/M1XZG"><img src="https://img.shields.io/github/repo-size/M1XZG/M1XZG?label=Repo%20Size&color=999999" alt="Repository size" /></a>
   </p>
 </div>
 
