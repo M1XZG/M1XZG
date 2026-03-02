@@ -22,7 +22,7 @@ tools:
  
 Create a daily status report for maintainers. 
 
-Start the report with a random positive thought of the day. 
+Start the report with a random positive thought of the day or inspirational quote from someone. This should NOT be work related.
 
 Include 
 - Recent activity in all of my active public repositories (issues, PRs, discussions, code changes) 
