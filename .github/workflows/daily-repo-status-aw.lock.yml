@@ -22,12 +22,12 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"2b5a5ad2824f5a393d285bcdd62cc886be14adf92c28c1802ca3bc9229d83ed8","compiler_version":"v0.51.5"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"39d6a106a9d08b2db62c9978fc838a7fac5b5e01c53dbf220a93bd3d0620f634","compiler_version":"v0.51.5"}
 
 name: "Daily Repo Status Report"
 "on":
   schedule:
-  - cron: "0 0,12 * * *"
+  - cron: "30 7 * * *"
   workflow_dispatch:
 
 permissions: {}

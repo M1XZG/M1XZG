@@ -1,7 +1,7 @@
 --- 
 on: 
   schedule:
-    - cron: "0 0,12 * * *"
+    - cron: "30 7 * * *"
  
 permissions: 
   contents: read 
@@ -25,7 +25,7 @@ Create a daily status report for maintainers.
 Start the report with a random positive thought of the day or inspirational quote from someone. This should NOT be work related.
 
 Include 
-- Recent activity in all of my active public repositories (issues, PRs, discussions, code changes) 
+- Recent activity in all of my active public repositories (issues, PRs, code changes) 
 - Total and exact number of commits, issues, PR' across all active repos, no shortcuts
 - Progress tracking, goal reminders and highlights 
 - Project status and recommendations 
