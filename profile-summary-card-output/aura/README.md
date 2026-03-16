@@ -35,16 +35,6 @@
 
 ---
 
-![](./2-most-commit-language.svg)
-
-```
-![](https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/2-most-commit-language.svg)
-```
-
-    
-
----
-
 ![](./3-stats.svg)
 
 ```
