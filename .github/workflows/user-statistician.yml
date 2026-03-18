@@ -7,8 +7,8 @@ on:
 
 jobs:
   stats:
-    runs-on: ubuntu-latest
-    #runs-on: self-hosted
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     
     steps:
     - uses: actions/checkout@v6
@@ -21,6 +21,7 @@ jobs:
     - name: Generate the user stats image
       uses: cicirello/user-statistician@v1
       with:
+        fail-on-error: false
         custom-title: My GitHub Statistics
         colors: dark
         image-file: assets/userstats.svg
