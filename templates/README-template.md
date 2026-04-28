@@ -316,11 +316,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ## 📊 Stats
 
-<!--
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg" alt="Profile Banner" width="80%" />
 </p>
--->
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/1-repos-per-language.svg" alt="Repos Per Language" width="45%" />
