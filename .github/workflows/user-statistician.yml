@@ -8,7 +8,7 @@ on:
 jobs:
   stats:
     #runs-on: ubuntu-latest
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v6
