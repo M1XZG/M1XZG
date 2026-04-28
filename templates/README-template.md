@@ -104,6 +104,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2025-11-25 | 12000 hrs |
 | 2026-01-07 | 13000 hrs |
 | 2026-02-21 | 14000 hrs |
+| 2026-04-03 | 15000 hrs !
 
 </details>
 
@@ -328,9 +329,11 @@ Thanks for stopping by! You can find me on various [social media platforms](http
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg" alt="Productive Time" width="45%" />
 </p>
 
+<!---
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/assets/userstats.svg" alt="My GitHub Stats" />
 </p>
+--->
 
 ---
 
