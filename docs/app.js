@@ -11,6 +11,13 @@
 'use strict';
 
 // ═══════════════════════════════════════════════════════════
+// APP CONSTANTS
+// ═══════════════════════════════════════════════════════════
+
+const NWS_USER_AGENT      = 'WeatherOrNot/1.0 (weather-aggregator)';
+const GEOLOCATION_TIMEOUT = 10000; // ms
+
+// ═══════════════════════════════════════════════════════════
 // WMO WEATHER INTERPRETATION CODES
 // ═══════════════════════════════════════════════════════════
 
@@ -273,7 +280,7 @@ async function fetchNWSAlerts(lat, lon) {
   try {
     const res = await fetch(
       `https://api.weather.gov/alerts/active?point=${lat.toFixed(4)},${lon.toFixed(4)}`,
-      { headers: { 'User-Agent': 'WeatherOrNot/1.0 (weather-aggregator)' } }
+      { headers: { 'User-Agent': NWS_USER_AGENT } }
     );
     if (!res.ok) return [];
     const json = await res.json();
@@ -846,9 +853,13 @@ async function loadWeather(lat, lon, locationName) {
     ];
     displayWarnings(warnings);
 
-    // Location header
-    const flag = countryFlag(state.loc?.countryCode || '');
-    el('location-name').innerHTML = `📍 ${locationName} ${flag}`;
+    // Location header — use textContent to avoid XSS with user-provided location name
+    const nameEl = el('location-name');
+    nameEl.textContent = '';
+    nameEl.append(
+      document.createTextNode(`📍 ${locationName} `),
+      document.createTextNode(countryFlag(state.loc?.countryCode || '')),
+    );
     el('location-time').textContent = new Date().toLocaleString('en-GB', {
       weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
       hour: '2-digit', minute: '2-digit',
@@ -939,7 +950,7 @@ async function handleGeolocate() {
       btn.textContent = '📍 My Location';
       btn.disabled = false;
     },
-    { timeout: 10000 }
+    { timeout: GEOLOCATION_TIMEOUT }
   );
 }
 
@@ -949,6 +960,19 @@ async function handleGeolocate() {
 
 function init() {
   loadConfig();
+
+  // Resolve source link from current page URL (works across forks/renames)
+  const sourceLink = el('source-link');
+  if (sourceLink) {
+    const repoBase = window.location.href.replace(/\/docs\/.*$/, '');
+    if (repoBase.includes('github.io')) {
+      // GitHub Pages URL: https://user.github.io/repo/ → infer repo source
+      const parts = window.location.hostname.split('.');
+      const user  = parts[0];
+      const repo  = window.location.pathname.split('/').filter(Boolean)[0] || user;
+      sourceLink.href = `https://github.com/${user}/${repo}/tree/main/docs`;
+    }
+  }
 
   // Search input events
   const searchInput = el('location-input');
