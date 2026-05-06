@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WeatherOrNot — Multi-source weather aggregator. Current conditions, 14-day forecast, radar maps and weather warnings all in one place." />
+  <title>🌦️ WeatherOrNot — All Your Weather, One Place</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-clear-day">
+
+  <!-- ══════════════════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌦️</span>
+        <div class="logo-text">
+          <h1>WeatherOrNot</h1>
+          <p class="tagline">All your weather, one place. Whether you like it or not.</p>
+        </div>
+      </div>
+      <button id="unit-toggle" class="btn btn-ghost unit-btn" title="Toggle temperature units">°F</button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       SEARCH
+  ═══════════════════════════════════════════════════════ -->
+  <section class="search-section">
+    <div class="search-wrapper">
+      <div class="search-bar card">
+        <input
+          type="text"
+          id="location-input"
+          class="search-input"
+          placeholder="Enter city, town, county, postcode…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="search-btn" class="btn btn-primary">🔍 Search</button>
+        <button id="locate-btn" class="btn btn-secondary">📍 My Location</button>
+      </div>
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+
+    <!-- API Keys Panel -->
+    <div class="api-keys-wrapper">
+      <button id="toggle-api-keys" class="btn btn-ghost api-toggle-btn">⚙️ Optional API Keys</button>
+      <div id="api-keys-panel" class="api-keys-panel card hidden">
+        <p class="api-intro">Add free API keys to unlock additional weather data sources for comparison:</p>
+        <div class="key-grid">
+          <label class="key-field">
+            <span>OpenWeatherMap</span>
+            <a href="https://openweathermap.org/api" target="_blank" class="get-key-link">Get free key →</a>
+            <input type="password" id="owm-key" placeholder="Paste your API key here…" />
+          </label>
+          <label class="key-field">
+            <span>WeatherAPI.com</span>
+            <a href="https://www.weatherapi.com/signup.aspx" target="_blank" class="get-key-link">Get free key →</a>
+            <input type="password" id="wapi-key" placeholder="Paste your API key here…" />
+          </label>
+        </div>
+        <button id="save-api-keys" class="btn btn-primary save-keys-btn">💾 Save &amp; Reload Weather</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       ERROR MESSAGE
+  ═══════════════════════════════════════════════════════ -->
+  <div id="error-message" class="error-banner hidden"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADING
+  ═══════════════════════════════════════════════════════ -->
+  <div id="loading" class="loading-screen hidden">
+    <div class="spinner"></div>
+    <p>Fetching weather data…</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════════════════ -->
+  <main id="main-content" class="main-content hidden">
+
+    <!-- Location + Time Header -->
+    <div class="location-header">
+      <h2 id="location-name">📍 —</h2>
+      <span id="location-time" class="location-time"></span>
+    </div>
+
+    <!-- ─── WEATHER WARNINGS ─────────────────────────── -->
+    <section id="warnings-section" class="warnings-section hidden">
+      <div id="warnings-container"></div>
+    </section>
+
+    <!-- ─── CURRENT WEATHER HERO ─────────────────────── -->
+    <section class="current-hero card">
+      <div class="hero-main">
+        <div id="current-icon" class="hero-icon">🌡️</div>
+        <div class="hero-temps">
+          <div class="hero-temp-row">
+            <span id="current-temp" class="hero-temp">—</span>
+          </div>
+          <div id="current-desc" class="hero-desc">—</div>
+          <div id="feels-like" class="hero-feels">—</div>
+        </div>
+      </div>
+      <div class="hero-extra">
+        <!-- Wind Compass -->
+        <div class="compass-wrap">
+          <div class="compass" title="Wind direction">
+            <div class="compass-rose">N</div>
+            <div class="compass-needle" id="compass-needle"></div>
+          </div>
+          <div class="compass-info">
+            <div id="compass-speed" class="compass-speed">—</div>
+            <div id="compass-dir" class="compass-dir">—</div>
+          </div>
+        </div>
+        <!-- Sun / Moon -->
+        <div class="sun-moon">
+          <div class="sun-row">🌅 <span id="sunrise">—</span></div>
+          <div class="sun-row">🌇 <span id="sunset">—</span></div>
+          <div class="sun-row"><span id="moon-phase">🌑</span> Moon phase</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── METRICS GRID ──────────────────────────────── -->
+    <section class="metrics-grid">
+      <div class="metric-card card">
+        <div class="metric-icon">💧</div>
+        <div class="metric-label">Humidity</div>
+        <div class="metric-value" id="metric-humidity">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">🌬️</div>
+        <div class="metric-label">Wind</div>
+        <div class="metric-value" id="metric-wind">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">💨</div>
+        <div class="metric-label">Gusts</div>
+        <div class="metric-value" id="metric-gusts">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">📊</div>
+        <div class="metric-label">Pressure</div>
+        <div class="metric-value" id="metric-pressure">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">☁️</div>
+        <div class="metric-label">Cloud Cover</div>
+        <div class="metric-value" id="metric-cloud">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">👁️</div>
+        <div class="metric-label">Visibility</div>
+        <div class="metric-value" id="metric-visibility">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">☀️</div>
+        <div class="metric-label">UV Index</div>
+        <div class="metric-value" id="metric-uv">—</div>
+      </div>
+      <div class="metric-card card">
+        <div class="metric-icon">🌧️</div>
+        <div class="metric-label">Precipitation</div>
+        <div class="metric-value" id="metric-precip">—</div>
+      </div>
+    </section>
+
+    <!-- ─── SOURCES COMPARISON ────────────────────────── -->
+    <section class="section-block card">
+      <h3 class="section-title">📡 Data Sources Comparison</h3>
+      <div id="sources-comparison">
+        <p class="dim-text">Weather data will appear here after searching a location.</p>
+      </div>
+    </section>
+
+    <!-- ─── HOURLY FORECAST ───────────────────────────── -->
+    <section class="section-block card">
+      <h3 class="section-title">🕐 Next 48 Hours</h3>
+      <div class="chart-container">
+        <canvas id="hourly-chart"></canvas>
+      </div>
+    </section>
+
+    <!-- ─── 14-DAY FORECAST ───────────────────────────── -->
+    <section class="section-block card">
+      <h3 class="section-title">📅 14-Day Forecast</h3>
+      <div id="daily-cards" class="daily-cards"></div>
+    </section>
+
+    <!-- ─── RADAR MAP ──────────────────────────────────── -->
+    <section class="section-block card">
+      <h3 class="section-title">🛰️ Weather Radar &amp; Satellite</h3>
+      <div id="radar-controls" class="radar-controls"></div>
+      <div id="radar-map"></div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <p>
+      Weather data: <a href="https://open-meteo.com" target="_blank">Open-Meteo</a>
+      · <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a>
+      · <a href="https://www.weatherapi.com" target="_blank">WeatherAPI</a>
+      · <a href="https://www.weather.gov" target="_blank">NWS</a>
+      &nbsp;|&nbsp; Radar: <a href="https://www.rainviewer.com" target="_blank">RainViewer</a>
+      &nbsp;|&nbsp; Maps: <a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a>
+      &nbsp;|&nbsp; <a href="https://github.com/M1XZG/M1XZG/tree/main/docs" target="_blank">Source on GitHub</a>
+    </p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WuvQ=" crossorigin=""></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
