@@ -104,7 +104,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2025-11-25 | 12000 hrs |
 | 2026-01-07 | 13000 hrs |
 | 2026-02-21 | 14000 hrs |
-| 2026-04-03 | 15000 hrs !
+| 2026-04-03 | 15000 hrs |
 
 </details>
 
