@@ -2,7 +2,7 @@ name: user-statistician
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Runs every 2 hours
+    - cron: '17 * * * *' # Runs at 17 minutes past every hour
   workflow_dispatch:
 
 jobs:
