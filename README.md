@@ -19,7 +19,7 @@
 
 <div align="center">
   <p>
-    <img src="https://komarev.com/ghpvc/?username=M1XZG&style=for-the-badge&color=ae4aff&label=Profile+Views" alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=M1XZG&base=500&style=for-the-badge&color=ae4aff&label=Profile+Views" alt="Profile views" />
     <img src="https://img.shields.io/badge/Based_in-UK-ae4aff?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in the UK" />
     <img src="https://img.shields.io/badge/Tinkering_with-Pi_%26_Docker-ae4aff?style=for-the-badge&logo=homeassistant&logoColor=white" alt="Tinkering with Raspberry Pi and Docker" />
     <img src="https://img.shields.io/badge/VRChat-16k%2B_hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="16,000+ VRChat hours" />
