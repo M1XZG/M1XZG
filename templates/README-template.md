@@ -15,16 +15,14 @@
 
 ---
 
-## Repo Stats
+## 👀 At a Glance
 
 <div align="center">
   <p>
-    <a href="https://github.com/M1XZG/M1XZG/issues"><img src="https://img.shields.io/github/issues/M1XZG/M1XZG?label=Open%20Issues&color=F85149" alt="Open issues" /></a>
-    <a href="https://github.com/M1XZG/M1XZG/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/M1XZG/M1XZG?label=Closed%20Issues&color=8957e5" alt="Closed issues" /></a>
-    <a href="https://github.com/M1XZG/M1XZG/pulls"><img src="https://img.shields.io/github/issues-pr/M1XZG/M1XZG?label=Open%20PRs&color=0A84FF" alt="Open pull requests" /></a>
-    <a href="https://github.com/M1XZG/M1XZG/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed/M1XZG/M1XZG?label=Merged%20PRs&color=6f42c1" alt="Merged pull requests" /></a>
-    <a href="https://github.com/M1XZG/M1XZG/commits"><img src="https://img.shields.io/github/last-commit/M1XZG/M1XZG?label=Last%20Commit&color=2cbe4e" alt="Last commit" /></a>
-    <a href="https://github.com/M1XZG/M1XZG"><img src="https://img.shields.io/github/repo-size/M1XZG/M1XZG?label=Repo%20Size&color=999999" alt="Repository size" /></a>
+    <img src="https://komarev.com/ghpvc/?username=M1XZG&style=for-the-badge&color=ae4aff&label=Profile+Views" alt="Profile views" />
+    <img src="https://img.shields.io/badge/Based_in-UK-ae4aff?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in the UK" />
+    <img src="https://img.shields.io/badge/Tinkering_with-Pi_%26_Docker-ae4aff?style=for-the-badge&logo=homeassistant&logoColor=white" alt="Tinkering with Raspberry Pi and Docker" />
+    <img src="https://img.shields.io/badge/VRChat-16k%2B_hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="16,000+ VRChat hours" />
   </p>
 </div>
 
@@ -32,7 +30,7 @@
 
 ## 📑 Table of Contents
 
-- [Repo Stats](#repo-stats)
+- [👀 At a Glance](#-at-a-glance)
 - [📑 Table of Contents](#-table-of-contents)
 - [🧑‍💻 About Me](#-about-me)
 - [🌐 Socials](#-socials)
