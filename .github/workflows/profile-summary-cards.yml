@@ -40,9 +40,25 @@ jobs:
       # Commit and push changes
       - name: Commit changes
         run: |
+          set -e
           git remote set-url origin https://x-access-token:${{ secrets.MY_GH_PAT }}@github.com/${{ github.repository }}.git
           git config --global user.email "rmckenzi@rpmdp.com"
           git config --global user.name "Robert McKenzie"
           git add profile-summary-card-output
-          git commit -m "Generate profile summary cards (aura themes only)" || echo "No changes to commit"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Generate profile summary cards (aura themes only)"
+          # Rebase and push, retrying on race with concurrent auto-commit workflows
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+            if git push origin "HEAD:${GITHUB_REF_NAME:-main}"; then
+              echo "Push succeeded on attempt $attempt"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed (likely a non-fast-forward race); retrying after backoff..."
+            sleep $((attempt * 5))
+          done
+          echo "Push failed after 5 attempts" >&2
+          exit 1
