@@ -37,5 +37,18 @@ jobs:
       run: |
         git remote set-url origin https://x-access-token:${{ secrets.MY_GH_PAT }}@github.com/${{ github.repository }}.git
         git add assets/userstats.svg
-        git commit -m "Update user statistics SVG" || echo "No changes to commit"
-        git push
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        git commit -m "Update user statistics SVG"
+        for attempt in 1 2 3 4 5; do
+          if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+            echo "Pushed on attempt ${attempt}"
+            exit 0
+          fi
+          echo "Push attempt ${attempt} failed (remote moved); retrying..."
+          sleep $(( (RANDOM % 8) + 3 ))
+        done
+        echo "Failed to push after 5 attempts"
+        exit 1
