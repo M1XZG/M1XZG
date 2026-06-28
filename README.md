@@ -110,13 +110,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-06-28 @ 07:34 UTC</strong> - 16,774.5 <sup>lifetime hrs</sup>
+As of <strong>2026-06-28 @ 09:07 UTC</strong> - 16,776.5 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-06-28 @ 07:34 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-06-28 @ 09:07 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -281,33 +281,6 @@ As of <strong>2026-06-28 @ 07:34 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
           <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Freplace_posters.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
         </td>
       </tr>
-    <tr>
-      <td colspan="3" align="center">
-        <strong>Swindon Makerspace</strong>
-      </td>
-    </tr>
-    <tr>
-      <td>Swindon Makerspace Uptime Monitor</td>
-      <td>
-        <a href="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml">
-          <img src="https://github.com/swindonmakers/uptime-monitor/actions/workflows/uptime.yml/badge.svg" alt="Swindon Makerspace Uptime Monitor" />
-        </a>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fswindonmakers%2Fuptime-monitor%2Factions%2Fworkflows%2Fuptime.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
-      </td>
-    </tr>
-    <tr>
-      <td>Swindon Makerspace Wiki Backup</td>
-      <td>
-        <a href="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml">
-          <img src="https://github.com/swindonmakers/wiki/actions/workflows/Wiki-Backup.yml/badge.svg" alt="Swindon Makerspace Wiki Backup" />
-        </a>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fswindonmakers%2Fwiki%2Factions%2Fworkflows%2FWiki-Backup.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
-      </td>
-    </tr>
   </tbody>
 </table>
 
