@@ -232,7 +232,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2FM1XZG%2Factions%2Fworkflows%2Fupdate-vrchat-hours-unified.yaml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2FM1XZG%2Factions%2Fworkflows%2Fupdate-vrchat-hours-unified.yaml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
     <tr>
@@ -243,7 +243,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fuptime%2Factions%2Fworkflows%2Fuptime.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fuptime%2Factions%2Fworkflows%2Fuptime.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
     <tr>
@@ -254,7 +254,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2FM1XZG%2Factions%2Fworkflows%2Fprofile-summary-cards.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2FM1XZG%2Factions%2Fworkflows%2Fprofile-summary-cards.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
     <tr>
@@ -265,7 +265,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         </a>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
       <tr>
@@ -276,7 +276,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
           </a>
         </td>
         <td>
-          <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Freplace_posters.yml%2Fruns%3Fper_page%3D1&query=workflow_runs[0].updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
+          <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Freplace_posters.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
         </td>
       </tr>
   </tbody>
