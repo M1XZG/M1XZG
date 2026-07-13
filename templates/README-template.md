@@ -216,12 +216,11 @@ Thanks for stopping by! You can find me on various [social media platforms](http
     <tr>
       <th>Work Flow</th>
       <th>Status</th>
-      <th>Last Run (UTC)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td colspan="3" align="center">
+      <td colspan="2" align="center">
         <strong>Personal Profile Updates</strong>
       </td>
     </tr>
@@ -232,9 +231,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
           <img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)" />
         </a>
       </td>
-      <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2FM1XZG%2Factions%2Fworkflows%2Fupdate-vrchat-hours-unified.yaml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
-      </td>
     </tr>
     <tr>
       <td>M1XZG Uptime Monitor</td>
@@ -242,9 +238,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
         <a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml">
           <img src="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg" alt="M1XZG Uptime Monitor" />
         </a>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fuptime%2Factions%2Fworkflows%2Fuptime.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
       </td>
     </tr>
     <tr>
@@ -254,9 +247,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
           <img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator" />
         </a>
       </td>
-      <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2FM1XZG%2Factions%2Fworkflows%2Fprofile-summary-cards.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
-      </td>
     </tr>
     <tr>
       <td>Shared Game Images - GitHub Pages</td>
@@ -265,9 +255,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
           <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Deploy GitHub Pages" />
         </a>
       </td>
-      <td>
-        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Fpages.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
-      </td>
     </tr>
       <tr>
         <td>Replace Posters Daily</td>
@@ -275,9 +262,6 @@ Thanks for stopping by! You can find me on various [social media platforms](http
           <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml">
             <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml/badge.svg" alt="Replace Posters Daily" />
           </a>
-        </td>
-        <td>
-          <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FM1XZG%2Fshared-game-images%2Factions%2Fworkflows%2Freplace_posters.yml%2Fruns%3Fper_page%3D1&query=workflow_runs%5B0%5D.updated_at&label=Last%20Run&cacheSeconds=900&color=blue" alt="Last run timestamp" />
         </td>
       </tr>
   </tbody>
