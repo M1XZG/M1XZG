@@ -31,9 +31,15 @@ jobs:
           # AUTO_PUSH is optional, a boolean variable default to true, whether automatically push generated files to desired branch 
           AUTO_PUSH: false
       
-      # Keep only the aura and aura_dark themes and remove all others
+      # Keep only the aura and aura_dark themes and remove all others.
+      # Card generation can hit GitHub API 403s and leave no output directory;
+      # guard against that so the job doesn't fail on a missing folder.
       - name: Keep only aura themes
         run: |
+          if [ ! -d profile-summary-card-output ]; then
+            echo "::warning::profile-summary-card-output not found (card generation likely hit GitHub API errors); keeping previously committed cards."
+            exit 0
+          fi
           cd profile-summary-card-output
           find . -mindepth 1 -maxdepth 1 -type d ! -name 'aura' ! -name 'aura_dark' -exec rm -rf {} +
           

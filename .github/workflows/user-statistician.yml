@@ -18,8 +18,14 @@ jobs:
         git config --global user.email "rmckenzi@rpmdp.com"
         git config --global user.name "Robert McKenzie"
     
+    # GitHub's GraphQL API intermittently returns HTTP 502 on the
+    # contributionsCollection / repositoriesContributedTo aggregations for
+    # high-activity accounts. When that happens the action aborts with an
+    # uncaught JSONDecodeError (it is not covered by fail-on-error), so we mark
+    # the step continue-on-error to keep the last committed SVG and stay green.
     - name: Generate the user stats image
       uses: cicirello/user-statistician@v1
+      continue-on-error: true
       with:
         fail-on-error: false
         custom-title: My GitHub Statistics
