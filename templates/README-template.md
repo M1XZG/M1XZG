@@ -289,7 +289,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
   <i>All the networks. Found by everyone</i><br>
   <a href="https://wigle.net">
-    <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png?" alt="WiGLE Stats">
+  <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
   </a>
 </p>
 
