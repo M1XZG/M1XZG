@@ -291,7 +291,7 @@ As of <strong>2026-07-29 @ 23:25 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
   <i>All the networks. Found by everyone</i><br>
   <a href="https://wigle.net">
-  <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png">
+  <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png?v=6a68aaeb-181e">
   </a>
 </p>
 
