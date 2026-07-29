@@ -2,14 +2,81 @@
 
 import sys
 import os
+import re
 import shutil
 import requests
 from datetime import datetime
+from urllib.parse import quote
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'python-requirements'))
 from minsert import MarkdownFile
 
 # Hours consistently missing from the API that we want to add back
 OFFSET_MISSING_HOURS = 13.0
+WIGLE_BADGE_URL = "https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png"
+WIGLE_CACHE_PLACEHOLDER = "WIGLE_CACHE_VERSION"
+
+def get_existing_wigle_cache_version(filename):
+    """Read the current WiGLE cache version from an existing README."""
+    try:
+        with open(filename, "r") as file:
+            content = file.read()
+    except FileNotFoundError:
+        return None
+
+    match = re.search(
+        rf'{re.escape(WIGLE_BADGE_URL)}\?v=([^"&]+)',
+        content
+    )
+    return match.group(1) if match else None
+
+def get_wigle_cache_version(readme_filename, debug=False):
+    """Return a URL-safe version derived from WiGLE's current image metadata."""
+    try:
+        response = requests.head(
+            WIGLE_BADGE_URL,
+            allow_redirects=True,
+            timeout=15
+        )
+        response.raise_for_status()
+        version_source = response.headers.get("ETag") or response.headers.get("Last-Modified")
+        if not version_source:
+            raise ValueError("WiGLE returned neither an ETag nor Last-Modified header")
+
+        version = quote(version_source.strip('"'), safe="")
+        if debug:
+            print(f"[DEBUG] WiGLE cache version: {version}")
+        return version
+    except (requests.RequestException, ValueError) as error:
+        existing_version = get_existing_wigle_cache_version(readme_filename)
+        if existing_version:
+            print(
+                f"Warning: Failed to retrieve WiGLE image metadata ({error}); "
+                f"preserving cache version {existing_version}.",
+                file=sys.stderr
+            )
+            return existing_version
+
+        print(
+            f"Error: Failed to retrieve WiGLE image metadata and no existing "
+            f"cache version is available: {error}",
+            file=sys.stderr
+        )
+        sys.exit(1)
+
+def insert_wigle_cache_version(filename, version):
+    """Replace the WiGLE cache placeholder in a generated README."""
+    with open(filename, "r") as file:
+        content = file.read()
+
+    if WIGLE_CACHE_PLACEHOLDER not in content:
+        print(
+            f"Error: '{WIGLE_CACHE_PLACEHOLDER}' was not found in '{filename}'.",
+            file=sys.stderr
+        )
+        sys.exit(1)
+
+    with open(filename, "w") as file:
+        file.write(content.replace(WIGLE_CACHE_PLACEHOLDER, version))
 
 def load_steam_vars(filename, debug=False):
     """Load Steam API credentials from config file"""
@@ -144,6 +211,9 @@ def main():
         if debug:
             print(f"[DEBUG] Copying template to {temp_file}")
         shutil.copy('./templates/README-template.md', temp_file)
+
+        wigle_cache_version = get_wigle_cache_version('./README.md', debug=debug)
+        insert_wigle_cache_version(temp_file, wigle_cache_version)
         
         # Insert all hours data at once
         if debug:
