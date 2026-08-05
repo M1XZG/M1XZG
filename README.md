@@ -103,13 +103,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-08-05 @ 17:35 UTC</strong> - 17,598.3 <sup>lifetime hrs</sup>
+As of <strong>2026-08-05 @ 18:38 UTC</strong> - 17,599.3 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-08-05 @ 17:35 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-08-05 @ 18:38 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -309,5 +309,5 @@ As of <strong>2026-08-05 @ 17:35 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 ---
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=rubik+one&size=30&pause=1000&color=9F04F7&background=B3B3B300&center=true&vCenter=true&width=435&lines=Thanks+for+visiting;Happy+Hacking;See+you+in+VRChat" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=rubik+one&size=30&pause=1000&color=9F04F7&background=B3B3B300&center=true&vCenter=true&width=435&lines=Thanks+for+visiting;Happy+Hacking" alt="Typing SVG" /></a>
 </p>
