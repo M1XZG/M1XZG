@@ -22,7 +22,7 @@
     <img src="https://komarev.com/ghpvc/?username=M1XZG&base=500&style=for-the-badge&color=ae4aff&label=Profile+Views" alt="Profile views" />
     <img src="https://img.shields.io/badge/Based_in-UK-ae4aff?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in the UK" />
     <img src="https://img.shields.io/badge/Tinkering_with-Pi_%26_Docker-ae4aff?style=for-the-badge&logo=homeassistant&logoColor=white" alt="Tinkering with Raspberry Pi and Docker" />
-    <img src="https://img.shields.io/badge/VRChat-16k%2B_hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="17,500+ VRChat hours" />
+    <img src="https://img.shields.io/badge/VRChat-17.5k%2B_hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="17,500+ VRChat hours" />
   </p>
 </div>
 
@@ -103,13 +103,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-08-15 @ 00:21 UTC</strong> - 17,771.8 <sup>lifetime hrs</sup>
+As of <strong>2026-08-15 @ 01:14 UTC</strong> - 17,772.3 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-08-15 @ 00:21 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-08-15 @ 01:14 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
