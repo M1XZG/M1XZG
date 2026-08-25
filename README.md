@@ -103,13 +103,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-08-25 @ 15:20 UTC</strong> - 18,023.6 <sup>lifetime hrs</sup>
+As of <strong>2026-08-25 @ 16:15 UTC</strong> - 18,024.6 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-08-25 @ 15:20 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-08-25 @ 16:15 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -292,7 +292,7 @@ As of <strong>2026-08-25 @ 15:20 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
   <b>WiGLE - Wireless Geographic Logging Engine</b><br>
   <i>All the networks. Found by everyone</i><br>
   <a href="https://wigle.net">
-  <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png?v=6a8da86b-179d">
+  <img border="0" src="https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png?v=6a8dbf90-17ef">
   </a>
 </p>
 
