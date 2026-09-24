@@ -47,69 +47,15 @@
 
 ## 🧑‍💻 About Me
 
-I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
+I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was available year-round.
 
-I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! 
-
-Mostly I like to tinker with bash/zsh scripts and home automation. I love <b>Raspberry Pi's</b> and use quite a few of them for various jobs around the house. Most recently I'm using a Pi 4 8GB with <b>Docker</b> to run a couple of custom containers (which I might release) as well as <b>Plex</b>. Also running my own <a href="https://github.com/M1XZG/Raspberry-pi-kiosk-config">kiosk</a> configuration and <a href="https://sdr-enthusiasts.gitbook.io/ads-b/">ADS-B Reception, Decoding & Sharing with Docker</a>.
-
-Some of my fav projects and organisations on GitHub that I'm part of, support or just use are:
-
-- [Discord bot for fun](https://github.com/M1XZG/discord-bot-for-fun) - Now with fishing and even a contest mode for fishing
-- [Swindon Makerspace](https://github.com/swindonmakers)
-- [OhMyZSH](https://github.com/ohmyzsh/ohmyzsh)
-- [ZSH History](https://github.com/rchakra3/zsh_history)
-- [TTS Voice Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard) (I'm using this for [VRChat](https://vrchat.com/))
-- ... more to come, I just can't think of them off hand
-
-Thanks for stopping by! You can find me on various [social media platforms](https://www.uk-experience.com/social-media-site-links/) (that's also a link to my blog, I really need to get more active on there).
-
-> 💡 *Psst! If you don't know what icons are available, check out this [emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md). If you want some of the nifty badges below, check out [shields.io](https://shields.io/).*
-
----
-
-## 🌐 Socials
-
-<p align="center">
-  <a href="https://wildwanderer-vr.com"><img src="https://img.shields.io/badge/My_Socials-Check_Me_Out-ae4aff?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwcHgiIGhlaWdodD0iMTUwcHgiIHZpZXdCb3g9IjAgMCAyOTIgMjkyIiB2ZXJzaW9uPSIxLjEiPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMSI+CiAgPHBhdGggZD0iTSAwIDE4Ny4xMzY3MTkgTCAyOTIgMTg3LjEzNjcxOSBMIDI5MiAyOTIgTCAwIDI5MiBaIE0gMCAxODcuMTM2NzE5ICIvPgo8L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNsaXAyIj4KICA8cGF0aCBkPSJNIDAgMCBMIDI5MiAwIEwgMjkyIDE1MS43OTI5NjkgTCAwIDE1MS43OTI5NjkgWiBNIDAgMCAiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMyI+CiAgPHBhdGggZD0iTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgTCAyOTIgMTI5Ljc3NzM0NCBMIDI5MiAxOTIuNjQwNjI1IEwgMTc2LjA2NjQwNiAxOTIuNjQwNjI1IFogTSAxNzYuMDY2NDA2IDEyOS43NzczNDQgIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPGcgaWQ9InN1cmZhY2UxIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAxKSIgY2xpcC1ydWxlPSJub256ZXJvIj4KPHBhdGggc3R5bGU9IiBzdHJva2U6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtmaWxsOnJnYigxMDAlLDEwMCUsMTAwJSk7ZmlsbC1vcGFjaXR5OjE7IiBkPSJNIDI5Mi4wMDM5MDYgMzguNTc0MjE5IEwgMjkyLjAwMzkwNiAyNTMuNDI1NzgxIEMgMjkyLjAwMzkwNiAyNzQuNzMwNDY5IDI3NC43MzQzNzUgMjkyIDI1My40Mjk2ODggMjkyIEwgLTY1NS44Nzg5MDYgMjkyIEMgLTY1OS4xNTYyNSAyOTIgLTY2Mi4yOTY4NzUgMjkwLjY5OTIxOSAtNjY0LjYxMzI4MSAyODguMzgyODEyIEMgLTY2Ni45Mjk2ODggMjg2LjA2MjUgLTY2OC4yMzA0NjkgMjgyLjkyNTc4MSAtNjY4LjIzMDQ2OSAyNzkuNjQ4NDM4IEwgLTY2OC4yMzA0NjkgMTIuMzUxNTYyIEMgLTY2OC4yMzA0NjkgOS4wNzQyMTkgLTY2Ni45Mjk2ODggNS45MzM1OTQgLTY2NC42MTMyODEgMy42MTcxODggQyAtNjYyLjI5Njg3NSAxLjMwMDc4MSAtNjU5LjE1NjI1IDAgLTY1NS44Nzg5MDYgMCBMIDI1My40Mjk2ODggMCBDIDI3NC43MzQzNzUgMCAyOTIuMDAzOTA2IDE3LjI2OTUzMSAyOTIuMDAzOTA2IDM4LjU3NDIxOSBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSAyMjQuNjc1NzgxIEwgMjI0LjY3NTc4MSA2Ny4zMjAzMTIgTCAtNjAwLjkwNjI1IDY3LjMyMDMxMiBaIE0gLTYwMC45MDYyNSAyMjQuNjc1NzgxICIvPgo8L2c+CjwvZz4KPC9zdmc+Cg==" alt="My Socials" /></a>
-  <a href="https://www.linkedin.com/in/robpmckenzie/"><img src="https://img.shields.io/badge/LinkedIn-Connect-ae4aff?style=for-the-badge&logo=linkedin" /></a>
-  <a href="https://discordapp.com/users/wildwanderer_vr"><img src="https://img.shields.io/badge/Discord-Chat-ae4aff?style=for-the-badge&logo=discord" /></a>
-  <a href="https://vrchat.com/home/user/usr_6cd0b3d0-d998-4bfb-9af5-57fdb782c1de"><img src="https://img.shields.io/badge/VRchat-Friend_me-ae4aff?style=for-the-badge&logo=vrchat" /></a>
-  <a href="https://www.instagram.com/wildwanderer_vr/"><img src="https://img.shields.io/badge/Instagram-Follow_Me-ae4aff?style=for-the-badge&logo=instagram" /></a>
-</p>
-
----
-
-## 🥽 My VRChat Info
-
-<details>
- <summary>Click to see my past milestones</summary>
-
-| Date | Hours |  | Date | Hours |
-| :--- | :--- | :---: | :--- | :--- |
-| 2022-06-01 | Started |  | 2025-08-17 | 10000 hrs |
-| 2023-01-01 | ~40 hrs |  | 2025-10-08 | 11000 hrs |
-| 2024-06-02 | 3000 hrs |  | 2025-11-25 | 12000 hrs |
-| 2024-07-31 | 4000 hrs |  | 2026-01-07 | 13000 hrs |
-| 2024-09-17 | 5000 hrs |  | 2026-02-21 | 14000 hrs |
-| 2024-11-07 | 6000 hrs |  | 2026-04-03 | 15000 hrs |
-| 2024-12-22 | 6900 hrs |  | 2026-05-24 | 16000 hrs |
-| 2024-12-29 | 7000 hrs |  | 2026-07-07 | 17000 hrs |
-| 2025-03-18 | 8000 hrs |  | 2026-08-01 | 17500 hrs |
-| 2025-06-13 | 9000 hrs |  |  |  |
-
-</details>
-
-### 🥽 My current hours
-
-<!-- start myhoursHERE -->
-As of <strong>2026-09-24 @ 15:18 UTC</strong> - 18,698.3 <sup>lifetime hrs</sup>
+<!-- I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! -->
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-09-24 @ 15:18 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-09-24 @ 18:40 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
