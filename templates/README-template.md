@@ -47,7 +47,7 @@
 
 ## 🧑‍💻 About Me
 
-I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
+I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was available year-round.
 
 <!-- I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! -->
 
