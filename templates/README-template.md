@@ -49,7 +49,7 @@
 
 I love to drink coffee :coffee:, too much coffee :coffee: :coffee: :coffee:. I wish [PSL](https://www.starbucks.com/menu/product/418/hot) was year round.
 
-I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! 
+<!-- I'm currently working at <a href="https://github.com" target="_blank">GitHub</a> :octocat: and <span style="color:#e25555;">❤️</span> it! -->
 
 Mostly I like to tinker with bash/zsh scripts and home automation. I love <b>Raspberry Pi's</b> and use quite a few of them for various jobs around the house. Most recently I'm using a Pi 4 8GB with <b>Docker</b> to run a couple of custom containers (which I might release) as well as <b>Plex</b>. Also running my own <a href="https://github.com/M1XZG/Raspberry-pi-kiosk-config">kiosk</a> configuration and <a href="https://sdr-enthusiasts.gitbook.io/ads-b/">ADS-B Reception, Decoding & Sharing with Docker</a>.
 
