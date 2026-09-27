@@ -2,6 +2,7 @@
 
 import logging
 import os
+import re
 from typing import Dict, Union
 
 
@@ -16,6 +17,11 @@ class MinsertConfig:
     COMMENT_END = "-->"
 
 
+MARKER_PATTERN = re.compile(
+    r"^<!--\s*(start|end)\s+([A-Za-z0-9_.-]+)\s*-->$"
+)
+
+
 def is_comment(line: str) -> bool:
     """Check if a line is a valid markdown comment."""
     line = line.strip()
@@ -28,21 +34,24 @@ def is_comment(line: str) -> bool:
 
 def is_starter(line: str) -> Union[str, None]:
     """Return the name of the block if the line is a starter, else None."""
-    if is_comment(line):
-        try:
-            get1 = line.split(MinsertConfig.START)[-1].strip()
-            return get1.split("-")[0].strip()
-        except Exception as err:  # pylint: disable=broad-except
-            logging.warning(err)
-            return None
+    match = MARKER_PATTERN.fullmatch(line.strip())
+    if match and match.group(1) == MinsertConfig.START:
+        return match.group(2)
     return None
 
 
 def is_ender(line: str) -> bool:
     """Check if the line is a block ender."""
-    if is_comment(line):
-        return MinsertConfig.END in line.split(" ")
-    return False
+    match = MARKER_PATTERN.fullmatch(line.strip())
+    return bool(match and match.group(1) == MinsertConfig.END)
+
+
+def get_ender_name(line: str) -> Union[str, None]:
+    """Return the name of the block if the line is an ender, else None."""
+    match = MARKER_PATTERN.fullmatch(line.strip())
+    if match and match.group(1) == MinsertConfig.END:
+        return match.group(2)
+    return None
 
 
 class MarkdownFile:
@@ -66,7 +75,7 @@ class MarkdownFile:
         with open(self.file_path) as file:
             lines = file.readlines()
 
-        inside_a_block = False
+        inside_a_block = None
         count = 0
 
         for line in lines:
@@ -76,29 +85,33 @@ class MarkdownFile:
                 start_of = is_starter(line)
                 if not start_of:
                     continue
-                try:
-                    lines = things[start_of].split("\n")
-                    count += len(lines)
-                except KeyError:
+                if start_of not in things:
                     logging.warning(
                         "\t '%s' in line %i of %s not found.",
                         start_of,
                         count,
                         self.file_path,
                     )
-                    lines = []
-                content = [ln + "\n" for ln in lines]
+                    continue
+                content_lines = things[start_of].split("\n")
+                count += len(content_lines)
+                content = [ln + "\n" for ln in content_lines]
                 new_lines += content
-                inside_a_block = True
-            elif is_ender(line):
+                inside_a_block = start_of
+            elif get_ender_name(line) == inside_a_block:
                 new_lines.append(line)
                 count += 1
-                inside_a_block = False
+                inside_a_block = None
+            elif is_ender(line):
+                raise ValueError(
+                    f"block '{inside_a_block}' closed by mismatched marker: "
+                    f"{line.strip()}"
+                )
             else:
                 continue
 
         if inside_a_block:
-            raise ValueError("block not closed")
+            raise ValueError(f"block '{inside_a_block}' not closed")
 
         with open(self.file_path, "w") as file:
             file.writelines(new_lines)
