@@ -5,15 +5,17 @@ import os
 import re
 import shutil
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from urllib.parse import quote
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'python-requirements'))
+from hours_history import append_history_row
 from minsert import MarkdownFile
 
 # Hours consistently missing from the API that we want to add back
 OFFSET_MISSING_HOURS = 13.0
 WIGLE_BADGE_URL = "https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png"
 WIGLE_CACHE_PLACEHOLDER = "WIGLE_CACHE_VERSION"
+HOURS_HISTORY_FILE = "./data/vrchat-hours.csv"
 
 def get_existing_wigle_cache_version(filename):
     """Read the current WiGLE cache version from an existing README."""
@@ -162,7 +164,13 @@ def main():
 
     formatted_hours = f"{adjusted_hours:,.1f}"
 
-    current_date = datetime.now().astimezone().strftime("%Y-%m-%d @ %H:%M %Z")
+    now = datetime.now().astimezone()
+    current_date = now.strftime("%Y-%m-%d @ %H:%M %Z")
+    recorded_at = (
+        now.astimezone(timezone.utc)
+        .isoformat(timespec="seconds")
+        .replace("+00:00", "Z")
+    )
     if debug:
         print(f"[DEBUG] Current date: {current_date}")
         print(f"[DEBUG] Playtime hours (formatted): {formatted_hours}")
@@ -187,7 +195,10 @@ def main():
         print(f"[DEBUG] Writing {user_type} hours data to {data_file}")
     
     with open(data_file, 'a') as f:
-        f.write(f"{placeholder}={formatted_hours}|{suffix}|{current_date}\n")
+        f.write(
+            f"{placeholder}={adjusted_hours:.1f}|{formatted_hours}|"
+            f"{suffix}|{current_date}|{recorded_at}\n"
+        )
     
     # If this is the AFK account (last to run), process the complete README
     if user_type == 'afk':
@@ -196,11 +207,24 @@ def main():
         
         # Read all collected data
         all_data = {}
+        numeric_hours = {}
+        recorded_times = {}
         with open(data_file, 'r') as f:
             for line in f:
                 key, value = line.strip().split('=', 1)
-                hours, suffix_text, date = value.split('|')
-                all_data[key] = f"As of <strong>{date}</strong> - {hours} <sup>{suffix_text}</sup>"
+                raw_hours, hours, suffix_text, date, timestamp = value.split('|')
+                numeric_hours[key] = float(raw_hours)
+                recorded_times[key] = timestamp
+                all_data[key] = (
+                    f"As of <strong>{date}</strong> - {hours} "
+                    f"<sup>{suffix_text}</sup>"
+                )
+
+        missing_accounts = {"myhoursHERE", "afkhoursHERE"} - numeric_hours.keys()
+        if missing_accounts:
+            raise ValueError(
+                f"Missing collected hours for: {', '.join(sorted(missing_accounts))}"
+            )
         
         # Backup and create final README
         if debug:
@@ -220,6 +244,13 @@ def main():
             print(f"[DEBUG] Inserting all hours data into {temp_file}")
         file = MarkdownFile(temp_file)
         file.insert(all_data)
+
+        append_history_row(
+            HOURS_HISTORY_FILE,
+            recorded_times["afkhoursHERE"],
+            numeric_hours["myhoursHERE"],
+            numeric_hours["afkhoursHERE"],
+        )
         
         # Clean up data file
         os.remove(data_file)
