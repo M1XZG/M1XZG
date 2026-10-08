@@ -88,8 +88,8 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 | 2022-06-01 | Started |  | 2026-04-03 | 15000 hrs |
 | 2023-01-01 | ~40 hrs |  | 2026-05-24 | 16000 hrs |
 | 2024-06-02 | 3000 hrs |  | 2026-07-07 | 17000 hrs |
-| 2024-07-31 | 4000 hrs |  | 2026-08-01 | 17500 hrs |
-| 2024-09-17 | 5000 hrs |  | 2026-08-24 | 18000 hrs |
+| 2024-07-31 | 4000 hrs |  | 2026-08-24 | 18000 hrs |
+| 2024-09-17 | 5000 hrs |  | 2026-10-07 | 19000 hrs |
 | 2024-11-07 | 6000 hrs |  |  |  |
 | 2024-12-22 | 6900 hrs |  |  |  |
 | 2024-12-29 | 7000 hrs |  |  |  |
@@ -106,13 +106,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-10-08 @ 09:23 UTC</strong> - 19,015.0 <sup>lifetime hrs</sup>
+As of <strong>2026-10-08 @ 10:09 UTC</strong> - 19,015.5 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-10-08 @ 09:23 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-10-08 @ 10:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
