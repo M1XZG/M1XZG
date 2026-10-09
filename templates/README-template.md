@@ -22,7 +22,9 @@
     <img src="https://komarev.com/ghpvc/?username=M1XZG&base=500&style=for-the-badge&color=ae4aff&label=Profile+Views" alt="Profile views" />
     <img src="https://img.shields.io/badge/Based_in-UK-ae4aff?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in the UK" />
     <img src="https://img.shields.io/badge/Tinkering_with-Pi_%26_Docker-ae4aff?style=for-the-badge&logo=homeassistant&logoColor=white" alt="Tinkering with Raspberry Pi and Docker" />
-    <img src="https://img.shields.io/badge/VRChat-17.5k%2B_hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="17,500+ VRChat hours" />
+<!-- start vrchatBadgeHERE -->
+<!-- end vrchatBadgeHERE -->
+    <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/gpg-public-key.asc" title="GPG fingerprint: BCEE 7ED1 0C7C 1A61 4D12 9B4E 07EF 0BCB 3732 4D4D"><img src="https://img.shields.io/badge/GPG-07EF0BCB37324D4D-ae4aff?style=for-the-badge&logo=gnuprivacyguard&logoColor=white" alt="Download my public GPG key" /></a>
   </p>
 </div>
 

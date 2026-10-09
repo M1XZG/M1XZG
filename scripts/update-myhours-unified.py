@@ -17,6 +17,15 @@ WIGLE_BADGE_URL = "https://wigle.net/bi/WkoSmTxhhOrSbz9bThNm+g.png"
 WIGLE_CACHE_PLACEHOLDER = "WIGLE_CACHE_VERSION"
 HOURS_HISTORY_FILE = "./data/vrchat-hours.csv"
 
+def format_vrchat_hours_badge(hours):
+    formatted = f"{hours:,.1f}"
+    label = quote(f"{formatted} hrs", safe="")
+    return (
+        '<a href="#-my-current-hours"><img src="https://img.shields.io/badge/'
+        f'VRChat-{label}-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" '
+        f'alt="{formatted} VRChat hours" /></a>'
+    )
+
 def get_existing_wigle_cache_version(filename):
     """Read the current WiGLE cache version from an existing README."""
     try:
@@ -225,6 +234,9 @@ def main():
             raise ValueError(
                 f"Missing collected hours for: {', '.join(sorted(missing_accounts))}"
             )
+        all_data["vrchatBadgeHERE"] = format_vrchat_hours_badge(
+            numeric_hours["myhoursHERE"]
+        )
         
         # Backup and create final README
         if debug:
