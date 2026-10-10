@@ -23,7 +23,7 @@
     <img src="https://img.shields.io/badge/Based_in-UK-ae4aff?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in the UK" />
     <img src="https://img.shields.io/badge/Tinkering_with-Pi_%26_Docker-ae4aff?style=for-the-badge&logo=homeassistant&logoColor=white" alt="Tinkering with Raspberry Pi and Docker" />
 <!-- start vrchatBadgeHERE -->
-<a href="#-my-current-hours"><img src="https://img.shields.io/badge/VRChat-19%2C064.6%20hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="19,064.6 VRChat hours" /></a>
+<a href="#-my-current-hours"><img src="https://img.shields.io/badge/VRChat-19%2C065.6%20hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="19,065.6 VRChat hours" /></a>
 <!-- end vrchatBadgeHERE -->
     <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/gpg-public-key.asc" title="GPG fingerprint: BCEE 7ED1 0C7C 1A61 4D12 9B4E 07EF 0BCB 3732 4D4D"><img src="https://img.shields.io/badge/GPG-07EF0BCB37324D4D-ae4aff?style=for-the-badge&logo=gnuprivacyguard&logoColor=white" alt="Download my public GPG key" /></a>
   </p>
@@ -109,13 +109,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-10-10 @ 11:16 UTC</strong> - 19,064.6 <sup>lifetime hrs</sup>
+As of <strong>2026-10-10 @ 12:27 UTC</strong> - 19,065.6 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-10-10 @ 11:16 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-10-10 @ 12:27 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
