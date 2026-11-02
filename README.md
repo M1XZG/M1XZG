@@ -274,16 +274,16 @@ As of <strong>2026-11-02 @ 00:34 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg" alt="Profile Banner" width="80%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg?v=neon-1" alt="Profile Banner" width="80%" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/1-repos-per-language.svg" alt="Repos Per Language" width="45%" />
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/2-most-commit-language.svg" alt="Most Commit Language" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/1-repos-per-language.svg?v=neon-1" alt="Repos Per Language" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/2-most-commit-language.svg?v=neon-1" alt="Most Commit Language" width="45%" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/3-stats.svg" alt="Stats" width="45%" />
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg" alt="Productive Time" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/3-stats.svg?v=neon-1" alt="Stats" width="45%" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg?v=neon-1" alt="Productive Time" width="45%" />
 </p>
 
 <p align="center">
