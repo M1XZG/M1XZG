@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/assets/github-header-banner-rounded.png" alt="Profile Banner" width="100%" />
+  <img src="/assets/github-header-banner-neon.svg" alt="Profile Banner" width="100%" />
 </p>
 
 <p align="center"><sub>Banner generated with <a href="https://leviarista.github.io/github-profile-header-generator/">GitHub Profile Header Generator</a>.</sub></p>
