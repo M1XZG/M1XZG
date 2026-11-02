@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      - name: Test neon border
+        run: python3 -m unittest discover -s scripts/python-requirements -p test_neon_border.py
       #- uses: vn7n24fzkq/github-profile-summary-cards@release
       # - uses: m1xzg/github-profile-summary-cards@release
       - uses: m1xzg/github-profile-summary-cards@m1xzg-v1
@@ -30,9 +32,8 @@ jobs:
           # AUTO_PUSH is optional, a boolean variable default to true, whether automatically push generated files to desired branch 
           AUTO_PUSH: false
       
-      # Keep only the aura and aura_dark themes and remove all others.
-      # Card generation can hit GitHub API 403s and leave no output directory;
-      # guard against that so the job doesn't fail on a missing folder.
+      # Keep only aura and aura_dark. The neon step checks for a complete set
+      # before the workflow commits anything.
       - name: Keep only aura themes
         run: |
           if [ ! -d profile-summary-card-output ]; then
@@ -41,6 +42,9 @@ jobs:
           fi
           cd profile-summary-card-output
           find . -mindepth 1 -maxdepth 1 -type d ! -name 'aura' ! -name 'aura_dark' -exec rm -rf {} +
+
+      - name: Add animated neon borders
+        run: python3 scripts/apply-neon-border.py profile-summary-card-output
           
       # Commit and push changes
       - name: Commit changes
