@@ -1,10 +1,10 @@
 {
-  "capturedAt": "2026-11-15T13:54:04.571Z",
+  "capturedAt": "2026-11-15T17:33:44.642Z",
   "source": "GitHub GraphQL contribution calendar and contributionsCollection; public REST repositories.",
   "scope": "Calendar totals follow GitHub profile visibility. Repository and commit-language/hourly aggregates exclude private repositories. No repository names or individual commits are stored.",
   "contributions": {
-    "total": 34463,
-    "reportedTotal": 34912,
+    "total": 34490,
+    "reportedTotal": 34939,
     "weeks": [
       {
         "date": "2025-11-16",
@@ -216,12 +216,12 @@
       },
       {
         "date": "2026-11-15",
-        "count": 67
+        "count": 94
       }
     ],
     "lifetime": {
-      "total": 52248,
-      "reportedTotal": 52248,
+      "total": 52272,
+      "reportedTotal": 52272,
       "years": [
         {
           "year": 2013,
@@ -290,17 +290,17 @@
         },
         {
           "year": 2026,
-          "count": 30956,
-          "reportedCount": 30956
+          "count": 30980,
+          "reportedCount": 30980
         }
       ],
-      "capturedAt": "2026-11-15T14:03:36.025Z"
+      "capturedAt": "2026-11-15T17:34:18.465Z"
     }
   },
   "repositories": [
     {
       "name": "Python",
-      "count": 19
+      "count": 18
     },
     {
       "name": "Shell",
@@ -311,15 +311,15 @@
       "count": 2
     },
     {
+      "name": "JavaScript",
+      "count": 2
+    },
+    {
       "name": "C++",
       "count": 1
     },
     {
       "name": "Go",
-      "count": 1
-    },
-    {
-      "name": "JavaScript",
       "count": 1
     },
     {
@@ -354,8 +354,12 @@
     ],
     "languages": [
       {
+        "name": "JavaScript",
+        "count": 35998
+      },
+      {
         "name": "Python",
-        "count": 36606
+        "count": 710
       },
       {
         "name": "Shell",
@@ -368,10 +372,6 @@
       {
         "name": "HTML",
         "count": 107
-      },
-      {
-        "name": "JavaScript",
-        "count": 82
       },
       {
         "name": "C++",
@@ -413,18 +413,18 @@
     "maxRepositoriesPerYear": 100
   },
   "productiveTime": {
-    "since": "2026-08-17T13:54:04.571Z",
-    "until": "2026-11-15T13:54:04.571Z",
+    "since": "2026-08-17T17:33:44.642Z",
+    "until": "2026-11-15T17:33:44.642Z",
     "timeZone": "UTC",
     "maxRepositories": 50,
     "maxCommitsPerRepository": 50,
     "hours": [
-      11,
-      3,
-      4,
-      3,
-      4,
-      3,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
       4,
       3,
       6,
@@ -432,11 +432,11 @@
       9,
       20,
       24,
-      12,
-      6,
-      2,
-      9,
+      14,
+      14,
       5,
+      13,
+      8,
       15,
       11,
       1,

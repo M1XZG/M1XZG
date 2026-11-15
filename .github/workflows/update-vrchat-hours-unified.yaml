@@ -17,6 +17,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Prepare render workspace
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/tmp/remotion-preview"
+          echo "TMPDIR=$GITHUB_WORKSPACE/tmp/remotion-preview" >> "$GITHUB_ENV"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: templates/remotion-preview/package-lock.json
+
+      - name: Prepare dashboard renderer
+        working-directory: templates/remotion-preview
+        run: |
+          npm ci --no-audit --no-fund
+          npx remotion browser ensure
+          npm test
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

@@ -52,6 +52,18 @@ updateprofile () {
         exit
     fi
 
+    if ! (
+        cd "$SRC/templates/remotion-preview" &&
+        npm run collect:charts &&
+        npm run publish:snapshot &&
+        npm run render:gif &&
+        npm run render:still &&
+        npm run render:charts
+    ); then
+        echo "Dashboard refresh failed; no profile changes will be published." >&2
+        exit 1
+    fi
+
     # Compare the files
     cmp $SRC/README.md $SRC/TMP-README-unified.md
     rv=$?
@@ -68,9 +80,10 @@ updateprofile () {
 
     mv $SRC/TMP-README-unified.md ./README.md
 
-    git commit -a -m "Update VRChat Hours (Main + AFK) - $TSTAMP"
+    git commit -a -m "Update profile dashboard and VRChat hours - $TSTAMP" \
+        -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
     git push --set-upstream origin $NEWBRANCH
-    gh pr create --title "Update VRChat Hours (Main + AFK) - $TSTAMP" --body "Update of VRChat hours for both accounts via cron"
+    gh pr create --title "Update profile dashboard and VRChat hours - $TSTAMP" --body "Refresh the profile charts and VRChat hours from their current data sources."
     sleep 5s
     gh pr merge --auto -m
     git checkout main

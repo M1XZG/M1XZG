@@ -1,11 +1,18 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {readFileSync, writeFileSync} from 'node:fs';
+import {existsSync, readFileSync, writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const root = new URL('../../', import.meta.url);
 const read = (path) => readFileSync(new URL(path, root), 'utf8');
+const publish = process.argv.includes('--publish');
+const pendingReadme = new URL('TMP-README-unified.md', root);
+const readme = publish && existsSync(pendingReadme)
+  ? readFileSync(pendingReadme, 'utf8') : read('README.md');
+const assetBase = publish
+  ? 'https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview'
+  : './remotion-preview';
 const textNodes = (svg) => [...svg.matchAll(/<text\b[^>]*>([^<]*)<\/text>/g)]
   .map((match) => match[1]);
 const required = (value, label) => {
@@ -20,7 +27,6 @@ assert.deepEqual(statsText.slice(labelIndex, labelIndex + labels.length), labels
 const values = statsText.slice(labelIndex + labels.length, labelIndex + 2 * labels.length);
 assert.equal(values.length, labels.length);
 assert.ok(values.every((value) => /^\d[\d,.]*k?$/i.test(value)));
-const readme = read('README.md');
 const mainHours = required(readme.match(
   /<!-- start myhoursHERE -->\s*As of <strong>([^<]+)<\/strong> - ([\d,.]+)/,
 ), 'VRChat hours');
@@ -60,21 +66,21 @@ const languageTable = (items) => {
 const overview = `
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png${assetQuery}" />
-    <img src="./remotion-preview/overview.gif${assetQuery}" width="100%" alt="GitHub snapshot: ${snapshot.lifetimeContributions} lifetime contributions, ${snapshot.contributions} contributions in the last year, ${snapshot.commits} commits, ${snapshot.pullRequests} pull requests, ${snapshot.stars} stars, ${snapshot.issues} issues and ${snapshot.contributedTo} repositories contributed to. VRChat: ${mainHours[2]} hours, ${progress}% of 20,000." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="${assetBase}/overview.png${assetQuery}" />
+    <img src="${assetBase}/overview.gif${assetQuery}" width="100%" alt="GitHub snapshot: ${snapshot.lifetimeContributions} lifetime contributions, ${snapshot.contributions} contributions in the last year, ${snapshot.commits} commits, ${snapshot.pullRequests} pull requests, ${snapshot.stars} stars, ${snapshot.issues} issues and ${snapshot.contributedTo} repositories contributed to. VRChat: ${mainHours[2]} hours, ${progress}% of 20,000." />
   </picture>
 </p>
 
-<p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png${assetQuery}">View the still image</a>.</sub></p>
+<p align="center"><sub>One short animation, then a still frame. <a href="${assetBase}/overview.png${assetQuery}">View the still image</a>.</sub></p>
 
 <p align="center">
-  <img src="./remotion-preview/charts.png${assetQuery}" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
+  <img src="${assetBase}/charts.png${assetQuery}" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the notes below." />
 </p>
 
 <details>
-<summary>Preview figures and build notes</summary>
+<summary>${publish ? 'Figures and build notes' : 'Preview figures and build notes'}</summary>
 
-This is a fixed design snapshot captured on ${snapshot.capturedAt.slice(0, 10)}, not a new live stats service. The new detailed charts use [structured GitHub data](./remotion-preview/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
+${publish ? 'The hourly [profile workflow](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml) refreshes these images alongside the VRChat hours.' : `This is a fixed design snapshot captured on ${snapshot.capturedAt.slice(0, 10)}, not a new live stats service.`} The detailed charts use [structured GitHub data](${assetBase}/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
 
 Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (${charts.contributions.total.toLocaleString('en-GB')}). GitHub returned ${charts.contributions.reportedTotal.toLocaleString('en-GB')} separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
 
@@ -112,7 +118,7 @@ ${charts.productiveTime.hours.map((count, hour) => `| ${String(hour).padStart(2,
 
 VRChat was reported at ${snapshot.vrchatReportedAt}. Steam API readings can trail the client by one or two hours.
 
-The [Remotion source](./remotion-preview/src/Root.jsx) and [input snapshot](./remotion-preview/snapshot.json) are kept alongside the rendered images. To rebuild from this checkout, run these commands from the templates/remotion-preview folder:
+The [Remotion source](${assetBase}/src/Root.jsx) and [input snapshot](${assetBase}/snapshot.json) are kept alongside the rendered images.${publish ? ' Run the profile workflow manually to refresh the published dashboard.' : ` To rebuild from this checkout, run these commands from the templates/remotion-preview folder:
 
 \`\`\`bash
 npm ci
@@ -130,17 +136,37 @@ npm run collect:charts
 
 Then rerun the snapshot and render commands. The collector stores aggregate counts, not repository names or individual commits.
 
-Rebuilding only writes the preview files. No live README, production template or workflow is changed.
+Rebuilding only writes the preview files. No live README, production template or workflow is changed.`}
 
 </details>
 `;
 const heading = '## 📊 Stats\n';
-assert.equal(readme.split(heading).length, 2, 'Expected exactly one Stats heading');
-const start = readme.indexOf(heading);
-const end = readme.indexOf('\n---', start);
-assert.ok(end > start, 'Missing end of Stats section');
+const statsRange = (content) => {
+  assert.equal(content.split(heading).length, 2, 'Expected exactly one Stats heading');
+  const start = content.indexOf(heading);
+  const end = content.indexOf('\n---', start);
+  assert.ok(end > start, 'Missing end of Stats section');
+  return {start, end};
+};
+const {start, end} = statsRange(readme);
 const legacy = readme.slice(start + heading.length, end);
-const statsSection = `${heading}\n${overview}
+if (publish) {
+  const section = `${heading}\n${overview}
+<p align="center">
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/userstats.svg" alt="My GitHub Stats" />
+</p>
+`;
+  for (const path of [
+    new URL('templates/README-template.md', root),
+    ...(existsSync(pendingReadme) ? [pendingReadme] : []),
+  ]) {
+    const content = readFileSync(path, 'utf8');
+    const range = statsRange(content);
+    writeFileSync(path, content.slice(0, range.start) + section + content.slice(range.end));
+  }
+  console.log('Updated permanent stats template and any pending workflow README.');
+} else {
+  const statsSection = `${heading}\n${overview}
 <details>
 <summary>Compare with the original profile charts</summary>
 
@@ -148,10 +174,11 @@ ${legacy}
 
 </details>
 `;
-const preview = '> **Design preview:** the Remotion dashboard below is a fixed snapshot. The live profile and its update workflows are unchanged.\n\n'
-  + readme.replaceAll('src="/assets/', 'src="../assets/')
-    .replace(readme.slice(start, end), statsSection);
-for (const name of ['test-readme.me', 'test-readme.md']) {
-  writeFileSync(new URL(`../${name}`, import.meta.url), preview);
+  const preview = '> **Design preview:** the Remotion dashboard below is a fixed snapshot. The live profile and its update workflows are unchanged.\n\n'
+    + readme.replaceAll('src="/assets/', 'src="../assets/')
+      .replace(readme.slice(start, end), statsSection);
+  for (const name of ['test-readme.me', 'test-readme.md']) {
+    writeFileSync(new URL(`../${name}`, import.meta.url), preview);
+  }
+  console.log(`Built preview README files and input snapshot in ${here}`);
 }
-console.log(`Built preview README files and input snapshot in ${here}`);
