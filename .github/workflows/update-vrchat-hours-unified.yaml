@@ -29,6 +29,23 @@ jobs:
           cache: npm
           cache-dependency-path: templates/remotion-preview/package-lock.json
 
+      - name: Install renderer libraries
+        if: runner.os == 'Linux'
+        run: |
+          privilege=()
+          if [ "$(id -u)" -ne 0 ]; then
+            privilege=(sudo -A)
+          fi
+          "${privilege[@]}" apt-get update -qq
+          alsa=libasound2
+          if apt-cache show libasound2t64 >/dev/null 2>&1; then
+            alsa=libasound2t64
+          fi
+          "${privilege[@]}" apt-get install -y --no-install-recommends \
+            libnspr4 libnss3 libdbus-1-3 libatk1.0-0 libgbm1 "$alsa" \
+            libxrandr2 libxkbcommon0 libxfixes3 libxcomposite1 libxdamage1 \
+            libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 fonts-dejavu-core
+
       - name: Prepare dashboard renderer
         working-directory: templates/remotion-preview
         run: |
