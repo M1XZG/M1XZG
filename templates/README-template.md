@@ -273,15 +273,15 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=6c6f8bcd298098ba" />
-    <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.gif?v=6c6f8bcd298098ba" width="100%" alt="GitHub snapshot: 52,278 lifetime contributions, 34,496 contributions in the last year, 38.0k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,741.6 hours, 98.71% of 20,000." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=606bd7d0cb53f96c" />
+    <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.gif?v=606bd7d0cb53f96c" width="100%" alt="GitHub snapshot: 52,285 lifetime contributions, 34,503 contributions in the last year, 38.0k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,741.6 hours, 98.71% of 20,000." />
   </picture>
 </p>
 
-<p align="center"><sub>One short animation, then a still frame. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=6c6f8bcd298098ba">View the still image</a>.</sub></p>
+<p align="center"><sub>One short animation, then a still frame. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=606bd7d0cb53f96c">View the still image</a>.</sub></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/charts.png?v=6c6f8bcd298098ba" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the notes below." />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/charts.png?v=606bd7d0cb53f96c" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the notes below." />
 </p>
 
 <details>
@@ -289,9 +289,9 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 The hourly [profile workflow](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml) refreshes these images alongside the VRChat hours. The detailed charts use [structured GitHub data](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
 
-Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (34,496). GitHub returned 34,945 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (34,503). GitHub returned 34,952 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
 
-Contributions / Lifetime sums dated entries across every GitHub contribution year, 2013-2026, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at 2026-11-15T17:47:58.312Z. Its 52,278 dated contributions and GitHub's separate 52,278 summary total are both retained in the data file.
+Contributions / Lifetime sums dated entries across every GitHub contribution year, 2013-2026, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at 2026-11-15T18:13:30.785Z. Its 52,285 dated contributions and GitHub's separate 52,285 summary total are both retained in the data file.
 
 Repository-language bars count owned public repositories, excluding forks and missing primary languages. Commit-language bars count public contributions across 2013-2026, grouped by the repository's primary language, with a GitHub limit of 100 repositories per year. They do not measure lines of code. The top five languages plus Other retain the full percentage denominator.
 
@@ -299,8 +299,8 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Metric | Snapshot |
 | --- | ---: |
-| Contributions over lifetime | 52,278 |
-| Contributions in the last year | 34,496 |
+| Contributions over lifetime | 52,285 |
+| Contributions in the last year | 34,503 |
 | Total commits | 38.0k |
 | Total pull requests | 13.5k |
 | Total stars | 50 |
@@ -327,7 +327,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Language | Count | Share |
 | --- | ---: | ---: |
-| JavaScript | 36,002 | 96.3% |
+| JavaScript | 36,006 | 96.3% |
 | Python | 710 | 1.9% |
 | Shell | 242 | 0.6% |
 | Markdown | 187 | 0.5% |
@@ -353,8 +353,8 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 | 04:00 | 0 |
 | 05:00 | 0 |
 | 06:00 | 0 |
-| 07:00 | 3 |
-| 08:00 | 6 |
+| 07:00 | 0 |
+| 08:00 | 5 |
 | 09:00 | 6 |
 | 10:00 | 9 |
 | 11:00 | 20 |
@@ -363,15 +363,15 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 | 14:00 | 14 |
 | 15:00 | 5 |
 | 16:00 | 13 |
-| 17:00 | 12 |
-| 18:00 | 15 |
+| 17:00 | 14 |
+| 18:00 | 17 |
 | 19:00 | 11 |
 | 20:00 | 1 |
 | 21:00 | 12 |
 | 22:00 | 7 |
 | 23:00 | 13 |
 
-VRChat was reported at 2026-11-15 @ 17:47 UTC. Steam API readings can trail the client by one or two hours.
+VRChat was reported at 2026-11-15 @ 18:13 UTC. Steam API readings can trail the client by one or two hours.
 
 The [Remotion source](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/src/Root.jsx) and [input snapshot](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/snapshot.json) are kept alongside the rendered images. Run the profile workflow manually to refresh the published dashboard.
 
