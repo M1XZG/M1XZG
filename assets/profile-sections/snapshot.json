@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-11-15T20:12:24.839207+00:00",
+  "capturedAt": "2026-11-15T21:10:39.794542+00:00",
   "worlds": [
     {
       "slug": "cozy-house",
@@ -15,7 +15,7 @@
     {
       "slug": "soft-comfy-space",
       "name": "Wildy's Soft and Comfy Space",
-      "visits": 13824,
+      "visits": 13826,
       "favorites": 236,
       "updatedAt": "2026-02-01T15:44:24.093Z",
       "url": "https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69",
@@ -76,8 +76,8 @@
       "url": "https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml",
       "status": "in_progress",
       "conclusion": null,
-      "updatedAt": "2026-11-15T20:10:55Z",
-      "runUrl": "https://github.com/M1XZG/M1XZG/actions/runs/43756587452",
+      "updatedAt": "2026-11-15T21:09:11Z",
+      "runUrl": "https://github.com/M1XZG/M1XZG/actions/runs/43762062887",
       "source": "https://api.github.com/repos/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/runs?per_page=1"
     },
     {
@@ -87,8 +87,8 @@
       "url": "https://github.com/M1XZG/uptime/actions/workflows/uptime.yml",
       "status": "completed",
       "conclusion": "success",
-      "updatedAt": "2026-11-15T20:10:25Z",
-      "runUrl": "https://github.com/M1XZG/uptime/actions/runs/43756506229",
+      "updatedAt": "2026-11-15T21:10:22Z",
+      "runUrl": "https://github.com/M1XZG/uptime/actions/runs/43762149099",
       "source": "https://api.github.com/repos/M1XZG/uptime/actions/workflows/uptime.yml/runs?per_page=1"
     },
     {
@@ -98,8 +98,8 @@
       "url": "https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml",
       "status": "completed",
       "conclusion": "success",
-      "updatedAt": "2026-11-15T18:26:24Z",
-      "runUrl": "https://github.com/M1XZG/M1XZG/actions/runs/43746570407",
+      "updatedAt": "2026-11-15T20:25:23Z",
+      "runUrl": "https://github.com/M1XZG/M1XZG/actions/runs/43757777087",
       "source": "https://api.github.com/repos/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/runs?per_page=1"
     },
     {
