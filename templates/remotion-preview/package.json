@@ -1,0 +1,17 @@
+{
+  "name": "m1xzg-profile-stats-preview",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "snapshot": "node build-preview.mjs",
+    "studio": "remotion studio src/index.jsx",
+    "render:gif": "remotion render src/index.jsx ProfileOverview overview.gif --codec=gif --number-of-gif-loops=0 --concurrency=2",
+    "render:still": "remotion still src/index.jsx ProfileOverview overview.png --frame=100"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.543",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.543"
+  }
+}
