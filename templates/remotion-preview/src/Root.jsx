@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Composition, Easing, interpolate, useCurrentFrame} from 'remotion';
 import snapshot from '../snapshot.json';
+import {DetailedCharts} from './Charts';
 
 const colors = {
   cyan: '#6be7ff',
@@ -154,7 +155,7 @@ const ProfileOverview = () => {
           color: colors.muted,
           fontSize: 10,
         }}>
-          <span>GITHUB: EXISTING AURA CARDS / ROUNDED TOTALS</span>
+          <span>GITHUB: CALENDAR + AURA TOTALS / SEE BUILD NOTES</span>
           <span>VRCHAT: {snapshot.vrchatReportedAt}</span>
         </div>
       </AbsoluteFill>
@@ -163,12 +164,22 @@ const ProfileOverview = () => {
 };
 
 export const RemotionRoot = () => (
-  <Composition
-    id="ProfileOverview"
-    component={ProfileOverview}
-    width={1100}
-    height={460}
-    fps={15}
-    durationInFrames={105}
-  />
+  <>
+    <Composition
+      id="ProfileOverview"
+      component={ProfileOverview}
+      width={1100}
+      height={460}
+      fps={15}
+      durationInFrames={105}
+    />
+    <Composition
+      id="DetailedCharts"
+      component={DetailedCharts}
+      width={1100}
+      height={1250}
+      fps={15}
+      durationInFrames={105}
+    />
+  </>
 );

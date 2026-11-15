@@ -1,0 +1,371 @@
+{
+  "capturedAt": "2026-11-15T13:54:04.571Z",
+  "source": "GitHub GraphQL contribution calendar and contributionsCollection; public REST repositories.",
+  "scope": "Calendar totals follow GitHub profile visibility. Repository and commit-language/hourly aggregates exclude private repositories. No repository names or individual commits are stored.",
+  "contributions": {
+    "total": 34463,
+    "reportedTotal": 34912,
+    "weeks": [
+      {
+        "date": "2025-11-16",
+        "count": 309
+      },
+      {
+        "date": "2025-11-23",
+        "count": 596
+      },
+      {
+        "date": "2025-11-30",
+        "count": 508
+      },
+      {
+        "date": "2025-12-07",
+        "count": 553
+      },
+      {
+        "date": "2025-12-14",
+        "count": 668
+      },
+      {
+        "date": "2025-12-21",
+        "count": 534
+      },
+      {
+        "date": "2025-12-28",
+        "count": 618
+      },
+      {
+        "date": "2026-01-04",
+        "count": 548
+      },
+      {
+        "date": "2026-01-11",
+        "count": 555
+      },
+      {
+        "date": "2026-01-18",
+        "count": 534
+      },
+      {
+        "date": "2026-01-25",
+        "count": 503
+      },
+      {
+        "date": "2026-02-01",
+        "count": 616
+      },
+      {
+        "date": "2026-02-08",
+        "count": 662
+      },
+      {
+        "date": "2026-02-15",
+        "count": 803
+      },
+      {
+        "date": "2026-02-22",
+        "count": 764
+      },
+      {
+        "date": "2026-03-01",
+        "count": 769
+      },
+      {
+        "date": "2026-03-08",
+        "count": 753
+      },
+      {
+        "date": "2026-03-15",
+        "count": 765
+      },
+      {
+        "date": "2026-03-22",
+        "count": 717
+      },
+      {
+        "date": "2026-03-29",
+        "count": 711
+      },
+      {
+        "date": "2026-04-05",
+        "count": 695
+      },
+      {
+        "date": "2026-04-12",
+        "count": 686
+      },
+      {
+        "date": "2026-04-19",
+        "count": 697
+      },
+      {
+        "date": "2026-04-26",
+        "count": 624
+      },
+      {
+        "date": "2026-05-03",
+        "count": 574
+      },
+      {
+        "date": "2026-05-10",
+        "count": 529
+      },
+      {
+        "date": "2026-05-17",
+        "count": 473
+      },
+      {
+        "date": "2026-05-24",
+        "count": 603
+      },
+      {
+        "date": "2026-05-31",
+        "count": 538
+      },
+      {
+        "date": "2026-06-07",
+        "count": 552
+      },
+      {
+        "date": "2026-06-14",
+        "count": 551
+      },
+      {
+        "date": "2026-06-21",
+        "count": 616
+      },
+      {
+        "date": "2026-06-28",
+        "count": 686
+      },
+      {
+        "date": "2026-07-05",
+        "count": 728
+      },
+      {
+        "date": "2026-07-12",
+        "count": 690
+      },
+      {
+        "date": "2026-07-19",
+        "count": 659
+      },
+      {
+        "date": "2026-07-26",
+        "count": 678
+      },
+      {
+        "date": "2026-08-02",
+        "count": 650
+      },
+      {
+        "date": "2026-08-09",
+        "count": 800
+      },
+      {
+        "date": "2026-08-16",
+        "count": 771
+      },
+      {
+        "date": "2026-08-23",
+        "count": 646
+      },
+      {
+        "date": "2026-08-30",
+        "count": 793
+      },
+      {
+        "date": "2026-09-06",
+        "count": 777
+      },
+      {
+        "date": "2026-09-13",
+        "count": 776
+      },
+      {
+        "date": "2026-09-20",
+        "count": 784
+      },
+      {
+        "date": "2026-09-27",
+        "count": 729
+      },
+      {
+        "date": "2026-10-04",
+        "count": 767
+      },
+      {
+        "date": "2026-10-11",
+        "count": 745
+      },
+      {
+        "date": "2026-10-18",
+        "count": 774
+      },
+      {
+        "date": "2026-10-25",
+        "count": 746
+      },
+      {
+        "date": "2026-11-01",
+        "count": 796
+      },
+      {
+        "date": "2026-11-08",
+        "count": 777
+      },
+      {
+        "date": "2026-11-15",
+        "count": 67
+      }
+    ]
+  },
+  "repositories": [
+    {
+      "name": "Python",
+      "count": 19
+    },
+    {
+      "name": "Shell",
+      "count": 6
+    },
+    {
+      "name": "HTML",
+      "count": 2
+    },
+    {
+      "name": "C++",
+      "count": 1
+    },
+    {
+      "name": "Go",
+      "count": 1
+    },
+    {
+      "name": "JavaScript",
+      "count": 1
+    },
+    {
+      "name": "Markdown",
+      "count": 1
+    },
+    {
+      "name": "PowerShell",
+      "count": 1
+    },
+    {
+      "name": "TypeScript",
+      "count": 1
+    }
+  ],
+  "commits": {
+    "years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "languages": [
+      {
+        "name": "Python",
+        "count": 36606
+      },
+      {
+        "name": "Shell",
+        "count": 242
+      },
+      {
+        "name": "Markdown",
+        "count": 187
+      },
+      {
+        "name": "HTML",
+        "count": 107
+      },
+      {
+        "name": "JavaScript",
+        "count": 82
+      },
+      {
+        "name": "C++",
+        "count": 41
+      },
+      {
+        "name": "TypeScript",
+        "count": 37
+      },
+      {
+        "name": "Go",
+        "count": 31
+      },
+      {
+        "name": "PowerShell",
+        "count": 5
+      },
+      {
+        "name": "Perl",
+        "count": 3
+      },
+      {
+        "name": "Dockerfile",
+        "count": 2
+      },
+      {
+        "name": "OpenSCAD",
+        "count": 2
+      },
+      {
+        "name": "C#",
+        "count": 1
+      },
+      {
+        "name": "Lua",
+        "count": 1
+      }
+    ],
+    "maxRepositoriesPerYear": 100
+  },
+  "productiveTime": {
+    "since": "2026-08-17T13:54:04.571Z",
+    "until": "2026-11-15T13:54:04.571Z",
+    "timeZone": "UTC",
+    "maxRepositories": 50,
+    "maxCommitsPerRepository": 50,
+    "hours": [
+      11,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      6,
+      6,
+      9,
+      20,
+      24,
+      12,
+      6,
+      2,
+      9,
+      5,
+      15,
+      11,
+      1,
+      12,
+      7,
+      13
+    ]
+  }
+}
