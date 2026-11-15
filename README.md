@@ -109,13 +109,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-11-15 @ 17:08 UTC</strong> - 19,741.6 <sup>lifetime hrs</sup>
+As of <strong>2026-11-15 @ 17:47 UTC</strong> - 19,741.6 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-11-15 @ 17:08 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-11-15 @ 17:47 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -273,21 +273,115 @@ As of <strong>2026-11-15 @ 17:08 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 ## 📊 Stats
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg?v=neon-1" alt="Profile Banner" width="80%" />
-</p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/1-repos-per-language.svg?v=neon-1" alt="Repos Per Language" width="45%" />
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/2-most-commit-language.svg?v=neon-1" alt="Most Commit Language" width="45%" />
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/3-stats.svg?v=neon-1" alt="Stats" width="45%" />
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/4-productive-time.svg?v=neon-1" alt="Productive Time" width="45%" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=6c6f8bcd298098ba" />
+    <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.gif?v=6c6f8bcd298098ba" width="100%" alt="GitHub snapshot: 52,278 lifetime contributions, 34,496 contributions in the last year, 38.0k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,741.6 hours, 98.71% of 20,000." />
+  </picture>
 </p>
 
+<p align="center"><sub>One short animation, then a still frame. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=6c6f8bcd298098ba">View the still image</a>.</sub></p>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/assets/userstats.svg" alt="My GitHub Stats" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/charts.png?v=6c6f8bcd298098ba" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the notes below." />
+</p>
+
+<details>
+<summary>Figures and build notes</summary>
+
+The hourly [profile workflow](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml) refreshes these images alongside the VRChat hours. The detailed charts use [structured GitHub data](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
+
+Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (34,496). GitHub returned 34,945 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+
+Contributions / Lifetime sums dated entries across every GitHub contribution year, 2013-2026, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at 2026-11-15T17:47:58.312Z. Its 52,278 dated contributions and GitHub's separate 52,278 summary total are both retained in the data file.
+
+Repository-language bars count owned public repositories, excluding forks and missing primary languages. Commit-language bars count public contributions across 2013-2026, grouped by the repository's primary language, with a GitHub limit of 100 repositories per year. They do not measure lines of code. The top five languages plus Other retain the full percentage denominator.
+
+Hourly activity is a sample from the last 90 days: up to 50 authored commits on each default branch, across up to 50 contributing repositories, excluding private repositories. It is not a complete productivity record. Hours use UTC, matching the existing profile workflow.
+
+| Metric | Snapshot |
+| --- | ---: |
+| Contributions over lifetime | 52,278 |
+| Contributions in the last year | 34,496 |
+| Total commits | 38.0k |
+| Total pull requests | 13.5k |
+| Total stars | 50 |
+| Total issues | 770 |
+| Repositories contributed to | 68 |
+| VRChat lifetime hours | 19,741.6 |
+| Hours to 20,000 | 258.4 |
+
+**Repositories by primary language**
+
+| Language | Count | Share |
+| --- | ---: | ---: |
+| Python | 18 | 54.5% |
+| Shell | 6 | 18.2% |
+| HTML | 2 | 6.1% |
+| JavaScript | 2 | 6.1% |
+| C++ | 1 | 3.0% |
+| Go | 1 | 3.0% |
+| Markdown | 1 | 3.0% |
+| PowerShell | 1 | 3.0% |
+| TypeScript | 1 | 3.0% |
+
+**Public commit contributions by repository language**
+
+| Language | Count | Share |
+| --- | ---: | ---: |
+| JavaScript | 36,002 | 96.3% |
+| Python | 710 | 1.9% |
+| Shell | 242 | 0.6% |
+| Markdown | 187 | 0.5% |
+| HTML | 107 | 0.3% |
+| C++ | 41 | 0.1% |
+| TypeScript | 37 | 0.1% |
+| Go | 31 | 0.1% |
+| PowerShell | 5 | 0.0% |
+| Perl | 3 | 0.0% |
+| Dockerfile | 2 | 0.0% |
+| OpenSCAD | 2 | 0.0% |
+| C# | 1 | 0.0% |
+| Lua | 1 | 0.0% |
+
+**Sampled commits by UTC hour**
+
+| Hour | Commits |
+| --- | ---: |
+| 00:00 | 8 |
+| 01:00 | 0 |
+| 02:00 | 0 |
+| 03:00 | 0 |
+| 04:00 | 0 |
+| 05:00 | 0 |
+| 06:00 | 0 |
+| 07:00 | 3 |
+| 08:00 | 6 |
+| 09:00 | 6 |
+| 10:00 | 9 |
+| 11:00 | 20 |
+| 12:00 | 24 |
+| 13:00 | 14 |
+| 14:00 | 14 |
+| 15:00 | 5 |
+| 16:00 | 13 |
+| 17:00 | 12 |
+| 18:00 | 15 |
+| 19:00 | 11 |
+| 20:00 | 1 |
+| 21:00 | 12 |
+| 22:00 | 7 |
+| 23:00 | 13 |
+
+VRChat was reported at 2026-11-15 @ 17:47 UTC. Steam API readings can trail the client by one or two hours.
+
+The [Remotion source](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/src/Root.jsx) and [input snapshot](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/snapshot.json) are kept alongside the rendered images. Run the profile workflow manually to refresh the published dashboard.
+
+</details>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/userstats.svg" alt="My GitHub Stats" />
 </p>
 
 ---
