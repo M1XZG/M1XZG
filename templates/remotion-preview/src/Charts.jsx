@@ -12,14 +12,16 @@ const dateLabel = (date, options = {day: 'numeric', month: 'short', year: 'numer
   new Date(date).toLocaleDateString('en-GB', {...options, timeZone: 'UTC'});
 const total = (items) => items.reduce((sum, item) => sum + item.count, 0);
 
-const Panel = ({children, style}) => (
+const Panel = ({children, style, neonBorders}) => (
   <div style={{
     borderRadius: 22,
     boxSizing: 'border-box',
     flexShrink: 0,
-    border: '1px solid #49405f',
-    padding: '25px 28px',
-    background: 'radial-gradient(ellipse at 100% 0%, #29203d, transparent 70%), #151521',
+    border: neonBorders ? '3px solid transparent' : '1px solid #49405f',
+    padding: neonBorders ? '23px 26px' : '25px 28px',
+    background: neonBorders
+      ? 'radial-gradient(ellipse at 100% 0%, #29203d, #151521 70%) padding-box, linear-gradient(120deg, #70e7ff, #7861ca 45%, #c08bff 75%, #70e7ff) border-box'
+      : 'radial-gradient(ellipse at 100% 0%, #29203d, transparent 70%), #151521',
     overflow: 'hidden',
     ...style,
   }}>
@@ -38,7 +40,7 @@ const Heading = ({eyebrow, title, subtitle, aside}) => (
   </>
 );
 
-const ContributionHistory = () => {
+const ContributionHistory = ({neonBorders}) => {
   const weeks = data.contributions.weeks;
   const ceiling = Math.max(100, Math.ceil(Math.max(...weeks.map((week) => week.count), 1) / 500) * 500);
   const left = 62;
@@ -53,7 +55,7 @@ const ContributionHistory = () => {
   const ticks = [...new Set([0, ...weeks.map((_, i) => i).filter((i) => i % 9 === 0), weeks.length - 1])]
     .filter((i, index, list) => index === list.length - 1 || list[index + 1] - i >= 4);
   return (
-    <Panel style={{height: 342}}>
+    <Panel neonBorders={neonBorders} style={{height: 342}}>
       <Heading
         eyebrow="01 / CONTRIBUTION HISTORY"
         title="Contributions over time"
@@ -95,11 +97,11 @@ const ContributionHistory = () => {
   );
 };
 
-const LanguageBars = ({items, eyebrow, title, subtitle, unit, footer}) => {
+const LanguageBars = ({items, eyebrow, title, subtitle, unit, footer, neonBorders}) => {
   const sum = total(items);
   const displayed = topLanguages(items);
   return (
-    <Panel style={{width: 'calc(50% - 9px)', height: 470}}>
+    <Panel neonBorders={neonBorders} style={{width: 'calc(50% - 9px)', height: 470}}>
       <Heading {...{eyebrow, title, subtitle}} aside={`${number(sum)} ${unit}`} />
       <div style={{marginTop: 23, display: 'flex', flexDirection: 'column', gap: 16}}>
         {displayed.length === 0 && <div style={{color: muted}}>No classified public contributions to show.</div>}
@@ -126,7 +128,7 @@ const LanguageBars = ({items, eyebrow, title, subtitle, unit, footer}) => {
   );
 };
 
-const ProductiveTime = () => {
+const ProductiveTime = ({neonBorders}) => {
   const {hours} = data.productiveTime;
   const sum = hours.reduce((value, count) => value + count, 0);
   const maximum = Math.max(...hours);
@@ -139,7 +141,7 @@ const ProductiveTime = () => {
   const band = width / 24;
   const y = (value) => bottom - value / ceiling * (bottom - top);
   return (
-    <Panel style={{height: 359}}>
+    <Panel neonBorders={neonBorders} style={{height: 359}}>
       <Heading
         eyebrow="04 / PRODUCTIVE TIME"
         title="Commits by hour"
@@ -184,7 +186,7 @@ const ProductiveTime = () => {
   );
 };
 
-export const DetailedCharts = () => (
+export const DetailedCharts = ({neonBorders = false}) => (
   <AbsoluteFill style={{
     fontFamily: '"DejaVu Sans", sans-serif',
     color: text,
@@ -193,9 +195,10 @@ export const DetailedCharts = () => (
     flexDirection: 'column',
     gap: 18,
   }}>
-    <ContributionHistory />
+    <ContributionHistory neonBorders={neonBorders} />
     <div style={{display: 'flex', gap: 18}}>
       <LanguageBars
+        neonBorders={neonBorders}
         items={data.repositories}
         eyebrow="02 / REPOSITORIES BY LANGUAGE"
         title="Repository languages"
@@ -204,6 +207,7 @@ export const DetailedCharts = () => (
         footer="Forks and repositories without a primary language are excluded."
       />
       <LanguageBars
+        neonBorders={neonBorders}
         items={data.commits.languages}
         eyebrow="03 / COMMITS BY LANGUAGE"
         title="Commit languages"
@@ -212,7 +216,7 @@ export const DetailedCharts = () => (
         footer={`${data.commits.years[0]}-${data.commits.years.at(-1)} / up to 100 repositories per year / top five + Other`}
       />
     </div>
-    <ProductiveTime />
+    <ProductiveTime neonBorders={neonBorders} />
     <div style={{...mono, color: muted, fontSize: 10, padding: '0 4px'}}>
       FIXED DESIGN SNAPSHOT / {data.capturedAt.slice(0, 10)} / STRUCTURED GITHUB DATA
     </div>
