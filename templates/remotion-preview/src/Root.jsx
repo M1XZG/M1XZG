@@ -21,21 +21,21 @@ const count = (value, progress) => {
 };
 const mono = {fontFamily: '"DejaVu Sans Mono", monospace'};
 
-const Stat = ({label, value, progress, index}) => (
+const Stat = ({label, value, progress, index, compact = false}) => (
   <div style={{
     flex: 1,
     minWidth: 0,
-    padding: '22px 24px',
+    padding: compact ? '20px 18px' : '22px 24px',
     borderRadius: 16,
     border: '1px solid #39304f',
     background: 'linear-gradient(145deg, #211c32, #171827)',
     transform: `translateY(${(1 - progress) * (8 + index * 3)}px)`,
   }}>
-    <div style={{...mono, fontSize: 12, color: colors.muted, letterSpacing: 1.4}}>
+    <div style={{...mono, fontSize: compact ? 11 : 12, color: colors.muted, letterSpacing: compact ? 0.8 : 1.4}}>
       {label}
     </div>
     <div style={{
-      fontSize: 47,
+      fontSize: compact ? 40 : 47,
       fontWeight: 700,
       letterSpacing: -2,
       marginTop: 10,
@@ -104,12 +104,21 @@ const ProfileOverview = () => {
         </div>
         <div style={{display: 'flex', gap: 12, marginTop: 22}}>
           {[
+            ['CONTRIBUTIONS / LIFETIME', snapshot.lifetimeContributions],
             ['CONTRIBUTIONS / YEAR', snapshot.contributions],
+          ].map(([label, value], index) => (
+            <Stat key={label} {...{label, value, progress, index}} />
+          ))}
+        </div>
+        <div style={{display: 'flex', gap: 12, marginTop: 12}}>
+          {[
             ['TOTAL COMMITS', snapshot.commits],
             ['PULL REQUESTS', snapshot.pullRequests],
             ['TOTAL STARS', snapshot.stars],
+            ['TOTAL ISSUES', snapshot.issues],
+            ['CONTRIBUTED TO', snapshot.contributedTo],
           ].map(([label, value], index) => (
-            <Stat key={label} {...{label, value, progress, index}} />
+            <Stat key={label} compact {...{label, value, progress, index}} />
           ))}
         </div>
         <div style={{
@@ -169,7 +178,7 @@ export const RemotionRoot = () => (
       id="ProfileOverview"
       component={ProfileOverview}
       width={1100}
-      height={460}
+      height={600}
       fps={15}
       durationInFrames={105}
     />

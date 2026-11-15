@@ -279,7 +279,7 @@ As of <strong>2026-11-15 @ 13:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png" />
-    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: 34,463 contributions, 38.0k commits, 13.5k pull requests and 50 stars. VRChat: 19,741.6 hours, 98.71% of 20,000." />
+    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: 52,248 lifetime contributions, 34,463 contributions in the last year, 38.0k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,741.6 hours, 98.71% of 20,000." />
   </picture>
 </p>
 
@@ -292,9 +292,11 @@ As of <strong>2026-11-15 @ 13:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <details>
 <summary>Preview figures and build notes</summary>
 
-This is a fixed design snapshot captured on 2026-11-15, not a new live stats service. The new detailed charts use [structured GitHub data](./remotion-preview/chart-data.json), not estimates from the old chart images. Headline commit, pull-request and star totals still come from the existing Aura cards and keep their original rounding.
+This is a fixed design snapshot captured on 2026-11-15, not a new live stats service. The new detailed charts use [structured GitHub data](./remotion-preview/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
 
-The contribution chart and overview use the sum of the calendar's dated entries (34,463). GitHub returned 34,912 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (34,463). GitHub returned 34,912 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+
+Contributions / Lifetime sums dated entries across every GitHub contribution year, 2013-2026, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at 2026-11-15T14:03:36.025Z. Its 52,248 dated contributions and GitHub's separate 52,248 summary total are both retained in the data file.
 
 Repository-language bars count owned public repositories, excluding forks and missing primary languages. Commit-language bars count public contributions across 2013-2026, grouped by the repository's primary language, with a GitHub limit of 100 repositories per year. They do not measure lines of code. The top five languages plus Other retain the full percentage denominator.
 
@@ -302,6 +304,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Metric | Snapshot |
 | --- | ---: |
+| Contributions over lifetime | 52,248 |
 | Contributions in the last year | 34,463 |
 | Total commits | 38.0k |
 | Total pull requests | 13.5k |
