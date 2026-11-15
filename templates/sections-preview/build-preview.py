@@ -126,17 +126,25 @@ def workflow_state(workflow):
     return state.replace("_", " ").upper(), "#aaa6c1"
 
 
-def workflow_card(workflow):
-    state, color = workflow_state(workflow)
-    updated = workflow["updatedAt"]
-    updated = updated[:16].replace("T", " ") + " UTC" if updated else "No runs recorded"
-    body = text(30, 30, workflow["repo"], 12, "#bc91ff", mono=True)
-    body += text(30, 65, workflow["name"], 25, weight=700)
-    body += text(30, 92, f"LATEST RUN / {updated}", 11, "#aaa6c1", mono=True)
-    body += '<rect x="790" y="29" width="280" height="52" rx="14" fill="url(#panel)" stroke="#39304f"/>'
-    body += f'<circle cx="812" cy="55" r="5" fill="{color}"/>'
-    body += text(828, 61, state, 15, color, 700, mono=True)
-    return frame(1100, 115, workflow["name"] + ": " + state, body)
+def workflow_panel(workflows):
+    body = text(28, 35, "M1XZG / WORKFLOW STATUS", 14, "#6be7ff", mono=True)
+    body += text(28, 73, "WORKFLOW", 11, "#aaa6c1", mono=True)
+    body += text(650, 73, "STATUS", 11, "#aaa6c1", mono=True)
+    body += text(853, 73, "LAST RUN UPDATE / UTC", 11, "#aaa6c1", mono=True)
+    for index, workflow in enumerate(workflows):
+        y = 105 + index * 44
+        state, color = workflow_state(workflow)
+        updated = workflow["updatedAt"]
+        updated = updated[:16].replace("T", " ") if updated else "No runs recorded"
+        body += (
+            f'<rect x="17" y="{y - 23}" width="1066" height="40" rx="10" '
+            'fill="url(#panel)" stroke="#39304f"/>'
+        )
+        body += text(30, y + 3, workflow["name"], 19, weight=700)
+        body += f'<circle cx="635" cy="{y - 3}" r="4" fill="{color}"/>'
+        body += text(650, y + 2, state, 13, color, 700, mono=True)
+        body += text(853, y + 2, updated, 13, "#aaa6c1", mono=True)
+    return frame(1100, 100 + len(workflows) * 44, "Workflow status snapshot", body)
 
 
 def section(old, cards, captured, kind):
@@ -169,17 +177,16 @@ def build(snapshot):
         '<p align="center">\n' + "\n".join(world_links[i:i + 2]) + "\n</p>"
         for i in range(0, len(world_links), 2)
     ) + "\n"
-    workflows = []
-    for workflow in snapshot["workflows"]:
-        slug = workflow["slug"]
-        (HERE / f"{slug}.svg").write_text(workflow_card(workflow))
-        state, _ = workflow_state(workflow)
-        alt = f'{workflow["name"]}: {state}; latest run updated {workflow["updatedAt"] or "unknown"}'
-        workflows.append(
-            '<p align="center">\n'
-            f'  <a href="{escape(workflow["url"], quote=True)}"><img src="./sections-preview/{slug}.svg" '
-            f'width="100%" alt="{escape(alt, quote=True)}" /></a>\n</p>'
-        )
+    (HERE / "workflows.svg").write_text(workflow_panel(snapshot["workflows"]))
+    alt = "; ".join(
+        f'{workflow["name"]}: {workflow_state(workflow)[0]}, updated {workflow["updatedAt"] or "unknown"}'
+        for workflow in snapshot["workflows"]
+    )
+    workflows = (
+        '<p align="center">\n'
+        f'  <img src="./sections-preview/workflows.svg" width="90%" alt="{escape(alt, quote=True)}" />\n'
+        '</p>\n'
+    )
     for name in ["test-readme.md", "test-readme.me"]:
         path = TEMPLATES / name
         content = path.read_text()
@@ -193,7 +200,7 @@ def build(snapshot):
             prefix + world_heading
             + section(old_worlds, worlds, snapshot["capturedAt"], "World data")
             + "\n\n---\n\n" + workflow_heading
-            + section(old_workflows, "\n".join(workflows) + "\n", snapshot["capturedAt"], "Workflow")
+            + section(old_workflows, workflows, snapshot["capturedAt"], "Workflow")
             + "\n\n---\n\n" + stats_heading + suffix
         )
 

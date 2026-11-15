@@ -236,19 +236,7 @@ As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <!-- themed-section-preview -->
 
 <p align="center">
-  <a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="./sections-preview/vrchat-hours.svg" width="100%" alt="My VRChat Hours Update: PASSING; latest run updated 2026-11-15T17:49:00Z" /></a>
-</p>
-<p align="center">
-  <a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml"><img src="./sections-preview/uptime.svg" width="100%" alt="M1XZG Uptime Monitor: PASSING; latest run updated 2026-11-15T18:00:22Z" /></a>
-</p>
-<p align="center">
-  <a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="./sections-preview/profile-cards.svg" width="100%" alt="M1XZG Profile Card Creator: PASSING; latest run updated 2026-11-15T16:25:34Z" /></a>
-</p>
-<p align="center">
-  <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml"><img src="./sections-preview/game-images.svg" width="100%" alt="Shared Game Images - GitHub Pages: PASSING; latest run updated 2026-10-09T17:09:52Z" /></a>
-</p>
-<p align="center">
-  <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml"><img src="./sections-preview/posters.svg" width="100%" alt="Replace Posters Daily: PASSING; latest run updated 2026-11-15T12:12:56Z" /></a>
+  <img src="./sections-preview/workflows.svg" width="90%" alt="My VRChat Hours Update: PASSING, updated 2026-11-15T17:49:00Z; M1XZG Uptime Monitor: PASSING, updated 2026-11-15T18:00:22Z; M1XZG Profile Card Creator: PASSING, updated 2026-11-15T16:25:34Z; Shared Game Images - GitHub Pages: PASSING, updated 2026-10-09T17:09:52Z; Replace Posters Daily: PASSING, updated 2026-11-15T12:12:56Z" />
 </p>
 
 <p align="center"><sub>Workflow snapshot: 2026-11-15 18:03 UTC. Cards are a fixed design preview, not live updates. <a href="./sections-preview/snapshot.json">Source data</a>.</sub></p>
