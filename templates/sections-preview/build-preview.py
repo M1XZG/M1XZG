@@ -184,7 +184,7 @@ def build(snapshot):
     )
     workflows = (
         '<p align="center">\n'
-        f'  <img src="./sections-preview/workflows.svg" width="90%" alt="{escape(alt, quote=True)}" />\n'
+        f'  <img src="./sections-preview/workflows.svg" width="100%" alt="{escape(alt, quote=True)}" />\n'
         '</p>\n'
     )
     for name in ["test-readme.md", "test-readme.me"]:

@@ -236,7 +236,7 @@ As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <!-- themed-section-preview -->
 
 <p align="center">
-  <img src="./sections-preview/workflows.svg" width="90%" alt="My VRChat Hours Update: PASSING, updated 2026-11-15T17:49:00Z; M1XZG Uptime Monitor: PASSING, updated 2026-11-15T18:00:22Z; M1XZG Profile Card Creator: PASSING, updated 2026-11-15T16:25:34Z; Shared Game Images - GitHub Pages: PASSING, updated 2026-10-09T17:09:52Z; Replace Posters Daily: PASSING, updated 2026-11-15T12:12:56Z" />
+  <img src="./sections-preview/workflows.svg" width="100%" alt="My VRChat Hours Update: PASSING, updated 2026-11-15T17:49:00Z; M1XZG Uptime Monitor: PASSING, updated 2026-11-15T18:00:22Z; M1XZG Profile Card Creator: PASSING, updated 2026-11-15T16:25:34Z; Shared Game Images - GitHub Pages: PASSING, updated 2026-10-09T17:09:52Z; Replace Posters Daily: PASSING, updated 2026-11-15T12:12:56Z" />
 </p>
 
 <p align="center"><sub>Workflow snapshot: 2026-11-15 18:03 UTC. Cards are a fixed design preview, not live updates. <a href="./sections-preview/snapshot.json">Source data</a>.</sub></p>
