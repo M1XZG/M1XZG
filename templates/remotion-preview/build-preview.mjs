@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {readFileSync, writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 
@@ -42,6 +43,12 @@ const snapshot = {
 assert.ok(Number.isFinite(snapshot.vrchatHours) && snapshot.vrchatHours >= 0);
 writeFileSync(`${here}snapshot.json`, `${JSON.stringify(snapshot, null, 2)}\n`);
 
+const assetHash = createHash('sha256');
+for (const path of ['snapshot.json', 'chart-data.json', 'src/Root.jsx', 'src/Charts.jsx', 'chart-utils.mjs', 'package-lock.json']) {
+  assetHash.update(readFileSync(new URL(path, import.meta.url))).update('\0');
+}
+const assetQuery = `?v=${assetHash.digest('hex').slice(0, 16)}`;
+
 const remaining = Math.max(0, snapshot.vrchatMilestone - snapshot.vrchatHours)
   .toLocaleString('en-GB', {minimumFractionDigits: 1, maximumFractionDigits: 1});
 const progress = Math.min(100, snapshot.vrchatHours / snapshot.vrchatMilestone * 100).toFixed(2);
@@ -53,15 +60,15 @@ const languageTable = (items) => {
 const overview = `
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png" />
-    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: ${snapshot.lifetimeContributions} lifetime contributions, ${snapshot.contributions} contributions in the last year, ${snapshot.commits} commits, ${snapshot.pullRequests} pull requests, ${snapshot.stars} stars, ${snapshot.issues} issues and ${snapshot.contributedTo} repositories contributed to. VRChat: ${mainHours[2]} hours, ${progress}% of 20,000." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png${assetQuery}" />
+    <img src="./remotion-preview/overview.gif${assetQuery}" width="100%" alt="GitHub snapshot: ${snapshot.lifetimeContributions} lifetime contributions, ${snapshot.contributions} contributions in the last year, ${snapshot.commits} commits, ${snapshot.pullRequests} pull requests, ${snapshot.stars} stars, ${snapshot.issues} issues and ${snapshot.contributedTo} repositories contributed to. VRChat: ${mainHours[2]} hours, ${progress}% of 20,000." />
   </picture>
 </p>
 
-<p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png">View the still image</a>.</sub></p>
+<p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png${assetQuery}">View the still image</a>.</sub></p>
 
 <p align="center">
-  <img src="./remotion-preview/charts.png" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
+  <img src="./remotion-preview/charts.png${assetQuery}" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
 </p>
 
 <details>
