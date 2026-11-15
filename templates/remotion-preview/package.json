@@ -11,7 +11,8 @@
     "studio": "remotion studio src/index.jsx",
     "render:gif": "remotion render src/index.jsx ProfileOverview overview.gif --codec=gif --number-of-gif-loops=0 --concurrency=2",
     "render:still": "remotion still src/index.jsx ProfileOverview overview.png --frame=100",
-    "render:charts": "remotion still src/index.jsx DetailedCharts charts.png --frame=100"
+    "render:charts": "remotion still src/index.jsx DetailedCharts charts.png --frame=100",
+    "render:charts:neon": "remotion still src/index.jsx DetailedCharts ../sections-preview/charts.png --frame=100 --props='{\"neonBorders\":true}'"
   },
   "dependencies": {
     "@remotion/cli": "4.0.543",

@@ -321,7 +321,7 @@ As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png?v=3ab05f7e93d4e0b0">View the still image</a>.</sub></p>
 
 <p align="center">
-  <img src="./remotion-preview/charts.png?v=3ab05f7e93d4e0b0" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
+  <img src="./sections-preview/charts.png" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
 </p>
 
 <details>
@@ -420,7 +420,7 @@ npm ci
 npm run snapshot
 npm run render:gif
 npm run render:still
-npm run render:charts
+npm run render:charts:neon
 ```
 
 Those commands reuse the committed structured chart snapshot. To collect fresh aggregate chart data first, use an authenticated GitHub CLI:
