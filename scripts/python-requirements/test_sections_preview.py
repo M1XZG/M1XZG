@@ -1,6 +1,8 @@
 import importlib.util
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 from xml.etree import ElementTree as ET
 
 
@@ -64,6 +66,44 @@ class SectionsPreviewTest(unittest.TestCase):
         self.assertIn("2026-11-15 17:49", content)
         self.assertIn("2026-11-14 12:30", content)
         self.assertIn("No runs recorded", content)
+
+    def test_publishing_updates_template_and_pending_readme_without_touching_preview(self):
+        scratch = SCRIPT.parents[2] / "tmp"
+        scratch.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=scratch) as directory:
+            root = Path(directory)
+            templates = root / "templates"
+            templates.mkdir()
+            assets = root / "assets/profile-sections"
+            assets.mkdir(parents=True)
+            content = (
+                "Hours placeholders remain\n\n"
+                "### 🥽🌐 Some of the worlds I've uploaded\n\n"
+                '<a href="https://example.com/world">World badge</a>'
+                "\n\n---\n\n## 🚦 Workflow Status\n\n"
+                '<a href="https://example.com/workflow">Workflow badge</a>'
+                "\n\n---\n\n## 📊 Stats\n\nKeep stats unchanged\n"
+            )
+            target = templates / "README-template.md"
+            pending = root / "TMP-README-unified.md"
+            target.write_text(content)
+            pending.write_text(content)
+            for name in ["test-readme.md", "test-readme.me"]:
+                (templates / name).write_text("Preview stays unchanged")
+            snapshot = {"capturedAt": "2026-11-15T18:00:00Z", "worlds": [], "workflows": []}
+            with patch.object(preview, "TEMPLATES", templates):
+                preview.build(snapshot, publish=True)
+                first = target.read_text()
+                preview.build(snapshot, publish=True)
+            self.assertEqual(target.read_text(), first)
+            self.assertEqual(pending.read_text(), first)
+            self.assertIn("Hours placeholders remain", first)
+            self.assertIn("Keep stats unchanged", first)
+            self.assertIn("/main/assets/profile-sections/workflows.svg?v=", first)
+            self.assertIn("Refreshed by the hourly profile workflow.", first)
+            self.assertNotIn("fixed design preview", first)
+            self.assertEqual(first.count("<details>"), 2)
+            self.assertEqual((templates / "test-readme.md").read_text(), "Preview stays unchanged")
 
 
 if __name__ == "__main__":

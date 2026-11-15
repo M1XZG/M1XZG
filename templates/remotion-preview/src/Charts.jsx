@@ -186,7 +186,7 @@ const ProductiveTime = ({neonBorders}) => {
   );
 };
 
-export const DetailedCharts = ({neonBorders = false}) => (
+export const DetailedCharts = ({neonBorders = true}) => (
   <AbsoluteFill style={{
     fontFamily: '"DejaVu Sans", sans-serif',
     color: text,
