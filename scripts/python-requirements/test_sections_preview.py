@@ -47,6 +47,24 @@ class SectionsPreviewTest(unittest.TestCase):
         self.assertNotIn("<p>cards</p>", twice)
         self.assertIn("<p>new cards</p>", twice)
 
+    def test_compact_panel_preserves_each_workflow_status_and_time(self):
+        workflows = [
+            {"name": "Hours & updates", "status": "completed", "conclusion": "success",
+             "updatedAt": "2026-11-15T17:49:00Z"},
+            {"name": "Deploy", "status": "completed", "conclusion": "failure",
+             "updatedAt": "2026-11-14T12:30:00Z"},
+            {"name": "New workflow", "status": "no_runs", "conclusion": None,
+             "updatedAt": None},
+        ]
+        root = ET.fromstring(preview.workflow_panel(workflows))
+        content = "".join(root.itertext())
+        for workflow in workflows:
+            self.assertIn(workflow["name"], content)
+            self.assertIn(preview.workflow_state(workflow)[0], content)
+        self.assertIn("2026-11-15 17:49", content)
+        self.assertIn("2026-11-14 12:30", content)
+        self.assertIn("No runs recorded", content)
+
 
 if __name__ == "__main__":
     unittest.main()
