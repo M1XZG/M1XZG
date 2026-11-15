@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1100" height="115" viewBox="0 0 1100 115" role="img">
+<title>Shared Game Images - GitHub Pages: PASSING</title>
+<defs>
+  <linearGradient id="border" x2="1" y2="1"><stop stop-color="#70e7ff"/><stop offset=".45" stop-color="#7861ca"/><stop offset=".75" stop-color="#c08bff"/><stop offset="1" stop-color="#70e7ff"/></linearGradient>
+  <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#211c32"/><stop offset="1" stop-color="#171827"/></linearGradient>
+  <radialGradient id="glow" cx=".9" cy="0" r=".9"><stop stop-color="#312048"/><stop offset="1" stop-color="#11111d"/></radialGradient>
+  <clipPath id="photo"><rect x="17" y="17" width="1066" height="158" rx="14"/></clipPath>
+</defs>
+<rect x="1.5" y="1.5" width="1097" height="112" rx="25" fill="url(#glow)" stroke="url(#border)" stroke-width="3"/>
+<text x="30" y="30" fill="#bc91ff" font-family="DejaVu Sans Mono,monospace" font-size="12" font-weight="400">M1XZG/shared-game-images</text><text x="30" y="65" fill="#f5f2ff" font-family="DejaVu Sans,sans-serif" font-size="25" font-weight="700">Shared Game Images - GitHub Pages</text><text x="30" y="92" fill="#aaa6c1" font-family="DejaVu Sans Mono,monospace" font-size="11" font-weight="400">LATEST RUN / 2026-10-09 17:09 UTC</text><rect x="790" y="29" width="280" height="52" rx="14" fill="url(#panel)" stroke="#39304f"/><circle cx="812" cy="55" r="5" fill="#6be7ff"/><text x="828" y="61" fill="#6be7ff" font-family="DejaVu Sans Mono,monospace" font-size="15" font-weight="700">PASSING</text>
+</svg>
