@@ -105,6 +105,7 @@ test('preview image URLs change with render inputs, including layout-only edits'
         cwd: join(fixture, 'templates/remotion-preview'),
         stdio: 'pipe',
       });
+
       const markdown = readFileSync(join(fixture, 'templates/test-readme.md'), 'utf8');
       const versions = [...markdown.matchAll(
         /\.\/remotion-preview\/(?:overview\.(?:gif|png)|charts\.png)(\?v=[a-f0-9]{16})/g,
@@ -124,6 +125,52 @@ test('preview image URLs change with render inputs, including layout-only edits'
     data.contributions.total += 1;
     writeFileSync(path, JSON.stringify(data));
     assert.notEqual(render(), layoutVersion);
+  } finally {
+    rmSync(fixture, {recursive: true});
+  }
+});
+
+test('publication preserves placeholders and uses fresh hours without editing the live README', () => {
+  const root = new URL('../../', import.meta.url);
+  const tmp = fileURLToPath(new URL('tmp/', root));
+  mkdirSync(tmp, {recursive: true});
+  const fixture = mkdtempSync(join(tmp, 'profile-publish-test-'));
+  try {
+    for (const path of [
+      'README.md', 'templates/README-template.md',
+      'profile-summary-card-output/aura/3-stats.svg',
+      ...['build-preview.mjs', 'chart-data.json', 'src/Root.jsx', 'src/Charts.jsx', 'chart-utils.mjs', 'package-lock.json']
+        .map((path) => `templates/remotion-preview/${path}`),
+    ]) {
+      const target = join(fixture, path);
+      mkdirSync(dirname(target), {recursive: true});
+      copyFileSync(new URL(path, root), target);
+    }
+    const live = readFileSync(join(fixture, 'README.md'), 'utf8');
+    const template = readFileSync(join(fixture, 'templates/README-template.md'), 'utf8');
+    const hoursPattern = /(?<=<!-- start myhoursHERE -->\s*As of <strong>[^<]+<\/strong> - )[\d,.]+/;
+    assert.match(live, hoursPattern);
+    const pending = live.replace(hoursPattern, '19,999.5');
+    writeFileSync(join(fixture, 'TMP-README-unified.md'), pending);
+    const publish = () => execFileSync(process.execPath, ['build-preview.mjs', '--publish'], {
+      cwd: join(fixture, 'templates/remotion-preview'),
+      stdio: 'pipe',
+    });
+    publish();
+    const result = readFileSync(join(fixture, 'templates/README-template.md'), 'utf8');
+    const outsideStats = (text) => text.replace(/## 📊 Stats\n[\s\S]*?(?=\n---)/, '');
+    assert.equal(outsideStats(result), outsideStats(template));
+    assert.equal(readFileSync(join(fixture, 'README.md'), 'utf8'), live);
+    const generated = readFileSync(join(fixture, 'TMP-README-unified.md'), 'utf8');
+    assert.equal(outsideStats(generated), outsideStats(pending));
+    assert.match(result, /main\/templates\/remotion-preview\/overview\.gif\?v=[a-f0-9]{16}/);
+    assert.match(result, /19,999\.5 hours/);
+    assert.match(result, /prefers-reduced-motion: reduce/);
+    assert.doesNotMatch(result, /fixed design snapshot|Design preview|Compare with the original/);
+    assert.match(result, /assets\/userstats\.svg/);
+    assert.equal(JSON.parse(readFileSync(join(fixture, 'templates/remotion-preview/snapshot.json'))).vrchatHours, 19999.5);
+    publish();
+    assert.equal(readFileSync(join(fixture, 'templates/README-template.md'), 'utf8'), result);
   } finally {
     rmSync(fixture, {recursive: true});
   }

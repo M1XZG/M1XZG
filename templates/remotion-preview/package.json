@@ -7,6 +7,7 @@
     "collect:charts": "node chart-data.mjs",
     "collect:lifetime": "node chart-data.mjs --lifetime-only",
     "snapshot": "node build-preview.mjs",
+    "publish:snapshot": "node build-preview.mjs --publish",
     "studio": "remotion studio src/index.jsx",
     "render:gif": "remotion render src/index.jsx ProfileOverview overview.gif --codec=gif --number-of-gif-loops=0 --concurrency=2",
     "render:still": "remotion still src/index.jsx ProfileOverview overview.png --frame=100",
