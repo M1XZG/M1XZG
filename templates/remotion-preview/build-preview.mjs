@@ -24,10 +24,12 @@ const mainHours = required(readme.match(
   /<!-- start myhoursHERE -->\s*As of <strong>([^<]+)<\/strong> - ([\d,.]+)/,
 ), 'VRChat hours');
 assert.ok(Number.isInteger(charts.contributions.total) && charts.contributions.total >= 0);
+assert.ok(Number.isInteger(charts.contributions.lifetime.total) && charts.contributions.lifetime.total >= 0);
 const snapshot = {
   capturedAt: charts.capturedAt,
   source: 'Contributions use the structured calendar daily-count sum. Other headline GitHub totals retain the committed Aura card rounding. VRChat hours come from README.md.',
   contributions: charts.contributions.total.toLocaleString('en-GB'),
+  lifetimeContributions: charts.contributions.lifetime.total.toLocaleString('en-GB'),
   stars: values[0],
   commits: values[1],
   pullRequests: values[2],
@@ -52,7 +54,7 @@ const overview = `
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png" />
-    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: ${snapshot.contributions} contributions, ${snapshot.commits} commits, ${snapshot.pullRequests} pull requests and ${snapshot.stars} stars. VRChat: ${mainHours[2]} hours, ${progress}% of 20,000." />
+    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: ${snapshot.lifetimeContributions} lifetime contributions, ${snapshot.contributions} contributions in the last year, ${snapshot.commits} commits, ${snapshot.pullRequests} pull requests, ${snapshot.stars} stars, ${snapshot.issues} issues and ${snapshot.contributedTo} repositories contributed to. VRChat: ${mainHours[2]} hours, ${progress}% of 20,000." />
   </picture>
 </p>
 
@@ -65,9 +67,11 @@ const overview = `
 <details>
 <summary>Preview figures and build notes</summary>
 
-This is a fixed design snapshot captured on ${snapshot.capturedAt.slice(0, 10)}, not a new live stats service. The new detailed charts use [structured GitHub data](./remotion-preview/chart-data.json), not estimates from the old chart images. Headline commit, pull-request and star totals still come from the existing Aura cards and keep their original rounding.
+This is a fixed design snapshot captured on ${snapshot.capturedAt.slice(0, 10)}, not a new live stats service. The new detailed charts use [structured GitHub data](./remotion-preview/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
 
-The contribution chart and overview use the sum of the calendar's dated entries (${charts.contributions.total.toLocaleString('en-GB')}). GitHub returned ${charts.contributions.reportedTotal.toLocaleString('en-GB')} separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (${charts.contributions.total.toLocaleString('en-GB')}). GitHub returned ${charts.contributions.reportedTotal.toLocaleString('en-GB')} separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+
+Contributions / Lifetime sums dated entries across every GitHub contribution year, ${charts.contributions.lifetime.years[0].year}-${charts.contributions.lifetime.years.at(-1).year}, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at ${charts.contributions.lifetime.capturedAt}. Its ${snapshot.lifetimeContributions} dated contributions and GitHub's separate ${charts.contributions.lifetime.reportedTotal.toLocaleString('en-GB')} summary total are both retained in the data file.
 
 Repository-language bars count owned public repositories, excluding forks and missing primary languages. Commit-language bars count public contributions across ${charts.commits.years[0]}-${charts.commits.years.at(-1)}, grouped by the repository's primary language, with a GitHub limit of 100 repositories per year. They do not measure lines of code. The top five languages plus Other retain the full percentage denominator.
 
@@ -75,6 +79,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Metric | Snapshot |
 | --- | ---: |
+| Contributions over lifetime | ${snapshot.lifetimeContributions} |
 | Contributions in the last year | ${snapshot.contributions} |
 | Total commits | ${snapshot.commits} |
 | Total pull requests | ${snapshot.pullRequests} |

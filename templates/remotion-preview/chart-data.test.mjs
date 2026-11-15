@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
-import {commitLanguages, hourlyCommits, repoLanguages, topLanguages, weeklyContributions} from './chart-utils.mjs';
+import {commitLanguages, hourlyCommits, repoLanguages, topLanguages, weeklyContributions, lifetimeContributions} from './chart-utils.mjs';
 
 test('repository counts exclude forks, private repos and missing languages', () => {
   assert.deepEqual(repoLanguages([
@@ -57,4 +57,25 @@ test('hourly samples use authored UTC hour and skip inaccessible or private hist
   assert.equal(hours[0], 2);
   assert.equal(hours[23], 1);
   assert.equal(hours.reduce((total, value) => total + value, 0), 3);
+});
+
+test('lifetime sums all years without double-counting adjacent-year calendar padding', () => {
+  const calendar = (totalContributions, days) => ({
+    totalContributions,
+    weeks: [{contributionDays: days.map(([date, contributionCount]) => ({date, contributionCount}))}],
+  });
+  const years = [
+    {year: 2026, calendar: calendar(15, [['2025-12-31', 4], ['2026-01-01', 10]])},
+    {year: 2025, calendar: calendar(7, [['2025-12-31', 4], ['2026-01-01', 10]])},
+  ];
+  assert.deepEqual(lifetimeContributions(years), {
+    total: 14,
+    reportedTotal: 22,
+    years: [
+      {year: 2025, count: 4, reportedCount: 7},
+      {year: 2026, count: 10, reportedCount: 15},
+    ],
+  });
+  assert.throws(() => lifetimeContributions([years[0], years[0]]));
+  assert.throws(() => lifetimeContributions([]));
 });

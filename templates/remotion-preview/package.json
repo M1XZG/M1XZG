@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --test chart-data.test.mjs",
     "collect:charts": "node chart-data.mjs",
+    "collect:lifetime": "node chart-data.mjs --lifetime-only",
     "snapshot": "node build-preview.mjs",
     "studio": "remotion studio src/index.jsx",
     "render:gif": "remotion render src/index.jsx ProfileOverview overview.gif --codec=gif --number-of-gif-loops=0 --concurrency=2",

@@ -57,3 +57,28 @@ export const topLanguages = (items, limit = 5) => {
   const other = sum(items.slice(limit));
   return other > 0 ? [...top, {name: 'Other', count: other}] : top;
 };
+
+export const lifetimeContributions = (calendars) => {
+  const seen = new Set();
+  const years = calendars.map(({year, calendar}) => {
+    requireValue(Number.isInteger(year) && !seen.has(year), 'Invalid or duplicate contribution year');
+    seen.add(year);
+    const days = calendar.weeks.flatMap((week) => week.contributionDays)
+      .filter((day) => day.date.startsWith(`${year}-`));
+    for (const day of days) {
+      requireValue(Number.isInteger(day.contributionCount) && day.contributionCount >= 0, 'Invalid contribution count');
+    }
+    requireValue(Number.isInteger(calendar.totalContributions) && calendar.totalContributions >= 0, 'Invalid reported total');
+    return {
+      year,
+      count: days.reduce((total, day) => total + day.contributionCount, 0),
+      reportedCount: calendar.totalContributions,
+    };
+  }).sort((a, b) => a.year - b.year);
+  requireValue(years.length > 0, 'No contribution years');
+  return {
+    total: sum(years),
+    reportedTotal: years.reduce((total, year) => total + year.reportedCount, 0),
+    years,
+  };
+};

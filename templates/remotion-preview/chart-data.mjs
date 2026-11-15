@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
-import {writeFileSync} from 'node:fs';
+import {readFileSync, writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
-import {repoLanguages, commitLanguages, hourlyCommits, weeklyContributions} from './chart-utils.mjs';
+import {repoLanguages, commitLanguages, hourlyCommits, weeklyContributions, lifetimeContributions} from './chart-utils.mjs';
 
 const sum = (items) => items.reduce((total, item) => total + item.count, 0);
 
@@ -19,6 +19,27 @@ const graphql = (query, variables = {}) => {
   assert.ok(!response.errors, JSON.stringify(response.errors));
   assert.ok(response.data?.user, 'Missing GitHub user');
   return response.data.user;
+};
+
+const collectLifetime = (years) => {
+  const calendars = years.map((year) => {
+    console.log(`Collecting lifetime contributions for ${year}`);
+    const user = graphql(`query($from: DateTime!, $to: DateTime!) {
+      user(login: "M1XZG") {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+            weeks { contributionDays { date contributionCount } }
+          }
+        }
+      }
+    }`, {
+      from: `${year}-01-01T00:00:00Z`,
+      to: `${year}-12-31T23:59:59Z`,
+    });
+    return {year, calendar: user.contributionsCollection.contributionCalendar};
+  });
+  return {...lifetimeContributions(calendars), capturedAt: new Date().toISOString()};
 };
 
 const collect = () => {
@@ -95,6 +116,7 @@ const collect = () => {
       total: sum(weeks),
       reportedTotal: calendar.totalContributions,
       weeks,
+      lifetime: collectLifetime(years),
     },
     repositories: repoLanguages(repos),
     commits: {
@@ -115,4 +137,16 @@ const collect = () => {
   console.log(`Saved chart-data.json: ${weeks.length} weeks, ${data.repositories.length} repository languages, ${data.commits.languages.length} commit languages.`);
 };
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) collect();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  if (process.argv.includes('--lifetime-only')) {
+    const path = new URL('./chart-data.json', import.meta.url);
+    const data = JSON.parse(readFileSync(path, 'utf8'));
+    const profile = graphql(`query {
+      user(login: "M1XZG") { contributionsCollection { contributionYears } }
+    }`);
+    data.contributions.lifetime = collectLifetime(profile.contributionsCollection.contributionYears);
+    writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`);
+  } else {
+    collect();
+  }
+}
