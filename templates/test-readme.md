@@ -124,6 +124,26 @@ As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 ### 🥽🌐 Some of the worlds I've uploaded
 
+<!-- themed-section-preview -->
+
+<p align="center">
+  <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224"><img src="./sections-preview/cozy-house.svg" width="49%" alt="Wildy&#x27;s Cozy House: 19,112 visits, 426 favorites; last upload 2025-03-23" /></a>
+  <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69"><img src="./sections-preview/soft-comfy-space.svg" width="49%" alt="Wildy&#x27;s Soft and Comfy Space: 13,816 visits, 236 favorites; last upload 2026-02-01" /></a>
+</p>
+<p align="center">
+  <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc"><img src="./sections-preview/cozy-loft.svg" width="49%" alt="Wildy&#x27;s Cozy Loft: 6,533 visits, 231 favorites; last upload 2025-02-15" /></a>
+  <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a"><img src="./sections-preview/afk-home.svg" width="49%" alt="Wildy&#x27;s AFK Home: 33 visits, 1 favorites; last upload 2026-02-01" /></a>
+</p>
+<p align="center">
+  <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50"><img src="./sections-preview/soft-haven.svg" width="49%" alt="Wildy&#x27;s Soft Haven: 5,166 visits, 31 favorites; last upload 2026-07-07" /></a>
+  <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a"><img src="./sections-preview/neon-afk-home.svg" width="49%" alt="Neon AFK Home: 105 visits, 1 favorites; last upload 2026-01-01" /></a>
+</p>
+
+<p align="center"><sub>World data snapshot: 2026-11-15 18:03 UTC. Cards are a fixed design preview, not live updates. <a href="./sections-preview/snapshot.json">Source data</a>.</sub></p>
+
+<details>
+<summary>Live badges and links</summary>
+
 <div align="center">
 
 <table>
@@ -207,9 +227,34 @@ As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 </div>
 
+</details>
+
 ---
 
 ## 🚦 Workflow Status
+
+<!-- themed-section-preview -->
+
+<p align="center">
+  <a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="./sections-preview/vrchat-hours.svg" width="100%" alt="My VRChat Hours Update: PASSING; latest run updated 2026-11-15T17:49:00Z" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml"><img src="./sections-preview/uptime.svg" width="100%" alt="M1XZG Uptime Monitor: PASSING; latest run updated 2026-11-15T18:00:22Z" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="./sections-preview/profile-cards.svg" width="100%" alt="M1XZG Profile Card Creator: PASSING; latest run updated 2026-11-15T16:25:34Z" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml"><img src="./sections-preview/game-images.svg" width="100%" alt="Shared Game Images - GitHub Pages: PASSING; latest run updated 2026-10-09T17:09:52Z" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml"><img src="./sections-preview/posters.svg" width="100%" alt="Replace Posters Daily: PASSING; latest run updated 2026-11-15T12:12:56Z" /></a>
+</p>
+
+<p align="center"><sub>Workflow snapshot: 2026-11-15 18:03 UTC. Cards are a fixed design preview, not live updates. <a href="./sections-preview/snapshot.json">Source data</a>.</sub></p>
+
+<details>
+<summary>Live badges and links</summary>
 
 <div align="center">
 
@@ -270,6 +315,8 @@ As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 </table>
 
 </div>
+
+</details>
 
 ---
 
