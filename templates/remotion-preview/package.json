@@ -3,10 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "test": "node --test chart-data.test.mjs",
+    "collect:charts": "node chart-data.mjs",
     "snapshot": "node build-preview.mjs",
     "studio": "remotion studio src/index.jsx",
     "render:gif": "remotion render src/index.jsx ProfileOverview overview.gif --codec=gif --number-of-gif-loops=0 --concurrency=2",
-    "render:still": "remotion still src/index.jsx ProfileOverview overview.png --frame=100"
+    "render:still": "remotion still src/index.jsx ProfileOverview overview.png --frame=100",
+    "render:charts": "remotion still src/index.jsx DetailedCharts charts.png --frame=100"
   },
   "dependencies": {
     "@remotion/cli": "4.0.543",

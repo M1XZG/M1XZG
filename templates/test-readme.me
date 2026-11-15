@@ -1,4 +1,4 @@
-> **Design preview:** the Remotion overview below is a fixed snapshot. The live profile and its update workflows are unchanged.
+> **Design preview:** the Remotion dashboard below is a fixed snapshot. The live profile and its update workflows are unchanged.
 
 <p align="center">
   <img src="../assets/github-header-banner-neon.svg" alt="Profile Banner" width="100%" />
@@ -279,20 +279,30 @@ As of <strong>2026-11-15 @ 13:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png" />
-    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: 52.24k contributions, 38.0k commits, 13.5k pull requests and 50 stars. VRChat: 19,741.6 hours, 98.71% of 20,000." />
+    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: 34,463 contributions, 38.0k commits, 13.5k pull requests and 50 stars. VRChat: 19,741.6 hours, 98.71% of 20,000." />
   </picture>
 </p>
 
 <p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png">View the still image</a>.</sub></p>
 
+<p align="center">
+  <img src="./remotion-preview/charts.png" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
+</p>
+
 <details>
 <summary>Preview figures and build notes</summary>
 
-This is a fixed design snapshot captured on 2026-11-15, not a new live stats service. GitHub totals come from the existing Aura cards and keep their original rounding. The detailed cards below are unchanged.
+This is a fixed design snapshot captured on 2026-11-15, not a new live stats service. The new detailed charts use [structured GitHub data](./remotion-preview/chart-data.json), not estimates from the old chart images. Headline commit, pull-request and star totals still come from the existing Aura cards and keep their original rounding.
+
+The contribution chart and overview use the sum of the calendar's dated entries (34,463). GitHub returned 34,912 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+
+Repository-language bars count owned public repositories, excluding forks and missing primary languages. Commit-language bars count public contributions across 2013-2026, grouped by the repository's primary language, with a GitHub limit of 100 repositories per year. They do not measure lines of code. The top five languages plus Other retain the full percentage denominator.
+
+Hourly activity is a sample from the last 90 days: up to 50 authored commits on each default branch, across up to 50 contributing repositories, excluding private repositories. It is not a complete productivity record. Hours use UTC, matching the existing profile workflow.
 
 | Metric | Snapshot |
 | --- | ---: |
-| Contributions in the last year | 52.24k |
+| Contributions in the last year | 34,463 |
 | Total commits | 38.0k |
 | Total pull requests | 13.5k |
 | Total stars | 50 |
@@ -300,6 +310,68 @@ This is a fixed design snapshot captured on 2026-11-15, not a new live stats ser
 | Repositories contributed to | 68 |
 | VRChat lifetime hours | 19,741.6 |
 | Hours to 20,000 | 258.4 |
+
+**Repositories by primary language**
+
+| Language | Count | Share |
+| --- | ---: | ---: |
+| Python | 19 | 57.6% |
+| Shell | 6 | 18.2% |
+| HTML | 2 | 6.1% |
+| C++ | 1 | 3.0% |
+| Go | 1 | 3.0% |
+| JavaScript | 1 | 3.0% |
+| Markdown | 1 | 3.0% |
+| PowerShell | 1 | 3.0% |
+| TypeScript | 1 | 3.0% |
+
+**Public commit contributions by repository language**
+
+| Language | Count | Share |
+| --- | ---: | ---: |
+| Python | 36,606 | 98.0% |
+| Shell | 242 | 0.6% |
+| Markdown | 187 | 0.5% |
+| HTML | 107 | 0.3% |
+| JavaScript | 82 | 0.2% |
+| C++ | 41 | 0.1% |
+| TypeScript | 37 | 0.1% |
+| Go | 31 | 0.1% |
+| PowerShell | 5 | 0.0% |
+| Perl | 3 | 0.0% |
+| Dockerfile | 2 | 0.0% |
+| OpenSCAD | 2 | 0.0% |
+| C# | 1 | 0.0% |
+| Lua | 1 | 0.0% |
+
+**Sampled commits by UTC hour**
+
+| Hour | Commits |
+| --- | ---: |
+| 00:00 | 11 |
+| 01:00 | 3 |
+| 02:00 | 4 |
+| 03:00 | 3 |
+| 04:00 | 4 |
+| 05:00 | 3 |
+| 06:00 | 4 |
+| 07:00 | 3 |
+| 08:00 | 6 |
+| 09:00 | 6 |
+| 10:00 | 9 |
+| 11:00 | 20 |
+| 12:00 | 24 |
+| 13:00 | 12 |
+| 14:00 | 6 |
+| 15:00 | 2 |
+| 16:00 | 9 |
+| 17:00 | 5 |
+| 18:00 | 15 |
+| 19:00 | 11 |
+| 20:00 | 1 |
+| 21:00 | 12 |
+| 22:00 | 7 |
+| 23:00 | 13 |
 
 VRChat was reported at 2026-11-15 @ 13:09 UTC. Steam API readings can trail the client by one or two hours.
 
@@ -310,11 +382,24 @@ npm ci
 npm run snapshot
 npm run render:gif
 npm run render:still
+npm run render:charts
 ```
+
+Those commands reuse the committed structured chart snapshot. To collect fresh aggregate chart data first, use an authenticated GitHub CLI:
+
+```bash
+npm run collect:charts
+```
+
+Then rerun the snapshot and render commands. The collector stores aggregate counts, not repository names or individual commits.
 
 Rebuilding only writes the preview files. No live README, production template or workflow is changed.
 
 </details>
+
+<details>
+<summary>Compare with the original profile charts</summary>
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/profile-summary-card-output/aura/0-profile-details.svg?v=neon-1" alt="Profile Banner" width="80%" />
@@ -332,6 +417,9 @@ Rebuilding only writes the preview files. No live README, production template or
 <p align="center">
   <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/refs/heads/main/assets/userstats.svg" alt="My GitHub Stats" />
 </p>
+
+
+</details>
 
 ---
 
