@@ -63,6 +63,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Test world and workflow card publisher
+        run: python -m unittest discover -s scripts/python-requirements -p test_sections_preview.py
+
       - name: Set up git user
         run: |
           git config --global user.email "rmckenzi@rpmdp.com"

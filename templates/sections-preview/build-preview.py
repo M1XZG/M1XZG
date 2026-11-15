@@ -2,6 +2,7 @@
 
 import argparse
 import base64
+from hashlib import sha256
 from datetime import datetime, timezone
 from html import escape
 import json
@@ -35,7 +36,8 @@ def download(url):
     ])
 
 
-def collect():
+def collect(output=HERE):
+    output.mkdir(parents=True, exist_ok=True)
     snapshot = {"capturedAt": datetime.now(timezone.utc).isoformat(), "worlds": [], "workflows": []}
     for slug, world_id in WORLDS:
         source = f"https://api.vrchat.cloud/api/1/worlds/wrld_{world_id}"
@@ -47,7 +49,7 @@ def collect():
             mime = "image/png"
         else:
             raise ValueError(f"Unsupported thumbnail format: {slug}")
-        (HERE / f"{slug}.thumbnail").write_bytes(thumbnail)
+        (output / f"{slug}.thumbnail").write_bytes(thumbnail)
         snapshot["worlds"].append({
             "slug": slug, "name": world["name"], "visits": world["visits"],
             "favorites": world["favorites"], "updatedAt": world["updated_at"],
@@ -67,7 +69,7 @@ def collect():
             "runUrl": run["html_url"] if run else None,
             "source": f"https://api.github.com/{endpoint}",
         })
-    (HERE / "snapshot.json").write_text(json.dumps(snapshot, indent=2) + "\n")
+    (output / "snapshot.json").write_text(json.dumps(snapshot, indent=2) + "\n")
     return snapshot
 
 
@@ -147,48 +149,61 @@ def workflow_panel(workflows):
     return frame(1100, 100 + len(workflows) * 44, "Workflow status snapshot", body)
 
 
-def section(old, cards, captured, kind):
+def section(old, cards, captured, kind, publish=False, asset_base="./sections-preview"):
     # Keep the original live badges and their individual links available.
     if "<!-- themed-section-preview -->" in old:
         old = old.split("<summary>Live badges and links</summary>\n\n", 1)[1]
         old = old.rsplit("\n</details>", 1)[0].strip()
+    freshness = (
+        "Refreshed by the hourly profile workflow. "
+        if publish else "Cards are a fixed design preview, not live updates. "
+    )
     return (
         "<!-- themed-section-preview -->\n\n"
         + cards
         + f"\n<p align=\"center\"><sub>{kind} snapshot: {captured[:16].replace('T', ' ')} UTC. "
-        'Cards are a fixed design preview, not live updates. '
-        '<a href="./sections-preview/snapshot.json">Source data</a>.</sub></p>\n\n'
+        + freshness
+        + f'<a href="{asset_base}/snapshot.json">Source data</a>.</sub></p>\n\n'
         "<details>\n<summary>Live badges and links</summary>\n\n"
         + old.strip() + "\n\n</details>"
     )
 
 
-def build(snapshot):
+def build(snapshot, publish=False):
+    output = TEMPLATES.parent / "assets/profile-sections" if publish else HERE
+    asset_base = (
+        "https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections"
+        if publish else "./sections-preview"
+    )
+    version = "?v=" + sha256(json.dumps(snapshot, sort_keys=True).encode()).hexdigest()[:16] if publish else ""
     world_links = []
     for world in snapshot["worlds"]:
         slug = world["slug"]
-        (HERE / f"{slug}.svg").write_text(world_card(world, (HERE / f"{slug}.thumbnail").read_bytes()))
+        (output / f"{slug}.svg").write_text(world_card(world, (output / f"{slug}.thumbnail").read_bytes()))
         alt = f'{world["name"]}: {world["visits"]:,} visits, {world["favorites"]:,} favorites; last upload {world["updatedAt"][:10]}'
         world_links.append(
-            f'  <a href="{escape(world["url"], quote=True)}"><img src="./sections-preview/{slug}.svg" '
+            f'  <a href="{escape(world["url"], quote=True)}"><img src="{asset_base}/{slug}.svg{version}" '
             f'width="49%" alt="{escape(alt, quote=True)}" /></a>'
         )
     worlds = "\n".join(
         '<p align="center">\n' + "\n".join(world_links[i:i + 2]) + "\n</p>"
         for i in range(0, len(world_links), 2)
     ) + "\n"
-    (HERE / "workflows.svg").write_text(workflow_panel(snapshot["workflows"]))
+    (output / "workflows.svg").write_text(workflow_panel(snapshot["workflows"]))
     alt = "; ".join(
         f'{workflow["name"]}: {workflow_state(workflow)[0]}, updated {workflow["updatedAt"] or "unknown"}'
         for workflow in snapshot["workflows"]
     )
     workflows = (
         '<p align="center">\n'
-        f'  <img src="./sections-preview/workflows.svg" width="100%" alt="{escape(alt, quote=True)}" />\n'
+        f'  <img src="{asset_base}/workflows.svg{version}" width="100%" alt="{escape(alt, quote=True)}" />\n'
         '</p>\n'
     )
-    for name in ["test-readme.md", "test-readme.me"]:
-        path = TEMPLATES / name
+    paths = [TEMPLATES / name for name in ["test-readme.md", "test-readme.me"]]
+    if publish:
+        pending = TEMPLATES.parent / "TMP-README-unified.md"
+        paths = [TEMPLATES / "README-template.md"] + ([pending] if pending.exists() else [])
+    for path in paths:
         content = path.read_text()
         world_heading = "### 🥽🌐 Some of the worlds I've uploaded\n\n"
         workflow_heading = "## 🚦 Workflow Status\n\n"
@@ -198,9 +213,9 @@ def build(snapshot):
         old_workflows, suffix = remainder.split("\n\n---\n\n" + stats_heading, 1)
         path.write_text(
             prefix + world_heading
-            + section(old_worlds, worlds, snapshot["capturedAt"], "World data")
+            + section(old_worlds, worlds, snapshot["capturedAt"], "World data", publish, asset_base)
             + "\n\n---\n\n" + workflow_heading
-            + section(old_workflows, workflows, snapshot["capturedAt"], "Workflow")
+            + section(old_workflows, workflows, snapshot["capturedAt"], "Workflow", publish, asset_base)
             + "\n\n---\n\n" + stats_heading + suffix
         )
 
@@ -208,6 +223,8 @@ def build(snapshot):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--collect", action="store_true", help="Refresh public data and thumbnails first (requires curl and authenticated gh).")
+    parser.add_argument("--publish", action="store_true", help="Update the production template and pending workflow README, using separate production assets.")
     args = parser.parse_args()
-    data = collect() if args.collect else json.loads((HERE / "snapshot.json").read_text())
-    build(data)
+    output = TEMPLATES.parent / "assets/profile-sections" if args.publish else HERE
+    data = collect(output) if args.collect else json.loads((output / "snapshot.json").read_text())
+    build(data, publish=args.publish)
