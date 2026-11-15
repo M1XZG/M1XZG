@@ -111,13 +111,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-11-15 @ 13:09 UTC</strong> - 19,741.6 <sup>lifetime hrs</sup>
+As of <strong>2026-11-15 @ 14:09 UTC</strong> - 19,741.6 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-11-15 @ 13:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-11-15 @ 14:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -278,15 +278,15 @@ As of <strong>2026-11-15 @ 13:09 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png" />
-    <img src="./remotion-preview/overview.gif" width="100%" alt="GitHub snapshot: 52,248 lifetime contributions, 34,463 contributions in the last year, 38.0k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,741.6 hours, 98.71% of 20,000." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./remotion-preview/overview.png?v=3ab05f7e93d4e0b0" />
+    <img src="./remotion-preview/overview.gif?v=3ab05f7e93d4e0b0" width="100%" alt="GitHub snapshot: 52,248 lifetime contributions, 34,463 contributions in the last year, 38.0k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,741.6 hours, 98.71% of 20,000." />
   </picture>
 </p>
 
-<p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png">View the still image</a>.</sub></p>
+<p align="center"><sub>One short animation, then a still frame. <a href="./remotion-preview/overview.png?v=3ab05f7e93d4e0b0">View the still image</a>.</sub></p>
 
 <p align="center">
-  <img src="./remotion-preview/charts.png" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
+  <img src="./remotion-preview/charts.png?v=3ab05f7e93d4e0b0" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the preview notes below." />
 </p>
 
 <details>
@@ -376,7 +376,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 | 22:00 | 7 |
 | 23:00 | 13 |
 
-VRChat was reported at 2026-11-15 @ 13:09 UTC. Steam API readings can trail the client by one or two hours.
+VRChat was reported at 2026-11-15 @ 14:09 UTC. Steam API readings can trail the client by one or two hours.
 
 The [Remotion source](./remotion-preview/src/Root.jsx) and [input snapshot](./remotion-preview/snapshot.json) are kept alongside the rendered images. To rebuild from this checkout, run these commands from the templates/remotion-preview folder:
 

@@ -1,5 +1,9 @@
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
+import {execFileSync} from 'node:child_process';
+import {appendFileSync, copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
+import {dirname, join} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {commitLanguages, hourlyCommits, repoLanguages, topLanguages, weeklyContributions, lifetimeContributions} from './chart-utils.mjs';
 
 test('repository counts exclude forks, private repos and missing languages', () => {
@@ -78,4 +82,49 @@ test('lifetime sums all years without double-counting adjacent-year calendar pad
   });
   assert.throws(() => lifetimeContributions([years[0], years[0]]));
   assert.throws(() => lifetimeContributions([]));
+});
+
+test('preview image URLs change with render inputs, including layout-only edits', () => {
+  const root = new URL('../../', import.meta.url);
+  const tmp = fileURLToPath(new URL('tmp/', root));
+  mkdirSync(tmp, {recursive: true});
+  const fixture = mkdtempSync(join(tmp, 'preview-cache-test-'));
+  try {
+    for (const path of [
+      'README.md',
+      'profile-summary-card-output/aura/3-stats.svg',
+      ...['build-preview.mjs', 'chart-data.json', 'src/Root.jsx', 'src/Charts.jsx', 'chart-utils.mjs', 'package-lock.json']
+        .map((path) => `templates/remotion-preview/${path}`),
+    ]) {
+      const target = join(fixture, path);
+      mkdirSync(dirname(target), {recursive: true});
+      copyFileSync(new URL(path, root), target);
+    }
+    const render = () => {
+      execFileSync(process.execPath, ['build-preview.mjs'], {
+        cwd: join(fixture, 'templates/remotion-preview'),
+        stdio: 'pipe',
+      });
+      const markdown = readFileSync(join(fixture, 'templates/test-readme.md'), 'utf8');
+      const versions = [...markdown.matchAll(
+        /\.\/remotion-preview\/(?:overview\.(?:gif|png)|charts\.png)(\?v=[a-f0-9]{16})/g,
+      )].map((match) => match[1]);
+      assert.equal(versions.length, 4);
+      assert.equal(new Set(versions).size, 1);
+      assert.equal(markdown, readFileSync(join(fixture, 'templates/test-readme.me'), 'utf8'));
+      return versions[0];
+    };
+    const initial = render();
+    assert.equal(render(), initial);
+    appendFileSync(join(fixture, 'templates/remotion-preview/src/Root.jsx'), '\n// Layout change\n');
+    const layoutVersion = render();
+    assert.notEqual(layoutVersion, initial);
+    const path = join(fixture, 'templates/remotion-preview/chart-data.json');
+    const data = JSON.parse(readFileSync(path, 'utf8'));
+    data.contributions.total += 1;
+    writeFileSync(path, JSON.stringify(data));
+    assert.notEqual(render(), layoutVersion);
+  } finally {
+    rmSync(fixture, {recursive: true});
+  }
 });
