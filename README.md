@@ -23,7 +23,7 @@
     <img src="https://img.shields.io/badge/Based_in-UK-ae4aff?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in the UK" />
     <img src="https://img.shields.io/badge/Tinkering_with-Pi_%26_Docker-ae4aff?style=for-the-badge&logo=homeassistant&logoColor=white" alt="Tinkering with Raspberry Pi and Docker" />
 <!-- start vrchatBadgeHERE -->
-<a href="#-my-current-hours"><img src="https://img.shields.io/badge/VRChat-19%2C760.1%20hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="19,760.1 VRChat hours" /></a>
+<a href="#-my-current-hours"><img src="https://img.shields.io/badge/VRChat-19%2C761.1%20hrs-ae4aff?style=for-the-badge&logo=vrchat&logoColor=white" alt="19,761.1 VRChat hours" /></a>
 <!-- end vrchatBadgeHERE -->
     <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/gpg-public-key.asc" title="GPG fingerprint: BCEE 7ED1 0C7C 1A61 4D12 9B4E 07EF 0BCB 3732 4D4D"><img src="https://img.shields.io/badge/GPG-07EF0BCB37324D4D-ae4aff?style=for-the-badge&logo=gnuprivacyguard&logoColor=white" alt="Download my public GPG key" /></a>
   </p>
@@ -109,13 +109,13 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 ### 🥽 My current hours
 
 <!-- start myhoursHERE -->
-As of <strong>2026-11-16 @ 14:27 UTC</strong> - 19,760.1 <sup>lifetime hrs</sup>
+As of <strong>2026-11-16 @ 15:18 UTC</strong> - 19,761.1 <sup>lifetime hrs</sup>
 <!-- end myhoursHERE -->
 
 ### 🥽🤖 AFK Instance Bot hours
 
 <!-- start afkhoursHERE -->
-As of <strong>2026-11-16 @ 14:27 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
+As of <strong>2026-11-16 @ 15:18 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</sup>
 <!-- end afkhoursHERE -->
 
 <sub>The above is reported by the Steam API which is potentially 1-2 hours behind what the game client reports.</sub>
@@ -125,19 +125,19 @@ As of <strong>2026-11-16 @ 14:27 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <!-- themed-section-preview -->
 
 <p align="center">
-  <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-house.svg?v=df56ff5cdd2caf24" width="49%" alt="Wildy&#x27;s Cozy House: 19,123 visits, 426 favorites; last upload 2025-03-23" /></a>
-  <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-comfy-space.svg?v=df56ff5cdd2caf24" width="49%" alt="Wildy&#x27;s Soft and Comfy Space: 13,848 visits, 236 favorites; last upload 2026-02-01" /></a>
+  <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-house.svg?v=b5ae59547c211a30" width="49%" alt="Wildy&#x27;s Cozy House: 19,123 visits, 426 favorites; last upload 2025-03-23" /></a>
+  <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-comfy-space.svg?v=b5ae59547c211a30" width="49%" alt="Wildy&#x27;s Soft and Comfy Space: 13,859 visits, 236 favorites; last upload 2026-02-01" /></a>
 </p>
 <p align="center">
-  <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-loft.svg?v=df56ff5cdd2caf24" width="49%" alt="Wildy&#x27;s Cozy Loft: 6,535 visits, 232 favorites; last upload 2025-02-15" /></a>
-  <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/afk-home.svg?v=df56ff5cdd2caf24" width="49%" alt="Wildy&#x27;s AFK Home: 33 visits, 1 favorites; last upload 2026-02-01" /></a>
+  <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-loft.svg?v=b5ae59547c211a30" width="49%" alt="Wildy&#x27;s Cozy Loft: 6,535 visits, 232 favorites; last upload 2025-02-15" /></a>
+  <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/afk-home.svg?v=b5ae59547c211a30" width="49%" alt="Wildy&#x27;s AFK Home: 33 visits, 1 favorites; last upload 2026-02-01" /></a>
 </p>
 <p align="center">
-  <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-haven.svg?v=df56ff5cdd2caf24" width="49%" alt="Wildy&#x27;s Soft Haven: 5,265 visits, 31 favorites; last upload 2026-07-07" /></a>
-  <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/neon-afk-home.svg?v=df56ff5cdd2caf24" width="49%" alt="Neon AFK Home: 105 visits, 1 favorites; last upload 2026-01-01" /></a>
+  <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-haven.svg?v=b5ae59547c211a30" width="49%" alt="Wildy&#x27;s Soft Haven: 5,271 visits, 31 favorites; last upload 2026-07-07" /></a>
+  <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/neon-afk-home.svg?v=b5ae59547c211a30" width="49%" alt="Neon AFK Home: 105 visits, 1 favorites; last upload 2026-01-01" /></a>
 </p>
 
-<p align="center"><sub>World data snapshot: 2026-11-16 14:28 UTC. Refreshed by the hourly profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
+<p align="center"><sub>World data snapshot: 2026-11-16 15:20 UTC. Refreshed by the hourly profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
 
 <details>
 <summary>Live badges and links</summary>
@@ -234,10 +234,10 @@ As of <strong>2026-11-16 @ 14:27 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 <!-- themed-section-preview -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/workflows.svg?v=df56ff5cdd2caf24" width="100%" alt="My VRChat Hours Update: IN PROGRESS, updated 2026-11-16T14:26:48Z; M1XZG Uptime Monitor: PASSING, updated 2026-11-16T14:25:22Z; M1XZG Profile Card Creator: PASSING, updated 2026-11-16T12:39:39Z; Shared Game Images - GitHub Pages: PASSING, updated 2026-10-09T17:09:52Z; Replace Posters Daily: PASSING, updated 2026-11-16T12:18:38Z" />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/workflows.svg?v=b5ae59547c211a30" width="100%" alt="My VRChat Hours Update: IN PROGRESS, updated 2026-11-16T15:18:22Z; M1XZG Uptime Monitor: PASSING, updated 2026-11-16T15:20:26Z; M1XZG Profile Card Creator: PASSING, updated 2026-11-16T14:44:44Z; Shared Game Images - GitHub Pages: PASSING, updated 2026-10-09T17:09:52Z; Replace Posters Daily: PASSING, updated 2026-11-16T12:18:38Z" />
 </p>
 
-<p align="center"><sub>Workflow snapshot: 2026-11-16 14:28 UTC. Refreshed by the hourly profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
+<p align="center"><sub>Workflow snapshot: 2026-11-16 15:20 UTC. Refreshed by the hourly profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
 
 <details>
 <summary>Live badges and links</summary>
@@ -311,15 +311,15 @@ As of <strong>2026-11-16 @ 14:27 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=e0dfb96bd8b29f24" />
-    <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.gif?v=e0dfb96bd8b29f24" width="100%" alt="GitHub snapshot: 52,390 lifetime contributions, 34,608 contributions in the last year, 38.1k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,760.1 hours, 98.80% of 20,000." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=defcae0e0bf89615" />
+    <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.gif?v=defcae0e0bf89615" width="100%" alt="GitHub snapshot: 52,396 lifetime contributions, 34,614 contributions in the last year, 38.1k commits, 13.5k pull requests, 50 stars, 770 issues and 68 repositories contributed to. VRChat: 19,761.1 hours, 98.81% of 20,000." />
   </picture>
 </p>
 
-<p align="center"><sub>One short animation, then a still frame. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=e0dfb96bd8b29f24">View the still image</a>.</sub></p>
+<p align="center"><sub>One short animation, then a still frame. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/overview.png?v=defcae0e0bf89615">View the still image</a>.</sub></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/charts.png?v=e0dfb96bd8b29f24" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the notes below." />
+  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/charts.png?v=defcae0e0bf89615" width="100%" alt="Matching contribution history, repository-language bars, commit-language bars and sampled UTC commit activity. Figures and scope are available in the notes below." />
 </p>
 
 <details>
@@ -327,9 +327,9 @@ As of <strong>2026-11-16 @ 14:27 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 The hourly [profile workflow](https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml) refreshes these images alongside the VRChat hours. The detailed charts use [structured GitHub data](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/chart-data.json), not estimates from the old chart images. Both contribution totals use calendar data; the other GitHub headline totals still come from the existing Aura cards and keep their original rounding.
 
-Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (34,608). GitHub returned 34,608 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
+Contributions / Year means the trailing year, not the current calendar year. That card and the contribution chart use the sum of the calendar's dated entries (34,614). GitHub returned 34,614 separately as its calendar summary; both values are preserved in the data file rather than forcing them to agree.
 
-Contributions / Lifetime sums dated entries across every GitHub contribution year, 2013-2026, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at 2026-11-16T14:27:53.179Z. Its 52,390 dated contributions and GitHub's separate 52,390 summary total are both retained in the data file.
+Contributions / Lifetime sums dated entries across every GitHub contribution year, 2013-2026, without counting adjacent-year calendar padding twice. The lifetime snapshot was captured at 2026-11-16T15:19:46.405Z. Its 52,396 dated contributions and GitHub's separate 52,396 summary total are both retained in the data file.
 
 Repository-language bars count owned public repositories, excluding forks and missing primary languages. Commit-language bars count public contributions across 2013-2026, grouped by the repository's primary language, with a GitHub limit of 100 repositories per year. They do not measure lines of code. The top five languages plus Other retain the full percentage denominator.
 
@@ -337,15 +337,15 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Metric | Snapshot |
 | --- | ---: |
-| Contributions over lifetime | 52,390 |
-| Contributions in the last year | 34,608 |
+| Contributions over lifetime | 52,396 |
+| Contributions in the last year | 34,614 |
 | Total commits | 38.1k |
 | Total pull requests | 13.5k |
 | Total stars | 50 |
 | Total issues | 770 |
 | Repositories contributed to | 68 |
-| VRChat lifetime hours | 19,760.1 |
-| Hours to 20,000 | 239.9 |
+| VRChat lifetime hours | 19,761.1 |
+| Hours to 20,000 | 238.9 |
 
 **Repositories by primary language**
 
@@ -365,7 +365,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Language | Count | Share |
 | --- | ---: | ---: |
-| Python | 36,714 | 98.0% |
+| Python | 36,718 | 98.0% |
 | Shell | 242 | 0.6% |
 | Markdown | 187 | 0.5% |
 | HTML | 107 | 0.3% |
@@ -384,7 +384,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 
 | Hour | Commits |
 | --- | ---: |
-| 00:00 | 12 |
+| 00:00 | 9 |
 | 01:00 | 3 |
 | 02:00 | 4 |
 | 03:00 | 3 |
@@ -398,7 +398,7 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 | 11:00 | 20 |
 | 12:00 | 24 |
 | 13:00 | 10 |
-| 14:00 | 6 |
+| 14:00 | 10 |
 | 15:00 | 2 |
 | 16:00 | 9 |
 | 17:00 | 5 |
@@ -407,9 +407,9 @@ Hourly activity is a sample from the last 90 days: up to 50 authored commits on 
 | 20:00 | 1 |
 | 21:00 | 12 |
 | 22:00 | 7 |
-| 23:00 | 14 |
+| 23:00 | 13 |
 
-VRChat was reported at 2026-11-16 @ 14:27 UTC. Steam API readings can trail the client by one or two hours.
+VRChat was reported at 2026-11-16 @ 15:18 UTC. Steam API readings can trail the client by one or two hours.
 
 The [Remotion source](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/src/Root.jsx) and [input snapshot](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templates/remotion-preview/snapshot.json) are kept alongside the rendered images. Run the profile workflow manually to refresh the published dashboard.
 
