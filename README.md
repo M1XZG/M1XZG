@@ -446,3 +446,13 @@ The [Remotion source](https://raw.githubusercontent.com/M1XZG/M1XZG/main/templat
 <p align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=rubik+one&size=30&pause=1000&color=9F04F7&background=B3B3B300&center=true&vCenter=true&width=435&lines=Thanks+for+visiting;Happy+Hacking" alt="Typing SVG" /></a>
 </p>
+
+<details>
+<summary>Credits</summary>
+
+Stats and charts: [Remotion](https://www.remotion.dev/) · [user-statistician](https://github.com/cicirello/user-statistician) · [GitHub Profile Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards)<br>
+Data: [GitHub](https://github.com/) · [Steam](https://store.steampowered.com/) · [VRChat](https://vrchat.com/) · [WiGLE](https://wigle.net/) · [thinkbroadband](https://www.thinkbroadband.com/broadband/monitoring)<br>
+Design and badges: [Shields.io](https://shields.io/) · [Simple Icons](https://simpleicons.org/) · [Profile Header Generator](https://github.com/leviarista/github-profile-header-generator)<br>
+Finishing touches: [Profile Views Counter](https://github.com/anton-komarev/github-profile-views-counter) · [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg)
+
+</details>
