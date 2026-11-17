@@ -65,7 +65,7 @@ updateprofile () {
     fi
 
     if ! python3 "$SRC/templates/sections-preview/build-preview.py" --collect --publish; then
-        echo "World and workflow card refresh failed; no profile changes will be published." >&2
+        echo "World card and live workflow badge refresh failed; no profile changes will be published." >&2
         exit 1
     fi
 

@@ -67,6 +67,33 @@ class SectionsPreviewTest(unittest.TestCase):
         self.assertIn("2026-11-14 12:30", content)
         self.assertIn("No runs recorded", content)
 
+    def test_live_workflows_link_each_badge_to_its_workflow(self):
+        root = ET.fromstring("<div>" + preview.live_workflows() + "</div>")
+        rows = root.findall("./table/tbody/tr")
+        self.assertEqual(len(rows), len(preview.WORKFLOWS))
+        for row, (_, label, repo, workflow) in zip(rows, preview.WORKFLOWS):
+            with self.subTest(workflow=workflow):
+                url = f"https://github.com/M1XZG/{repo}/actions/workflows/{workflow}"
+                links = row.findall("./td/a")
+                self.assertEqual([link.attrib["href"] for link in links], [url, url])
+                self.assertEqual(links[0].text, label)
+                badge = links[1].find("img")
+                self.assertTrue(badge.attrib["src"].startswith(
+                    f"https://img.shields.io/github/actions/workflow/status/M1XZG/{repo}/{workflow}?"
+                ))
+                self.assertNotIn("&color=", badge.attrib["src"])
+
+    def test_world_collection_can_skip_workflow_snapshots(self):
+        scratch = SCRIPT.parents[2] / "tmp"
+        scratch.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=scratch) as directory:
+            with patch.object(preview, "WORLDS", []), patch.object(
+                preview.subprocess, "check_output"
+            ) as request:
+                snapshot = preview.collect(Path(directory), include_workflows=False)
+            request.assert_not_called()
+            self.assertEqual(snapshot["workflows"], [])
+
     def test_publishing_updates_template_and_pending_readme_without_touching_preview(self):
         scratch = SCRIPT.parents[2] / "tmp"
         scratch.mkdir(exist_ok=True)
@@ -90,7 +117,7 @@ class SectionsPreviewTest(unittest.TestCase):
             pending.write_text(content)
             for name in ["test-readme.md", "test-readme.me"]:
                 (templates / name).write_text("Preview stays unchanged")
-            snapshot = {"capturedAt": "2026-11-15T18:00:00Z", "worlds": [], "workflows": []}
+            snapshot = {"capturedAt": "2026-11-15T18:00:00Z", "worlds": []}
             with patch.object(preview, "TEMPLATES", templates):
                 preview.build(snapshot, publish=True)
                 first = target.read_text()
@@ -99,10 +126,14 @@ class SectionsPreviewTest(unittest.TestCase):
             self.assertEqual(pending.read_text(), first)
             self.assertIn("Hours placeholders remain", first)
             self.assertIn("Keep stats unchanged", first)
-            self.assertIn("/main/assets/profile-sections/workflows.svg?v=", first)
-            self.assertIn("Refreshed by the hourly profile workflow.", first)
+            self.assertIn(preview.live_workflows(), first)
+            self.assertNotIn("workflows.svg", first)
+            self.assertNotIn("Workflow snapshot:", first)
+            self.assertNotIn("Workflow badge", first)
+            self.assertFalse((assets / "workflows.svg").exists())
+            self.assertIn("Refreshed by the profile workflow.", first)
             self.assertNotIn("fixed design preview", first)
-            self.assertEqual(first.count("<details>"), 2)
+            self.assertEqual(first.count("<details>"), 1)
             self.assertEqual((templates / "test-readme.md").read_text(), "Preview stays unchanged")
 
 
