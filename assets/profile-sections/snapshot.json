@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-11-17T03:15:58.086834+00:00",
+  "capturedAt": "2026-11-17T04:15:01.814649+00:00",
   "worlds": [
     {
       "slug": "cozy-house",
@@ -15,7 +15,7 @@
     {
       "slug": "soft-comfy-space",
       "name": "Wildy's Soft and Comfy Space",
-      "visits": 13865,
+      "visits": 13866,
       "favorites": 236,
       "updatedAt": "2026-02-01T15:44:24.093Z",
       "url": "https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69",
@@ -26,7 +26,7 @@
     {
       "slug": "cozy-loft",
       "name": "Wildy's Cozy Loft",
-      "visits": 6537,
+      "visits": 6538,
       "favorites": 232,
       "updatedAt": "2025-02-15T01:01:15.139Z",
       "url": "https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc",
@@ -76,8 +76,8 @@
       "url": "https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml",
       "status": "in_progress",
       "conclusion": null,
-      "updatedAt": "2026-11-17T03:14:00Z",
-      "runUrl": "https://github.com/M1XZG/M1XZG/actions/runs/44008716696",
+      "updatedAt": "2026-11-17T04:13:28Z",
+      "runUrl": "https://github.com/M1XZG/M1XZG/actions/runs/44015666315",
       "source": "https://api.github.com/repos/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/runs?per_page=1"
     },
     {
@@ -85,10 +85,10 @@
       "name": "M1XZG Uptime Monitor",
       "repo": "M1XZG/uptime",
       "url": "https://github.com/M1XZG/uptime/actions/workflows/uptime.yml",
-      "status": "completed",
-      "conclusion": "success",
-      "updatedAt": "2026-11-17T03:15:21Z",
-      "runUrl": "https://github.com/M1XZG/uptime/actions/runs/44008846370",
+      "status": "queued",
+      "conclusion": null,
+      "updatedAt": "2026-11-17T04:15:03Z",
+      "runUrl": "https://github.com/M1XZG/uptime/actions/runs/44015855036",
       "source": "https://api.github.com/repos/M1XZG/uptime/actions/workflows/uptime.yml/runs?per_page=1"
     },
     {
