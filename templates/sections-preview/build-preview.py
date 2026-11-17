@@ -36,7 +36,7 @@ def download(url):
     ])
 
 
-def collect(output=HERE):
+def collect(output=HERE, *, include_workflows=True):
     output.mkdir(parents=True, exist_ok=True)
     snapshot = {"capturedAt": datetime.now(timezone.utc).isoformat(), "worlds": [], "workflows": []}
     for slug, world_id in WORLDS:
@@ -56,7 +56,7 @@ def collect(output=HERE):
             "url": f"https://vrchat.com/home/world/wrld_{world_id}",
             "source": source, "thumbnailSource": world["thumbnailImageUrl"], "thumbnailMime": mime,
         })
-    for slug, label, repo, workflow in WORKFLOWS:
+    for slug, label, repo, workflow in (WORKFLOWS if include_workflows else []):
         endpoint = f"repos/M1XZG/{repo}/actions/workflows/{workflow}/runs?per_page=1"
         runs = json.loads(subprocess.check_output(["gh", "api", endpoint]))["workflow_runs"]
         run = runs[0] if runs else None
@@ -149,13 +149,37 @@ def workflow_panel(workflows):
     return frame(1100, 100 + len(workflows) * 44, "Workflow status snapshot", body)
 
 
+def live_workflows():
+    rows = []
+    for _, label, repo, workflow in WORKFLOWS:
+        url = f"https://github.com/M1XZG/{repo}/actions/workflows/{workflow}"
+        badge = (
+            f"https://img.shields.io/github/actions/workflow/status/M1XZG/{repo}/{workflow}"
+            "?style=flat-square&label=status&labelColor=211c32&logo=githubactions&logoColor=c08bff"
+        )
+        rows.append(
+            "    <tr>\n"
+            f'      <td><a href="{url}">{escape(label)}</a></td>\n'
+            f'      <td align="center"><a href="{url}"><img src="{escape(badge, quote=True)}" '
+            f'alt="{escape(label, quote=True)} status" /></a></td>\n'
+            "    </tr>"
+        )
+    return (
+        '<table width="100%">\n'
+        '  <thead><tr><th align="left">Workflow</th><th>Status</th></tr></thead>\n'
+        "  <tbody>\n" + "\n".join(rows) + "\n  </tbody>\n</table>\n\n"
+        '<p align="center"><sub>Status badges update independently of this README. '
+        "Open a workflow for its latest runs.</sub></p>"
+    )
+
+
 def section(old, cards, captured, kind, publish=False, asset_base="./sections-preview"):
     # Keep the original live badges and their individual links available.
     if "<!-- themed-section-preview -->" in old:
         old = old.split("<summary>Live badges and links</summary>\n\n", 1)[1]
         old = old.rsplit("\n</details>", 1)[0].strip()
     freshness = (
-        "Refreshed by the hourly profile workflow. "
+        "Refreshed by the profile workflow. "
         if publish else "Cards are a fixed design preview, not live updates. "
     )
     return (
@@ -189,16 +213,19 @@ def build(snapshot, publish=False):
         '<p align="center">\n' + "\n".join(world_links[i:i + 2]) + "\n</p>"
         for i in range(0, len(world_links), 2)
     ) + "\n"
-    (output / "workflows.svg").write_text(workflow_panel(snapshot["workflows"]))
-    alt = "; ".join(
-        f'{workflow["name"]}: {workflow_state(workflow)[0]}, updated {workflow["updatedAt"] or "unknown"}'
-        for workflow in snapshot["workflows"]
-    )
-    workflows = (
-        '<p align="center">\n'
-        f'  <img src="{asset_base}/workflows.svg{version}" width="100%" alt="{escape(alt, quote=True)}" />\n'
-        '</p>\n'
-    )
+    if publish:
+        workflows = live_workflows()
+    else:
+        (output / "workflows.svg").write_text(workflow_panel(snapshot["workflows"]))
+        alt = "; ".join(
+            f'{workflow["name"]}: {workflow_state(workflow)[0]}, updated {workflow["updatedAt"] or "unknown"}'
+            for workflow in snapshot["workflows"]
+        )
+        workflows = (
+            '<p align="center">\n'
+            f'  <img src="{asset_base}/workflows.svg{version}" width="100%" alt="{escape(alt, quote=True)}" />\n'
+            '</p>\n'
+        )
     paths = [TEMPLATES / name for name in ["test-readme.md", "test-readme.me"]]
     if publish:
         pending = TEMPLATES.parent / "TMP-README-unified.md"
@@ -215,7 +242,9 @@ def build(snapshot, publish=False):
             prefix + world_heading
             + section(old_worlds, worlds, snapshot["capturedAt"], "World data", publish, asset_base)
             + "\n\n---\n\n" + workflow_heading
-            + section(old_workflows, workflows, snapshot["capturedAt"], "Workflow", publish, asset_base)
+            + (workflows if publish else section(
+                old_workflows, workflows, snapshot["capturedAt"], "Workflow", publish, asset_base
+            ))
             + "\n\n---\n\n" + stats_heading + suffix
         )
 
@@ -226,5 +255,8 @@ if __name__ == "__main__":
     parser.add_argument("--publish", action="store_true", help="Update the production template and pending workflow README, using separate production assets.")
     args = parser.parse_args()
     output = TEMPLATES.parent / "assets/profile-sections" if args.publish else HERE
-    data = collect(output) if args.collect else json.loads((output / "snapshot.json").read_text())
+    data = (
+        collect(output, include_workflows=not args.publish)
+        if args.collect else json.loads((output / "snapshot.json").read_text())
+    )
     build(data, publish=args.publish)

@@ -134,7 +134,7 @@ Thanks for stopping by! You can find me on various [social media platforms](http
   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/neon-afk-home.svg?v=b290b39f24a6245a" width="49%" alt="Neon AFK Home: 105 visits, 1 favorites; last upload 2026-01-01" /></a>
 </p>
 
-<p align="center"><sub>World data snapshot: 2026-11-17 20:11 UTC. Refreshed by the hourly profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
+<p align="center"><sub>World data snapshot: 2026-11-17 20:11 UTC. Refreshed by the profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
 
 <details>
 <summary>Live badges and links</summary>
@@ -228,78 +228,33 @@ Thanks for stopping by! You can find me on various [social media platforms](http
 
 ## 🚦 Workflow Status
 
-<!-- themed-section-preview -->
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/workflows.svg?v=b290b39f24a6245a" width="100%" alt="My VRChat Hours Update: IN PROGRESS, updated 2026-11-17T20:09:49Z; M1XZG Uptime Monitor: PASSING, updated 2026-11-17T20:10:22Z; M1XZG Profile Card Creator: PASSING, updated 2026-11-17T18:28:22Z; Shared Game Images - GitHub Pages: PASSING, updated 2026-10-09T17:09:52Z; Replace Posters Daily: PASSING, updated 2026-11-17T18:12:04Z" />
-</p>
-
-<p align="center"><sub>Workflow snapshot: 2026-11-17 20:11 UTC. Refreshed by the hourly profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
-
-<details>
-<summary>Live badges and links</summary>
-
-<div align="center">
-
-<table>
-  <thead>
-    <tr>
-      <th>Work Flow</th>
-      <th>Status</th>
-    </tr>
-  </thead>
+<table width="100%">
+  <thead><tr><th align="left">Workflow</th><th>Status</th></tr></thead>
   <tbody>
     <tr>
-      <td colspan="2" align="center">
-        <strong>Personal Profile Updates</strong>
-      </td>
+      <td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml">My VRChat Hours Update</a></td>
+      <td align="center"><a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml"><img src="https://img.shields.io/github/actions/workflow/status/M1XZG/M1XZG/update-vrchat-hours-unified.yaml?style=flat-square&amp;label=status&amp;labelColor=211c32&amp;logo=githubactions&amp;logoColor=c08bff" alt="My VRChat Hours Update status" /></a></td>
     </tr>
     <tr>
-      <td>My VRChat Hours Update</td>
-      <td>
-        <a href="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml">
-          <img src="https://github.com/M1XZG/M1XZG/actions/workflows/update-vrchat-hours-unified.yaml/badge.svg" alt="Update VRChat Hours (Unified)" />
-        </a>
-      </td>
+      <td><a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml">M1XZG Uptime Monitor</a></td>
+      <td align="center"><a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml"><img src="https://img.shields.io/github/actions/workflow/status/M1XZG/uptime/uptime.yml?style=flat-square&amp;label=status&amp;labelColor=211c32&amp;logo=githubactions&amp;logoColor=c08bff" alt="M1XZG Uptime Monitor status" /></a></td>
     </tr>
     <tr>
-      <td>M1XZG Uptime Monitor</td>
-      <td>
-        <a href="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml">
-          <img src="https://github.com/M1XZG/uptime/actions/workflows/uptime.yml/badge.svg" alt="M1XZG Uptime Monitor" />
-        </a>
-      </td>
+      <td><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml">M1XZG Profile Card Creator</a></td>
+      <td align="center"><a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml"><img src="https://img.shields.io/github/actions/workflow/status/M1XZG/M1XZG/profile-summary-cards.yml?style=flat-square&amp;label=status&amp;labelColor=211c32&amp;logo=githubactions&amp;logoColor=c08bff" alt="M1XZG Profile Card Creator status" /></a></td>
     </tr>
     <tr>
-      <td>M1XZG Profile Card Creator</td>
-      <td>
-        <a href="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml">
-          <img src="https://github.com/M1XZG/M1XZG/actions/workflows/profile-summary-cards.yml/badge.svg" alt="Profile Card Creator" />
-        </a>
-      </td>
+      <td><a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">Shared Game Images - GitHub Pages</a></td>
+      <td align="center"><a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml"><img src="https://img.shields.io/github/actions/workflow/status/M1XZG/shared-game-images/pages.yml?style=flat-square&amp;label=status&amp;labelColor=211c32&amp;logo=githubactions&amp;logoColor=c08bff" alt="Shared Game Images - GitHub Pages status" /></a></td>
     </tr>
     <tr>
-      <td>Shared Game Images - GitHub Pages</td>
-      <td>
-        <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml">
-          <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/pages.yml/badge.svg" alt="Deploy GitHub Pages" />
-        </a>
-      </td>
+      <td><a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml">Replace Posters Daily</a></td>
+      <td align="center"><a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml"><img src="https://img.shields.io/github/actions/workflow/status/M1XZG/shared-game-images/replace_posters.yml?style=flat-square&amp;label=status&amp;labelColor=211c32&amp;logo=githubactions&amp;logoColor=c08bff" alt="Replace Posters Daily status" /></a></td>
     </tr>
-      <tr>
-        <td>Replace Posters Daily</td>
-        <td>
-          <a href="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml">
-            <img src="https://github.com/M1XZG/shared-game-images/actions/workflows/replace_posters.yml/badge.svg" alt="Replace Posters Daily" />
-          </a>
-        </td>
-      </tr>
   </tbody>
 </table>
 
-</div>
-
-</details>
+<p align="center"><sub>Status badges update independently of this README. Open a workflow for its latest runs.</sub></p>
 
 ---
 
