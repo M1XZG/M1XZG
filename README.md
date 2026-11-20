@@ -124,18 +124,16 @@ As of <strong>2026-11-20 @ 10:10 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
 
 <!-- themed-section-preview -->
 
-<p align="center">
-  <a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-house.svg?v=d492adad6d5a0f65" width="49%" alt="Wildy&#x27;s Cozy House: 19,258 visits, 426 favorites; last upload 2025-03-23" /></a>
-  <a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-comfy-space.svg?v=d492adad6d5a0f65" width="49%" alt="Wildy&#x27;s Soft and Comfy Space: 13,937 visits, 236 favorites; last upload 2026-02-01" /></a>
-</p>
-<p align="center">
-  <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-loft.svg?v=d492adad6d5a0f65" width="49%" alt="Wildy&#x27;s Cozy Loft: 6,637 visits, 232 favorites; last upload 2025-02-15" /></a>
-  <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/afk-home.svg?v=d492adad6d5a0f65" width="49%" alt="Wildy&#x27;s AFK Home: 33 visits, 1 favorites; last upload 2026-02-01" /></a>
-</p>
-<p align="center">
-  <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-haven.svg?v=d492adad6d5a0f65" width="49%" alt="Wildy&#x27;s Soft Haven: 5,642 visits, 31 favorites; last upload 2026-07-07" /></a>
-  <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/neon-afk-home.svg?v=d492adad6d5a0f65" width="49%" alt="Neon AFK Home: 105 visits, 1 favorites; last upload 2026-01-01" /></a>
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%"><a href="https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-house.svg?v=c7e2c7f1336a6829" width="100%" alt="Wildy&#x27;s Cozy House: 19,258 visits, 426 favorites; last upload 2025-03-23" /></a></td>
+    <td width="50%"><a href="https://vrchat.com/home/world/wrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-comfy-space.svg?v=c7e2c7f1336a6829" width="100%" alt="Wildy&#x27;s Soft and Comfy Space: 13,937 visits, 236 favorites; last upload 2026-02-01" /></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/cozy-loft.svg?v=c7e2c7f1336a6829" width="100%" alt="Wildy&#x27;s Cozy Loft: 6,637 visits, 232 favorites; last upload 2025-02-15" /></a></td>
+    <td width="50%"><a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50"><img src="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/soft-haven.svg?v=c7e2c7f1336a6829" width="100%" alt="Wildy&#x27;s Soft Haven: 5,642 visits, 31 favorites; last upload 2026-07-07" /></a></td>
+  </tr>
+</table>
 
 <p align="center"><sub>World data snapshot: 2026-11-20 10:11 UTC. Refreshed by the profile workflow. <a href="https://raw.githubusercontent.com/M1XZG/M1XZG/main/assets/profile-sections/snapshot.json">Source data</a>.</sub></p>
 
@@ -170,6 +168,8 @@ As of <strong>2026-11-20 @ 10:10 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
         <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_9f2d7f50-b918-4bab-9452-4b1c9a15ed69&query=favorites&label=Total%20Favorites&color=gold" />
       </a>
     </td>
+  </tr>
+  <tr>
     <td valign="top">
       <h4 id="-wildys-cozy-loft">🥽🏠 <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">Wildy’s Cozy Loft</a></h4>
       <a href="https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc">
@@ -182,20 +182,6 @@ As of <strong>2026-11-20 @ 10:10 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
         <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc&query=favorites&label=Total%20%20Favorites&color=gold" />
       </a>
     </td>
-  </tr>
-  <tr>
-    <td valign="top">
-   <h4 id="-wildys-afk-home">🥽🏠 <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">Wildy's AFK Home</a></h4>
-   <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">
-     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=updated_at&label=Last%20Upload" />
-   </a><br />
-   <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">
-     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=visits&label=Total%20Visits&color=red" />
-   </a><br />
-   <a href="https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a">
-     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_e4542a42-3097-46be-ba0d-21e10f8c768a&query=favorites&label=Total%20%20Favorites&color=gold" />
-   </a>
- </td>
   <td valign="top">
     <h4 id="-wildys-soft-haven">🥽🏠 <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50">Wildy’s Soft Haven</a></h4>
      <a href="https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50">
@@ -208,18 +194,6 @@ As of <strong>2026-11-20 @ 10:10 UTC</strong> - 1,497.6 <sup>AFK lifetime hrs</s
        <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50&query=favorites&label=Total%20%20Favorites&color=gold" />
      </a>
    </td>
- <td valign="top">
-   <h4 id="-neon-afk-home">🥽🏠 <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">Neon AFK Home</a></h4>
-   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
-     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=updated_at&label=Last%20Upload" />
-   </a><br />
-   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
-     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=visits&label=Total%20Visits&color=red" />
-   </a><br />
-   <a href="https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a">
-     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.vrchat.cloud%2Fapi%2F1%2Fworlds%2Fwrld_4941600b-e662-499c-b5fa-d8023190730a&query=favorites&label=Total%20%20Favorites&color=gold" />
-   </a>
- </td>
   </tr>
 </table>
 

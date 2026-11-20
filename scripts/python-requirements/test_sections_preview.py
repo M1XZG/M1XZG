@@ -117,13 +117,22 @@ class SectionsPreviewTest(unittest.TestCase):
             pending.write_text(content)
             for name in ["test-readme.md", "test-readme.me"]:
                 (templates / name).write_text("Preview stays unchanged")
-            snapshot = {"capturedAt": "2026-11-15T18:00:00Z", "worlds": []}
+            urls = [f"https://example.com/world/{i}" for i in range(4)]
+            worlds = []
+            for i, url in enumerate(urls):
+                (assets / f"{i}.thumbnail").write_bytes(b"thumbnail")
+                worlds.append({"slug": str(i), "url": url, "name": f"World {i}", "visits": 1,
+                               "favorites": 0, "updatedAt": "2026-11-15", "thumbnailMime": "image/png"})
+            snapshot = {"capturedAt": "2026-11-15T18:00:00Z", "worlds": worlds}
             with patch.object(preview, "TEMPLATES", templates):
                 preview.build(snapshot, publish=True)
                 first = target.read_text()
                 preview.build(snapshot, publish=True)
             self.assertEqual(target.read_text(), first)
             self.assertEqual(pending.read_text(), first)
+            table = ET.fromstring(first[first.index("<table"):first.index("</table>") + len("</table>")])
+            self.assertEqual([[a.get("href") for a in row.findall("td/a")] for row in table.findall("tr")],
+                             [urls[:2], urls[2:]])
             self.assertIn("Hours placeholders remain", first)
             self.assertIn("Keep stats unchanged", first)
             self.assertIn(preview.live_workflows(), first)

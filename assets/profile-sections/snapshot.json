@@ -35,17 +35,6 @@
       "thumbnailMime": "image/png"
     },
     {
-      "slug": "afk-home",
-      "name": "Wildy's AFK Home",
-      "visits": 33,
-      "favorites": 1,
-      "updatedAt": "2026-02-01T15:29:51.086Z",
-      "url": "https://vrchat.com/home/world/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a",
-      "source": "https://api.vrchat.cloud/api/1/worlds/wrld_e4542a42-3097-46be-ba0d-21e10f8c768a",
-      "thumbnailSource": "https://api.vrchat.cloud/api/1/image/file_229a1234-b951-416b-bc99-daa753fc301e/2/256",
-      "thumbnailMime": "image/png"
-    },
-    {
       "slug": "soft-haven",
       "name": "Wildy's Soft Haven",
       "visits": 5642,
@@ -54,17 +43,6 @@
       "url": "https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50",
       "source": "https://api.vrchat.cloud/api/1/worlds/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50",
       "thumbnailSource": "https://api.vrchat.cloud/api/1/image/file_df59ec66-97dc-4463-8317-a2b121fc46f9/3/256",
-      "thumbnailMime": "image/png"
-    },
-    {
-      "slug": "neon-afk-home",
-      "name": "Neon AFK Home",
-      "visits": 105,
-      "favorites": 1,
-      "updatedAt": "2026-01-01T18:19:15.336Z",
-      "url": "https://vrchat.com/home/world/wrld_4941600b-e662-499c-b5fa-d8023190730a",
-      "source": "https://api.vrchat.cloud/api/1/worlds/wrld_4941600b-e662-499c-b5fa-d8023190730a",
-      "thumbnailSource": "https://api.vrchat.cloud/api/1/image/file_5e5a7bba-22fd-475d-8cc2-5e30ceaa2448/9/256",
       "thumbnailMime": "image/png"
     }
   ],
