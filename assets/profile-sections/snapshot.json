@@ -1,10 +1,10 @@
 {
-  "capturedAt": "2026-11-20T00:24:42.183191+00:00",
+  "capturedAt": "2026-11-20T02:15:30.635728+00:00",
   "worlds": [
     {
       "slug": "cozy-house",
       "name": "Wildy's Cozy House",
-      "visits": 19252,
+      "visits": 19254,
       "favorites": 426,
       "updatedAt": "2025-03-23T01:17:09.478Z",
       "url": "https://vrchat.com/home/world/wrld_5931e6c9-1b23-4852-9c73-ee0bf273e224",
@@ -26,7 +26,7 @@
     {
       "slug": "cozy-loft",
       "name": "Wildy's Cozy Loft",
-      "visits": 6551,
+      "visits": 6566,
       "favorites": 231,
       "updatedAt": "2025-02-15T01:01:15.139Z",
       "url": "https://vrchat.com/home/world/wrld_2bdb0569-b7d2-4d0c-8214-7adb3224a5fc",
@@ -48,7 +48,7 @@
     {
       "slug": "soft-haven",
       "name": "Wildy's Soft Haven",
-      "visits": 5535,
+      "visits": 5544,
       "favorites": 31,
       "updatedAt": "2026-07-07T00:10:44.945Z",
       "url": "https://vrchat.com/home/world/wrld_dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50",
