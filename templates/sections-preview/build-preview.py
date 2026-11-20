@@ -16,9 +16,7 @@ WORLDS = [
     ("cozy-house", "5931e6c9-1b23-4852-9c73-ee0bf273e224"),
     ("soft-comfy-space", "9f2d7f50-b918-4bab-9452-4b1c9a15ed69"),
     ("cozy-loft", "2bdb0569-b7d2-4d0c-8214-7adb3224a5fc"),
-    ("afk-home", "e4542a42-3097-46be-ba0d-21e10f8c768a"),
     ("soft-haven", "dde3e2a3-cde3-4d4e-8a51-99d49f3d6f50"),
-    ("neon-afk-home", "4941600b-e662-499c-b5fa-d8023190730a"),
 ]
 WORKFLOWS = [
     ("vrchat-hours", "My VRChat Hours Update", "M1XZG", "update-vrchat-hours-unified.yaml"),
@@ -206,13 +204,13 @@ def build(snapshot, publish=False):
         (output / f"{slug}.svg").write_text(world_card(world, (output / f"{slug}.thumbnail").read_bytes()))
         alt = f'{world["name"]}: {world["visits"]:,} visits, {world["favorites"]:,} favorites; last upload {world["updatedAt"][:10]}'
         world_links.append(
-            f'  <a href="{escape(world["url"], quote=True)}"><img src="{asset_base}/{slug}.svg{version}" '
-            f'width="49%" alt="{escape(alt, quote=True)}" /></a>'
+            f'    <td width="50%"><a href="{escape(world["url"], quote=True)}">'
+            f'<img src="{asset_base}/{slug}.svg{version}" width="100%" alt="{escape(alt, quote=True)}" /></a></td>'
         )
-    worlds = "\n".join(
-        '<p align="center">\n' + "\n".join(world_links[i:i + 2]) + "\n</p>"
+    worlds = '<table width="100%">\n' + "\n".join(
+        "  <tr>\n" + "\n".join(world_links[i:i + 2]) + "\n  </tr>"
         for i in range(0, len(world_links), 2)
-    ) + "\n"
+    ) + "\n</table>\n"
     if publish:
         workflows = live_workflows()
     else:
