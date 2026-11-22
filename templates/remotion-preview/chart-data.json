@@ -1,15 +1,11 @@
 {
-  "capturedAt": "2026-11-21T22:08:48.519Z",
+  "capturedAt": "2026-11-22T00:27:44.174Z",
   "source": "GitHub GraphQL contribution calendar and contributionsCollection; public REST repositories.",
   "scope": "Calendar totals follow GitHub profile visibility. Repository and commit-language/hourly aggregates exclude private repositories. No repository names or individual commits are stored.",
   "contributions": {
-    "total": 35053,
-    "reportedTotal": 35053,
+    "total": 34750,
+    "reportedTotal": 35059,
     "weeks": [
-      {
-        "date": "2025-11-16",
-        "count": 309
-      },
       {
         "date": "2025-11-23",
         "count": 596
@@ -216,12 +212,16 @@
       },
       {
         "date": "2026-11-15",
-        "count": 657
+        "count": 663
+      },
+      {
+        "date": "2026-11-22",
+        "count": 0
       }
     ],
     "lifetime": {
-      "total": 52835,
-      "reportedTotal": 52835,
+      "total": 52841,
+      "reportedTotal": 52841,
       "years": [
         {
           "year": 2013,
@@ -290,11 +290,11 @@
         },
         {
           "year": 2026,
-          "count": 31543,
-          "reportedCount": 31543
+          "count": 31549,
+          "reportedCount": 31549
         }
       ],
-      "capturedAt": "2026-11-21T22:09:22.546Z"
+      "capturedAt": "2026-11-22T00:28:13.536Z"
     }
   },
   "repositories": [
@@ -355,7 +355,7 @@
     "languages": [
       {
         "name": "Python",
-        "count": 37060
+        "count": 37065
       },
       {
         "name": "Shell",
@@ -413,16 +413,16 @@
     "maxRepositoriesPerYear": 100
   },
   "productiveTime": {
-    "since": "2026-08-23T22:08:48.519Z",
-    "until": "2026-11-21T22:08:48.519Z",
+    "since": "2026-08-24T00:27:44.174Z",
+    "until": "2026-11-22T00:27:44.174Z",
     "timeZone": "UTC",
     "maxRepositories": 50,
     "maxCommitsPerRepository": 50,
     "hours": [
       8,
       0,
-      4,
-      1,
+      0,
+      0,
       4,
       1,
       4,
@@ -441,8 +441,8 @@
       12,
       7,
       13,
-      7,
-      13
+      11,
+      14
     ]
   }
 }
