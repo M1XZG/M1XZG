@@ -1,10 +1,10 @@
 {
-  "capturedAt": "2026-11-28T10:09:39.327Z",
+  "capturedAt": "2026-11-28T12:12:58.145Z",
   "source": "GitHub GraphQL contribution calendar and contributionsCollection; public REST repositories.",
   "scope": "Calendar totals follow GitHub profile visibility. Repository and commit-language/hourly aggregates exclude private repositories. No repository names or individual commits are stored.",
   "contributions": {
-    "total": 35234,
-    "reportedTotal": 35234,
+    "total": 35252,
+    "reportedTotal": 35252,
     "weeks": [
       {
         "date": "2025-11-23",
@@ -216,12 +216,12 @@
       },
       {
         "date": "2026-11-22",
-        "count": 484
+        "count": 502
       }
     ],
     "lifetime": {
-      "total": 53325,
-      "reportedTotal": 53325,
+      "total": 53343,
+      "reportedTotal": 53343,
       "years": [
         {
           "year": 2013,
@@ -290,11 +290,11 @@
         },
         {
           "year": 2026,
-          "count": 32033,
-          "reportedCount": 32033
+          "count": 32051,
+          "reportedCount": 32051
         }
       ],
-      "capturedAt": "2026-11-28T10:10:04.515Z"
+      "capturedAt": "2026-11-28T12:13:29.926Z"
     }
   },
   "repositories": [
@@ -355,7 +355,7 @@
     "languages": [
       {
         "name": "Python",
-        "count": 37453
+        "count": 37458
       },
       {
         "name": "Shell",
@@ -367,7 +367,7 @@
       },
       {
         "name": "HTML",
-        "count": 110
+        "count": 118
       },
       {
         "name": "JavaScript",
@@ -413,8 +413,8 @@
     "maxRepositoriesPerYear": 100
   },
   "productiveTime": {
-    "since": "2026-08-30T10:09:39.327Z",
-    "until": "2026-11-28T10:09:39.327Z",
+    "since": "2026-08-30T12:12:58.145Z",
+    "until": "2026-11-28T12:12:58.145Z",
     "timeZone": "UTC",
     "maxRepositories": 50,
     "maxCommitsPerRepository": 50,
@@ -429,12 +429,12 @@
       1,
       6,
       3,
-      5,
-      16,
+      15,
+      19,
       16,
       10,
-      12,
-      5,
+      8,
+      4,
       13,
       8,
       16,
