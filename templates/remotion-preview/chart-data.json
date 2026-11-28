@@ -1,10 +1,10 @@
 {
-  "capturedAt": "2026-11-27T22:09:42.982Z",
+  "capturedAt": "2026-11-28T00:24:07.474Z",
   "source": "GitHub GraphQL contribution calendar and contributionsCollection; public REST repositories.",
   "scope": "Calendar totals follow GitHub profile visibility. Repository and commit-language/hourly aggregates exclude private repositories. No repository names or individual commits are stored.",
   "contributions": {
-    "total": 35197,
-    "reportedTotal": 35197,
+    "total": 35203,
+    "reportedTotal": 35203,
     "weeks": [
       {
         "date": "2025-11-23",
@@ -216,12 +216,12 @@
       },
       {
         "date": "2026-11-22",
-        "count": 447
+        "count": 453
       }
     ],
     "lifetime": {
-      "total": 53288,
-      "reportedTotal": 53288,
+      "total": 53294,
+      "reportedTotal": 53294,
       "years": [
         {
           "year": 2013,
@@ -290,11 +290,11 @@
         },
         {
           "year": 2026,
-          "count": 31996,
-          "reportedCount": 31996
+          "count": 32002,
+          "reportedCount": 32002
         }
       ],
-      "capturedAt": "2026-11-27T22:10:14.813Z"
+      "capturedAt": "2026-11-28T00:24:37.693Z"
     }
   },
   "repositories": [
@@ -355,7 +355,7 @@
     "languages": [
       {
         "name": "Python",
-        "count": 37423
+        "count": 37428
       },
       {
         "name": "Shell",
@@ -413,16 +413,16 @@
     "maxRepositoriesPerYear": 100
   },
   "productiveTime": {
-    "since": "2026-08-29T22:09:42.982Z",
-    "until": "2026-11-27T22:09:42.982Z",
+    "since": "2026-08-30T00:24:07.474Z",
+    "until": "2026-11-28T00:24:07.474Z",
     "timeZone": "UTC",
     "maxRepositories": 50,
     "maxCommitsPerRepository": 50,
     "hours": [
       8,
       0,
-      4,
-      1,
+      0,
+      0,
       4,
       1,
       4,
@@ -441,8 +441,8 @@
       13,
       7,
       12,
-      7,
-      13
+      11,
+      14
     ]
   }
 }
